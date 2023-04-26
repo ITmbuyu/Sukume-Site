@@ -1,0 +1,857 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sukume &#8211; Blog Posts</title>
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Font-Awesome-Icons-CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Corbel', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <div id="logo">
+                    <h1> 
+                        <a  href="index.html">
+                            <span>  <a  href="#index.html">
+                              <img src="assets\images/Logo-small.png"  class="responsive" alt="Your logo" title="Your logo" style="max-width:100%;height: 70px;" />
+                          </a></span>
+                        </a> 
+                    </h1>
+                </div>
+                
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Our Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Our Experience <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="services-page.html" class="dropdown-item " id="menu-item-10">Our Services</a>
+                                                <a href="blogs.html" class="dropdown-item active" id="menu-item-31">Our Blogs</a>
+                                                <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!-- inner banner -->
+    <section class="inner-banner">
+        <style>
+            .inner-banner {
+                background-image: url('assets/images/inner-bannert.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 300px;
+            }
+        </style>
+        <div class="w3l-breadcrumb py-5">
+            <div class="container py-xl-5 py-md-4 mt-5">
+                <h4 class="inner-text-title font-weight-bold mb-sm-2">Blog</h4>
+                <ul class="breadcrumbs-custom-path">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Blog Posts</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- //inner banner -->
+
+    <!-- blog section -->
+    <section class="w3l-content-mid py-5 w3l-homeblock2 py-5 ">
+        <style>
+            .w3l-content-mid {
+                position: relative;
+            }
+
+            .w3l-content-mid video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+
+            .w3l-content-mid h3.title-w3l {
+                animation: bounceIn 1s;
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            @keyframes bounceIn {
+
+                from,
+                20%,
+                40%,
+                60%,
+                80%,
+                to {
+                    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                }
+
+                0% {
+                    opacity: 0;
+                    transform: scale3d(0.3, 0.3, 0.3);
+                }
+
+                20% {
+                    transform: scale3d(1.1, 1.1, 1.1);
+                }
+
+                40% {
+                    transform: scale3d(0.9, 0.9, 0.9);
+                }
+
+                60% {
+                    opacity: 1;
+                    transform: scale3d(1.03, 1.03, 1.03);
+                }
+
+                80% {
+                    transform: scale3d(0.97, 0.97, 0.97);
+                }
+
+                to {
+                    opacity: 1;
+                    transform: scale3d(1, 1, 1);
+                }
+            }
+
+
+
+            .hover-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+              }
+              
+              .hover-box {
+                transition: all 0.3s ease-in-out;
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                z-index: 1;
+              }
+              
+              .hover-box::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                background-color: rgba(255, 255, 255, 0.9);
+                transition: opacity 0.3s ease-in-out;
+              }
+              
+              .hover-box:hover::before {
+                opacity: 1;
+              }
+              
+              .blog-desc {
+                font-weight: bold;
+                font-size: 22px;
+              }
+              
+              .blog-icon-e i {
+                font-size: 18px;
+                color: #fff;
+                background-color: #d83030;
+                padding: 10px;
+                border-radius: 50%;
+              }
+              
+              .blog-icon-e:hover i {
+                transform: rotate(360deg);
+              }
+              
+              
+        </style>
+
+        <div class="w3l-homeblock2 py-5">
+            <div class="text-container">
+                <h3 class="title-w3l" style="animation: bounce 2s infinite;">
+                    Latest Blog Posts
+                </h3>
+            </div>
+        </div>
+        <style>
+            @keyframes bounce {
+
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+
+        <div class="row BlogHomeLayout container py-md-5 py-4 ">
+
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4 ">
+
+                <article id="post-1"
+                    class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-business">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a href="blogone.html">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/hello-world/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Hello world!"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="blogone.html"
+                                        rel="bookmark" class="blog-desc">Hello world!</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="blogone.html"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-1 -->
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4">
+
+                <article id="post-46"
+                    class="post-46 post type-post status-publish format-standard has-post-thumbnail hentry category-creative">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a
+                                    href="https://wp.w3layouts.com/execution/2021/04/07/eed-ut-perspiciatis-unde-omnis-iste-natus-2/">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/eed-ut-perspiciatis-unde-omnis-iste-natus-2/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Eed ut perspiciatis unde omnis iste natus" loading="lazy"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="https://wp.w3layouts.com/execution/2021/04/07/eed-ut-perspiciatis-unde-omnis-iste-natus-2/"
+                                        rel="bookmark" class="blog-desc">Eed ut perspiciatis unde omnis iste
+                                        natus</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="https://wp.w3layouts.com/execution/2021/04/07/eed-ut-perspiciatis-unde-omnis-iste-natus-2/"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-46 -->
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4">
+
+                <article id="post-44"
+                    class="post-44 post type-post status-publish format-standard has-post-thumbnail hentry category-industry">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a
+                                    href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit-2/">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit-2/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Aque ipsa quae ab illo inventore et qui archit" loading="lazy"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit-2/"
+                                        rel="bookmark" class="blog-desc">Aque ipsa quae ab illo inventore et qui
+                                        archit</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit-2/"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-44 -->
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4">
+
+                <article id="post-42"
+                    class="post-42 post type-post status-publish format-standard has-post-thumbnail hentry category-creative">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a
+                                    href="https://wp.w3layouts.com/execution/2021/04/07/why-a-visual-identity-system-is-more-memorable/">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/why-a-visual-identity-system-is-more-memorable/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Why a visual identity system is more memorable" loading="lazy"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="https://wp.w3layouts.com/execution/2021/04/07/why-a-visual-identity-system-is-more-memorable/"
+                                        rel="bookmark" class="blog-desc">Why a visual identity system is more
+                                        memorable</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="https://wp.w3layouts.com/execution/2021/04/07/why-a-visual-identity-system-is-more-memorable/"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-42 -->
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4">
+
+                <article id="post-40"
+                    class="post-40 post type-post status-publish format-standard has-post-thumbnail hentry category-creative">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a
+                                    href="https://wp.w3layouts.com/execution/2021/04/07/make-a-website-that-surpasses-amongst-all-the/">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/make-a-website-that-surpasses-amongst-all-the/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Make a website that surpasses amongst all the" loading="lazy"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="https://wp.w3layouts.com/execution/2021/04/07/make-a-website-that-surpasses-amongst-all-the/"
+                                        rel="bookmark" class="blog-desc">Make a website that surpasses amongst all
+                                        the</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="https://wp.w3layouts.com/execution/2021/04/07/make-a-website-that-surpasses-amongst-all-the/"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-40 -->
+            <!-- blog page blog grids -->
+
+            <div class="col-lg-6 mt-lg-5 mt-4">
+
+                <article id="post-38"
+                    class="post-38 post type-post status-publish format-standard has-post-thumbnail hentry category-corporate">
+
+                    <div class="bg-clr-white hover-box">
+                        <div class="row align-items-center">
+
+                            <div class="col-sm-6 position-relative">
+                                <a
+                                    href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit/">
+
+                                    <a class="post-thumbnail"
+                                        href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit/"
+                                        aria-hidden="true" tabindex="-1">
+                                        <img width="650" height="800"
+                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6.jpg"
+                                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                                            alt="Aque ipsa quae ab illo inventore et qui archit" loading="lazy"
+                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-390x480.jpg 390w"
+                                            sizes="(max-width: 650px) 100vw, 650px" /> </a>
+
+                                </a>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="card-body blog-details align-self pl-sm-0">
+
+                                    <a href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit/"
+                                        rel="bookmark" class="blog-desc">Aque ipsa quae ab illo inventore et qui
+                                        archit</a>
+                                    <!-- <p>Lorem ipsum dolor sit amet consectetur ipsum adipisicing elit.</p> -->
+
+                                    <div>
+
+                                        <div class="d-flex align-items-center justify-content-between mt-lg-4 mt-5">
+                                            <h5 class="text-blog-e">April 7, 2021</h5>
+
+                                            <a href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit/"
+                                                class="blog-icon-e"><i class="fas fa-plus"></i></a>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- #post-38 -->
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination-style text-center mt-5 pt-lg-5 pt-2">
+            <div class="page-pagination d-flex justify-content-center">
+                <nav aria-label="Page navigation example">
+                    <ul class='page-numbers'>
+                        <li><span aria-current="page" class="page-numbers current">1</span></li>
+                        <li><a class="page-numbers"
+                                href="https://wp.w3layouts.com/execution/blog-posts/page/2/">2</a></li>
+                        <li><a class="next page-numbers"
+                                href="https://wp.w3layouts.com/execution/blog-posts/page/2/">Next</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- //pagination -->
+
+        <video autoplay muted loop>
+            <source
+            src="assets\videos\_import_6176c757471771.23002145.mp4"
+                type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+
+
+    </section>
+    <!-- //blog section -->
+
+    <!-- footer -->
+    <footer class="w3l-footer-22 py-5">
+
+        <div class="container py-md-5 py-4 ExecutionFooter">
+            <div class="row sub-columns ">
+                <div class="col-lg-4 col-sm-6 sub-one-left">
+                    <h6>About </h6>
+                    <p>In Africa and other emerging markets, economies and businesses can grow and prosper while the vast majority of communities from which they derive their wealth remain poor. Besides being mind-bogglingly unjust, this creates high levels of inequality which, in turn, breeds its own social evils like crime, classism, ill-health, degradation, etc.</p>
+
+                    <div class="columns-2 FooterSocial">
+                        <ul class="social">
+
+                            <li><a href="https://www.facebook.com/w3layouts/" title="facebook"><span
+                                        class="fab fa-facebook-f" aria-hidden="true"></span></a>
+                            </li>
+
+                            <li><a href="https://in.linkedin.com/company/w3layouts" title="linkedin"><span
+                                        class="fab fa-linkedin-in" aria-hidden="true"></span></a>
+                            </li>
+
+                            <li><a href="https://twitter.com/W3layouts" title="twitter"><span class="fab fa-twitter"
+                                        aria-hidden="true"></span></a>
+                            </li>
+
+                            <li><a href="https://w3layouts.com/" title="google"><span class="fab fa-google-plus-g"
+                                        aria-hidden="true"></span></a>
+                            </li>
+
+                            <li><a href="https://www.instagram.com/w3layouts_/" title="instagram"><span
+                                        class="fab fa-instagram" aria-hidden="true"></span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-sm-6 sub-two-right pl-lg-5 mt-sm-0 mt-5">
+
+                    <div id="categories-4" class="widget_categories">
+                        <h6>Categories</h6>
+                        <ul>
+                            <li class="cat-item cat-item-2"><a
+                                    href="https://wp.w3layouts.com/execution/category/business/">Business</a>
+                            </li>
+                            <li class="cat-item cat-item-3"><a
+                                    href="https://wp.w3layouts.com/execution/category/corporate/">Corporate</a>
+                            </li>
+                            <li class="cat-item cat-item-4"><a
+                                    href="https://wp.w3layouts.com/execution/category/creative/">Creative</a>
+                            </li>
+                            <li class="cat-item cat-item-5"><a
+                                    href="https://wp.w3layouts.com/execution/category/industry/">Industry</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-6 sub-two-right mt-lg-0 mt-sm-5 mt-4">
+
+                    <div id="archives-4" class="widget_archive">
+                        <h6>Archives</h6>
+                        <ul>
+                            <li><a href='https://wp.w3layouts.com/execution/2021/04/'>April 2021</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 sub-two-right pl-lg-5 mt-lg-0 mt-sm-5 mt-4">
+
+                    <div id="meta-4" class="widget_meta">
+                        <h6>Meta</h6>
+                        <ul>
+                            <li><a href="https://wp.w3layouts.com/execution/wp-login.php">Log in</a></li>
+                            <li><a href="https://wp.w3layouts.com/execution/feed/">Entries feed</a></li>
+                            <li><a href="https://wp.w3layouts.com/execution/comments/feed/">Comments feed</a></li>
+
+                            <li><a href="https://wordpress.org/">WordPress.org</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-contact mt-5 pt-lg-4 FooterContact">
+
+                <div class="row justify-content-center">
+
+                    <div class="col-md-4 footer-contact d-flex align-items-center">
+                        <span class="fas fa-envelope-open" aria-hidden="true"></span>
+                        <div>
+                            <a href="mailto:info@sukume.com">info@sukume.com</a>
+                            <p>Drop Us a Line</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 footer-contact d-flex align-items-center active">
+                        <span class="fas fa-phone-alt" aria-hidden="true"></span>
+                        <div>
+                            <a href="tel:+27 83 200 8953">+27 83 200 8953</a>
+                            <p>Call Us Now</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 footer-contact d-flex align-items-center">
+                        <span class="fas fa-map-marker-alt" aria-hidden="true"></span>
+                        <div>
+                            <h5>13 Carlswald Creek, 105 9th Road,
+Midrand, 1684, Johannesburg, South Africa.</h5>
+                            <p>Get Direction</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- copyright -->
+        <div class="copyright-footer text-center">
+            <div class="container">
+                <div class="columns">
+                    <p class="CopyRights">&copy; 2023 Sukume. All Rights Reserved/a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- //copyright -->
+
+    </footer>
+    <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+</body>
+
+</html>
