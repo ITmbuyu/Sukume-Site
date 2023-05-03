@@ -17,10 +17,53 @@
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: 'Corbel', sans-serif;
-        }
-    </style>
+        /* Define styles for the loading animation */
+        #loader-wrapper {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: #6c5ce7;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 9999;
+         }
+         
+         #loader {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+           border: 8px solid #f1f2f6;
+           border-top-color: #ffffff;
+           animation: spin 2s linear infinite;
+         }
+         
+         #loader-inner {
+           width: 100%;
+           height: 100%;
+           background: #ffffff;
+           border-radius: 50%;
+           animation: spin-reverse 2s linear infinite;
+         }
+         
+         @keyframes spin {
+           to {
+             transform: rotate(360deg);
+           }
+         }
+         
+         @keyframes spin-reverse {
+           to {
+             transform: rotate(-360deg);
+           }
+         }
+
+       body {
+           font-family: 'Corbel', sans-serif;
+       }
+   </style>
 </head>
 
 <body>
@@ -62,7 +105,6 @@
                                 Our Experience <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="services-page.html" class="dropdown-item " id="menu-item-10">Our Services</a>
                                                 <a href="blogs.html" class="dropdown-item active" id="menu-item-31">Our Blogs</a>
                                                 <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
                             </div>
@@ -77,6 +119,51 @@
         </div>
     </header>
     <!--//header-->
+
+    <!--loading animation-->  
+    <div class="loading">
+        <div class="spinner">
+          <div class="circle"></div>
+          <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
+        </div>
+      </div>
+      
+      <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: purple;
+      }
+      
+      .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: transparent;
+        animation: spin 1s infinite;
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+    <!--// loading animation-->
 
     <!-- inner banner -->
     <section class="inner-banner">
@@ -255,10 +342,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/hello-world/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1.jpg"
+                                            src="assets/images/blog1.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Hello world!"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog1-390x480.jpg 390w"
+                                            srcset="assets/images/blog1.jpg 650w, assets/images/blog1-244x300.jpg 244w, assets/images/blog1-195x240.jpg 195w, assets/images/blog1-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -311,10 +398,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/eed-ut-perspiciatis-unde-omnis-iste-natus-2/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2.jpg"
+                                            src="assets/images/blog2.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Eed ut perspiciatis unde omnis iste natus" loading="lazy"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog2-390x480.jpg 390w"
+                                            srcset="assets/images/blog2.jpg 650w, assets/images/blog2-244x300.jpg 244w, assets/images/blog2-195x240.jpg 195w, assets/images/blog2-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -368,10 +455,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit-2/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4.jpg"
+                                            src="assets/images/blog4.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Aque ipsa quae ab illo inventore et qui archit" loading="lazy"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog4-390x480.jpg 390w"
+                                            srcset="assets/images/blog4.jpg 650w, assets/images/blog4-244x300.jpg 244w, assets/images/blog4-195x240.jpg 195w, assets/images/blog4-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -425,10 +512,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/why-a-visual-identity-system-is-more-memorable/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3.jpg"
+                                            src="assets/images/blog3.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Why a visual identity system is more memorable" loading="lazy"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog3-390x480.jpg 390w"
+                                            srcset="assets/images/blog3.jpg 650w, assets/images/blog3-244x300.jpg 244w, assets/images/blog3-195x240.jpg 195w, assets/images/blog3-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -482,10 +569,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/make-a-website-that-surpasses-amongst-all-the/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5.jpg"
+                                            src="assets/images/blog5.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Make a website that surpasses amongst all the" loading="lazy"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog5-390x480.jpg 390w"
+                                            srcset="assets/images/blog5.jpg 650w, assets/images/blog5-244x300.jpg 244w, assets/images/blog5-195x240.jpg 195w, assets/images/blog5-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -539,10 +626,10 @@
                                         href="https://wp.w3layouts.com/execution/2021/04/07/aque-ipsa-quae-ab-illo-inventore-et-qui-archit/"
                                         aria-hidden="true" tabindex="-1">
                                         <img width="650" height="800"
-                                            src="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6.jpg"
+                                            src="assets/images/blog6.jpg"
                                             class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
                                             alt="Aque ipsa quae ab illo inventore et qui archit" loading="lazy"
-                                            srcset="https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6.jpg 650w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-244x300.jpg 244w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-195x240.jpg 195w, https://wp.w3layouts.com/execution/wp-content/uploads/sites/39/2021/04/blog6-390x480.jpg 390w"
+                                            srcset="assets/images/blog6.jpg 650w, assets/images/blog6-244x300.jpg 244w, assets/images/blog6-195x240.jpg 195w, assets/images/blog6-390x480.jpg 390w"
                                             sizes="(max-width: 650px) 100vw, 650px" /> </a>
 
                                 </a>
@@ -847,6 +934,15 @@ Midrand, 1684, Johannesburg, South Africa.</h5>
         });
     </script>
     <!-- //disable body scroll which navbar is in active -->
+
+     <!--loading js-->
+     <script>
+        window.onload = function() {
+			var loading = document.querySelector('.loading');
+			loading.style.display = 'none';
+		}      
+    </script>
+    <!--// loading js-->
 
     <!--bootstrap-->
     <script src="assets/js/bootstrap.min.js"></script>

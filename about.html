@@ -17,10 +17,53 @@
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: 'Corbel', sans-serif;
-        }
-    </style>
+        /* Define styles for the loading animation */
+        #loader-wrapper {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: #6c5ce7;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 9999;
+         }
+         
+         #loader {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+           border: 8px solid #f1f2f6;
+           border-top-color: #ffffff;
+           animation: spin 2s linear infinite;
+         }
+         
+         #loader-inner {
+           width: 100%;
+           height: 100%;
+           background: #ffffff;
+           border-radius: 50%;
+           animation: spin-reverse 2s linear infinite;
+         }
+         
+         @keyframes spin {
+           to {
+             transform: rotate(360deg);
+           }
+         }
+         
+         @keyframes spin-reverse {
+           to {
+             transform: rotate(-360deg);
+           }
+         }
+
+       body {
+           font-family: 'Corbel', sans-serif;
+       }
+   </style>
 </head>
 
 <body>
@@ -62,7 +105,6 @@
                                 Our Experience <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="services-page.html" class="dropdown-item" id="menu-item-10">Our Services</a>
                                                 <a href="blogs.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
                                                 <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
                             </div>
@@ -76,6 +118,51 @@
         </div>
     </header>
     <!--//header-->
+
+    <!--loading animation-->  
+    <div class="loading">
+        <div class="spinner">
+          <div class="circle"></div>
+          <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
+        </div>
+      </div>
+      
+      <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: purple;
+      }
+      
+      .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: transparent;
+        animation: spin 1s infinite;
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+    <!--// loading animation-->
 
     <!-- inner banner -->
     <section class="inner-banner">
@@ -280,7 +367,7 @@
                         <div class="icon mb-4">
                             <span class="fas fa-pencil-alt"></span>
                         </div>
-                        <div class="info">
+                        <div class="info" >
                             <h4><a href="#url">Our Vision</a>
                             </h4>
                         </div>
@@ -414,7 +501,7 @@
                           <div class="team-block-single">
                             <div class="team-grids">
                                 <a href="#url">
-                <img src="assets/images/team3.jpg"
+                <img src="assets/images/team1.jpg"
                     class="img-fluid" alt="">
                 <div class="team-info">
                     <div class="social-icons-section">
@@ -436,9 +523,9 @@
                         </a>
                     </div>
                     <div class="team-bottom-block p-4">
-                        <h5 class="member mb-1"><a href="#url">Olive Yew</a>
+                        <h5 class="member mb-1"><a href="#url">Vuyelwa Nyakaza</a>
                         </h5>
-                        <small>Web Developer</small>
+                        <small>CEO</small>
                     </div>
                 </div>
                         </div>
@@ -516,7 +603,7 @@
                           <div class="team-block-single">
                             <div class="team-grids">
                                 <a href="#url">
-                        <img src="assets/images/team1.jpg"
+                        <img src="assets/images/team3.jpg"
                             class="img-fluid" alt="">
                         <div class="team-info">
                             <div class="social-icons-section">
@@ -1045,6 +1132,15 @@ Midrand, 1684, Johannesburg, South Africa.</h5>
         });
     </script>
     <!-- //disable body scroll which navbar is in active -->
+
+     <!--loading js-->
+     <script>
+        window.onload = function() {
+			var loading = document.querySelector('.loading');
+			loading.style.display = 'none';
+		}      
+    </script>
+    <!--// loading js-->
 
     <!--bootstrap-->
     <script src="assets/js/bootstrap.min.js"></script>

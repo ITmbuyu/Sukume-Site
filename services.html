@@ -17,10 +17,53 @@
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Custom CSS -->
     <style>
-        body {
-            font-family: 'Corbel', sans-serif;
-        }
-    </style>
+        /* Define styles for the loading animation */
+        #loader-wrapper {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: #6c5ce7;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 9999;
+         }
+         
+         #loader {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+           border: 8px solid #f1f2f6;
+           border-top-color: #ffffff;
+           animation: spin 2s linear infinite;
+         }
+         
+         #loader-inner {
+           width: 100%;
+           height: 100%;
+           background: #ffffff;
+           border-radius: 50%;
+           animation: spin-reverse 2s linear infinite;
+         }
+         
+         @keyframes spin {
+           to {
+             transform: rotate(360deg);
+           }
+         }
+         
+         @keyframes spin-reverse {
+           to {
+             transform: rotate(-360deg);
+           }
+         }
+
+       body {
+           font-family: 'Corbel', sans-serif;
+       }
+   </style>
 </head>
 
 <body>
@@ -62,7 +105,6 @@
                                 Our Experience <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a href="services-page.html" class="dropdown-item active" id="menu-item-10">Our Services</a>
                                                 <a href="blog.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
                                                 <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
                             </div>
@@ -77,6 +119,51 @@
         </div>
     </header>
     <!--//header-->
+
+    <!--loading animation-->  
+    <div class="loading">
+        <div class="spinner">
+          <div class="circle"></div>
+          <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
+        </div>
+      </div>
+      
+      <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: purple;
+      }
+      
+      .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: transparent;
+        animation: spin 1s infinite;
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+    <!--// loading animation-->
 
     <!-- inner banner -->
     <section class="inner-banner">
@@ -290,7 +377,7 @@
     
         <video autoplay muted loop>
             <source
-            src="assets\videos\_import_6176c757471771.23002145.mp4"
+            src="assets\videos\backvid.mp4"
                 type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -653,7 +740,7 @@
     
         <video autoplay muted loop>
             <source
-            src="assets\videos\_import_6176c757471771.23002145.mp4"
+            src="assets\videos\backvid.mp4"
                 type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -715,6 +802,18 @@
                 font-size: 3rem;
                 text-align: center;
             }
+
+            ol {
+                text-align: center;
+              }
+              
+              ol li {
+                display: inline-block;
+                text-align: center;
+                margin-right: 20px;
+              }
+
+            
 
             @keyframes bounceIn {
 
@@ -785,6 +884,8 @@
                 .card {
                     margin-bottom: 20px;
                 }
+
+                
               
               }
             
@@ -826,7 +927,7 @@
                                     Strategy Services
                                 </span>
                                 <div class="service-heading" style="color: #000; font-size: 1.08rem; font-weight: 600; margin: 1rem 0;">
-                                    <ol class="services-page-purple-list">
+                                    <ol class="services-page-purple-list" style="text-align: center;">
                                         <li>1. Development</li>
                                         <li>2. Implementation</li>
                                         <li>3. Economic Development</li>
@@ -932,7 +1033,7 @@
 
         <video autoplay muted loop>
             <source
-            src="assets\videos\_import_6176c757471771.23002145.mp4"
+            src="assets\videos\backvid.mp4"
                 type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
@@ -1179,6 +1280,15 @@ Midrand, 1684, Johannesburg, South Africa.</h5>
         });
     </script>
     <!-- //disable body scroll which navbar is in active -->
+
+     <!--loading js-->
+     <script>
+        window.onload = function() {
+			var loading = document.querySelector('.loading');
+			loading.style.display = 'none';
+		}      
+    </script>
+    <!--// loading js-->
 
     <!--bootstrap-->
     <script src="assets/js/bootstrap.min.js"></script>
