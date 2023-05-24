@@ -11874,7 +11874,7 @@ div#small-dialog iframe {
   color: #fff;
   width: 40px;
   height: 40px;
-  background: var(--primary-color);
+  background: #956fef;
   border-radius: 4px;
   -webkit-border-radius: 4px;
   -o-border-radius: 4px;
@@ -11989,7 +11989,7 @@ header {
   background-color: white;
   padding: 0px;
   transition: all 0.4s ease 0s;
-  height: 90px;
+  height: 100px;
   display: grid;
   align-items: center;
   /* box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05); */
@@ -12001,7 +12001,7 @@ header.nav-fixed {
   z-index: 9 !important;
   background-color: var(--bg-color);
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
-  height: 70px;
+  height: 100px;
   /* for z-index:10 to display gallery popup */
 }
 
@@ -12230,7 +12230,7 @@ button.search-btn:hover {
     font-size: 20px;
     line-height: 1.2em;
     color: #fff;
-    background: var(--primary-color);
+    background: #956fef;
     line-height: 34px;
   }
 
@@ -12877,7 +12877,7 @@ h5.small-title-2 {
 
 /* content section */
 .w3l-content-mid {
-  background: url(../images/bg3.jpg) no-repeat left;
+  background-color: #7d24c0;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
