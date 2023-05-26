@@ -98,7 +98,7 @@
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
+                            <a class="nav-link" href="about.html">About Us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Our Services</a>
@@ -171,95 +171,68 @@
 
     <!-- banner section -->
     <section class="banner-19">
-        <div class="banner-layer">
-            <video autoplay muted loop id="myVideo">
-                <source src="assets/videos/SUKUMEVID.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <style>
-                .banner-layer {
-                    position: relative;
-                }
+        <style>
+            .main-content {
+                position: absolute;
+                top: 75%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                padding: 20px;
+                color: #fff;
+            }
     
-                .banner-layer::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 100%;
-                    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity here */
-                    z-index: 1;
-                }
+            #heading {
+                font-family: 'Corbel', sans-serif;
+                font-size: 2.15rem;
+                line-height: 1.5;
+                margin-bottom: 1rem;
+                white-space: pre-line; /* Preserve line breaks and spaces */
+            }
     
+            /* Media queries for mobile devices */
+            @media (max-width: 768px) {
                 .main-content {
-                    position: absolute;
-                    top: 70%; /* Adjust the percentage value to move the text down */
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    padding: 20px;
-                    text-align: center;
-                    z-index: 2;
+                    padding: 10px;
                 }
     
                 #heading {
-                    font-family: 'Corbel', sans-serif;
-                    font-size: 40px;
-                    animation: zoomInOut 4s infinite;
-                    color: #fff; /* Adjust the text color here */
+                    font-size: 1.15rem;
+                    white-space: pre-wrap; /* Wrap text on mobile devices */
                 }
+            }
     
-                @keyframes zoomInOut {
-                    0% {
-                        transform: scale(1);
-                    }
-    
-                    50% {
-                        transform: scale(1.2);
-                    }
-    
-                    100% {
-                        transform: scale(1);
-                    }
+            @media (max-width: 576px) {
+                #heading {
+                    font-size: 1.15rem;
                 }
-    
-                /* Media queries */
-                @media (max-width: 768px) {
-                    .main-content {
-                        position: relative;
-                        top: unset;
-                        left: unset;
-                        transform: none;
-                        padding: 10px;
-                    }
-                }
-    
-                @media (max-width: 576px) {
-                    #heading {
-                        font-size: 20px;
-                    }
-                }
-    
-                /* Auto-adjust video on mobile devices */
-                @media (max-width: 576px) {
-                    .banner-layer video {
-                        object-fit: cover;
-                        width: 100%;
-                        height: auto;
-                        max-height: 100%;
-                    }
-                }
-            </style>
+            }
+        </style>
+        <div class="banner-layer">
+            <video autoplay muted loop id="myVideo"></video>
             <div class="main-content-top">
                 <div class="container HomePageHeroHeader">
                     <div class="main-content">
-                        <h4 id="heading">We build the brands, the businesses and the economies that build Africa</h4>
+                        <h4 id="heading"></h4>
     
                         <script>
-                            var typed = new Typed('#typed', {
-                                strings: ['We build the brands, the businesses and the economies that build Africa'],
+                            var video = document.getElementById("myVideo");
+                            var source = document.createElement("source");
+                            var videoSrc = window.innerWidth <= 700 ? "assets/videos/SUKUMEVIDDDDD.mp4" : "assets/videos/SUKUMEVIDDD.mp4";
+    
+                            source.setAttribute("src", videoSrc);
+                            source.setAttribute("type", "video/mp4");
+    
+                            video.appendChild(source);
+                            video.load();
+    
+                            var typed = new Typed('#heading', {
+                                strings: [
+                                    '      We build the brands,\nthe businesses and the economies\n    that build Africa' // Adjusted spacing using line breaks and spaces
+                                ],
                                 typeSpeed: 50,
-                                loop: false
+                                loop: true,
+                                backDelay: 2000 // Delay before typing starts again in the loop
                             });
                         </script>
     
@@ -268,18 +241,12 @@
             </div>
         </div>
     </section>
-    
-    
-    
-    
-    
-    
-    
+
     
     <!-- //banner section -->
 
     <!-- banner bottom section -->
-    <section class="w3l-content-mid py-5" style="background-color: #fff;">
+    <section class="w3l-content-mid py-5" style="background-color: #ffffff;">
         <style>
             .w3l-content-mid {
                 position: relative;
@@ -614,77 +581,97 @@
 
     <!-- logo brands section -->
     <section class="w3l-content-mid py-5">
-        <style>
-            .w3l-content-mid {
-                position: relative;
-            }
-
-            .w3l-content-mid video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-            }
-
-            .logo-expand {
-                transition: all 0.3s ease-in-out;
-                transform: scale(1);
-            }
-            .logo-expand:hover {
-                transform: scale(1.1);
-            }
-            
-        </style>
-
         <div class="container pb-md-5 pb-4 HomePageClients">
-            <div class="company-logos text-center pt-5 border-top-w3l">
-                <div class="row logos">
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <a href="#url"><img
-                                src="assets/images/logo1.png"
-                                alt="" class="img-fluid logo-expand"></a>
+            <div>
+                <div class="text-container">
+                    <h3 class="title-w3l" style="animation: bounce 2s infinite;">
+                        Our Clients
+                    </h3>
+                </div>
+                <style>
+                    @keyframes bounce {
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(-10px);
+                        }
+                    }
+    
+                    .logos-container {
+                        display: flex;
+                        overflow: auto;
+                    }
+    
+                    .logos-container .logo-item {
+                        flex-shrink: 0;
+                        width: 150px;
+                        padding: 10px;
+                    }
+    
+                    .logos-container .logo-expand {
+                        background: #fff;
+                        padding: 15px 10px;
+                        border-radius: 4px;
+                        transition: .3s ease;
+                        -webkit-transition: .3s ease;
+                        -moz-transition: .3s ease;
+                        -ms-transition: .3s ease;
+                        -o-transition: .3s ease;
+                    }
+    
+                    .logos-container .logo-expand:hover {
+                        transform: scale(1.1);
+                    }
+                </style>
+                <div class="logos-container">
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6">
-                        <a href="#url"><img
-                                src="assets/images/logo2.png"
-                                alt="" class="img-fluid logo-expand"></a>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-sm-0 mt-4">
-                        <a href="#url"><img
-                                src="assets/images/logo3.png"
-                                alt="" class="img-fluid logo-expand"></a>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-md-0 mt-4">
-                        <a href="#url"><img
-                                src="assets/images/logo4.png"
-                                alt="" class="img-fluid logo-expand"></a>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
-                        <a href="#url"> <img
-                                src="assets/images/logo5.png"
-                                alt="" class="img-fluid logo-expand"></a>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo5.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mt-lg-0 mt-4">
-                        <a href="#url"> <img
-                                src="assets/images/logo6.png"
-                                alt="" class="img-fluid logo-expand"></a>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo6.png" alt="" class="img-fluid logo-expand"></a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo7.png" alt="" class="img-fluid logo-expand"></a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo8.png" alt="" class="img-fluid logo-expand"></a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo9.png" alt="" class="img-fluid logo-expand"></a>
+                    </div>
+                    <div class="logo-item">
+                        <a href="#url"><img src="assets/images/logo10.png" alt="" class="img-fluid logo-expand"></a>
                     </div>
                 </div>
             </div>
         </div>
-        
-
-
+    
         <video autoplay muted loop>
-            <source
-            src="assets\videos\backvid.mp4"
-                type="video/mp4">
+            <source src="assets/videos/backvid.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
     </section>
+    
+    
+    
+    
+    
+    
+    
     <!-- //logo brands section -->
 
     <!-- testimonials section -->
@@ -1348,7 +1335,7 @@
                         <span class="fas fa-envelope-open" aria-hidden="true"></span>
                         <div>
                             <a href="mailto:info@sukume.com">info@sukume.com</a>
-                            <p>Drop Us a Line</p>
+                            <p>Drop us a Line</p>
                         </div>
                     </div>
 
@@ -1379,7 +1366,7 @@ Midrand, 1684, Johannesburg, South Africa.</h5>
         <div class="copyright-footer text-center">
             <div class="container">
                 <div class="columns">
-                    <p class="CopyRights">&copy; 2023 Sukume. All Rights Reserved/a>
+                    <p class="CopyRights">&copy; 2023 Sukume. All Rights Reserved
                     </p>
                 </div>
             </div>

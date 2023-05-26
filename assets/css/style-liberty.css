@@ -12722,7 +12722,7 @@ h5.small-title-2 {
 }
 
 .footer-contact.active {
-  background: var(--secondary-color);
+  background-color: #999999;
 }
 
 .footer-contact a,
