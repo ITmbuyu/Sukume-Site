@@ -11141,7 +11141,7 @@ p {
   padding: 0;
   font-size: 16px;
   line-height: 28px;
-  color: var(--font-color);
+  color: #000;
   letter-spacing: .4px;
 }
 
@@ -12514,6 +12514,7 @@ h3.title-style-2 {
   font-size: 35px;
   line-height: 45px;
   font-weight: bold;
+  color: #000;
 }
 
 h5.small-title-2 {
@@ -12887,16 +12888,7 @@ h5.small-title-2 {
   z-index: 1;
 }
 
-.w3l-content-mid:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background: linear-gradient(to right, rgb(37 37 37 / 30%) 0%, transparent 100%);
-}
+
 
 .welcome-left {
   max-width: 500px;
@@ -12926,6 +12918,11 @@ h3.title-w3l {
 /* //content section */
 
 /* services section */
+
+.service-section {
+  height: 800px; /* Adjust the height value as per your requirement */
+  /* Other styles... */
+}
 .service-section .card {
   border: none;
   background: var(--bg-color);
