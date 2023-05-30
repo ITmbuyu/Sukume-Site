@@ -62,6 +62,7 @@
 
        body {
            font-family: 'Corbel', sans-serif;
+          
        }
    </style>
 </head>
@@ -378,643 +379,129 @@
     </section>
     <!-- //Focus Areas -->
 
-    <!-- Services -->
-    <section class="w3l-content-mid py-5 w3l-content-12-main" style="background-color: rgb(255, 255, 255);">
-        <style>
-            .w3l-content-mid {
-                position: relative;
-            }
     
-            .w3l-content-mid video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-            }
-    
-           
-    
-               .w3l-content-mid .text-container {
-                position: relative;
-                z-index: 1;
-                text-align: center;
-                color: #000;
-                padding: 50px 0;
-            }
-    
-            .w3l-content-mid h3.title-w3l {
-                animation: bounceIn 1s;
-                font-size: 3rem;
-                text-align: center;
-            }
-    
-            @keyframes bounceIn {
-    
-                from,
-                20%,
-                40%,
-                60%,
-                80%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                }
-    
-                0% {
-                    opacity: 0;
-                    transform: scale3d(0.3, 0.3, 0.3);
-                }
-    
-                20% {
-                    transform: scale3d(1.1, 1.1, 1.1);
-                }
-    
-                40% {
-                    transform: scale3d(0.9, 0.9, 0.9);
-                }
-    
-                60% {
-                    opacity: 1;
-                    transform: scale3d(1.03, 1.03, 1.03);
-                }
-    
-                80% {
-                    transform: scale3d(0.97, 0.97, 0.97);
-                }
-    
-                to {
-                    opacity: 1;
-                    transform: scale3d(1, 1, 1);
-                }
-            }
-    
-            table {
-                border-collapse: collapse;
-                width: 100%;
-                margin-bottom: 1rem;
-                background-color: transparent;
-                color: #333;
-              }
-              
-              th, td {
-                padding: 0.75rem;
-                vertical-align: top;
-                border-top: 1px solid #dee2e6;
-                text-align: left;
-              }
-              
-              thead th {
-                vertical-align: bottom;
-                border-bottom: 2px solid #dee2e6;
-              }
-              
-              tbody tr:nth-of-type(even) {
-                background-color: #f8f9fa;
-              }
-              
-              tbody td {
-                border-top: none;
-            }
-    
-            .table-responsive {
-                overflow-x: auto;
-              }
-              
-              @media (max-width: 767px) {
-                .table-responsive {
-                  width: 100%;
-                  margin-bottom: 15px;
-                  overflow-y: hidden;
-                  -ms-overflow-style: -ms-autohiding-scrollbar;
-                  border: 1px solid #ddd;
-                }
-                .table-responsive > .table {
-                  margin-bottom: 0;
-                }
-                .table-responsive > .table > thead > tr > th,
-                .table-responsive > .table > tbody > tr > th,
-                .table-responsive > .table > tfoot > tr > th,
-                .table-responsive > .table > thead > tr > td,
-                .table-responsive > .table > tbody > tr > td,
-                .table-responsive > .table > tfoot > tr > td {
-                  white-space: nowrap;
-                }
-                .table-responsive > .table-bordered {
-                  border: 0;
-                }
-                .table-responsive > .table-bordered > thead > tr > th:first-child,
-                .table-responsive > .table-bordered > tbody > tr > th:first-child,
-                .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-                .table-responsive > .table-bordered > thead > tr > td:first-child,
-                .table-responsive > .table-bordered > tbody > tr > td:first-child,
-                .table-responsive > .table-bordered > tfoot > tr > td:first-child {
-                  border-left: 0;
-                }
-                .table-responsive > .table-bordered > thead > tr > th:last-child,
-                .table-responsive > .table-bordered > tbody > tr > th:last-child,
-                .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-                .table-responsive > .table-bordered > thead > tr > td:last-child,
-                .table-responsive > .table-bordered > tbody > tr > td:last-child,
-                .table-responsive > .table-bordered > tfoot > tr > td:last-child {
-                  border-right: 0;
-                }
-                .table-responsive > .table-bordered > tbody > tr:last-child > th,
-                .table-responsive > .table-bordered > tfoot > tr:last-child > th,
-                .table-responsive > .table-bordered > tbody > tr:last-child > td,
-                .table-responsive > .table-bordered > tfoot > tr:last-child > td {
-                  border-bottom: 0;
-                }
-            }
-              
-    
-              
-              
-    
-            
-        </style>
-    
-    
-        <div class="content-12 text-left py-5" style="background-color: rgb(255, 255, 255);">
-            <div class="text-container">
-                <h3 class="title-w3l" style="animation: bounce 2s infinite; color: #000;">
-                     More About Best Services
-                </h3>
-            </div>
-            <style>
-                @keyframes bounce {
-    
-                    0%,
-                    100% {
-                        transform: translateY(0);
-                    }
-    
-                    50% {
-                        transform: translateY(-10px);
-                    }
-                }
-            </style>
-    
-                            <div class="container py-md-5 py-4 HomePageContentTabs">
-    
-                                <div class="content-info-tabs text-center">
-    
-                                    <input id="tab1" type="radio" name="tabs" checked>
-                                    <label style="color: #000;" class="tabtle" for="tab1">Strategy</label>
-    
-                                    <input id="tab2" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab2">Branding</label>
-    
-                                    <input id="tab3" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab3">Trade & Investment</label>
-                                    
-                                    <input id="tab4" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab4">Public Speaking</label>
-    
-                                    <section id="content1" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                <div style="text-align: center;color: #000;" class="sukume-pp-service-quote"><strong>“Strategic planning is the key to warfare; to win, you need a lot of good counsel."</strong><br><span>Prov. 24:6</span></div>
-                                                <br>
-                                                    <p style="color: #000;">We utilise in-depth research insight into Strategy Development combined with a consultative method. Our approach is simple and practical with a strong focus on implementation and results.</p>
-                                                    <p style="color: #000;">We have particular exposure, experience and a genuine passion for the <strong>economic development</strong> sector. As such, we specialise in developing <strong>positioning and growth strategies</strong> for African economic sectors and businesses; for market entry and for resource mobilisation. We work with ambitious Small and Medium Enterprises (SMEs) all the way across to large global corporations.</p> 
-                                                    <br>
-                                                    <em><strong style="color: #f78da7;">Partner with us to purpose-build your own unique African brand!</strong></em>
-                                            </div>
-                                            <div class="col-lg-6 column mt-lg-0 mt-4">
-                                                <img src="assets/images/s3.jpg" class="img-fluid radius-image" alt="">
-                                            </div>
-    
-                                        </div>
-                                    </section>
-    
-                                    <section id="content2" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                    <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>“Define your identity, unlock your unique purpose!”</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                    <br>
-                                                    <p style="color: #000;"><strong>Building unique African global brands</strong></p>
-                                                    <p style="color: #000;">We design and develop branding, marketing and communication strategies specifically towards growing Africa’s own brands.  Through designing strong home-grown brand identities, building their awareness and positive reputations, we help create ample demand for a new generation of globally competitive and locally compelling African consumer, business and economic sector brands.</p>
-                                                    <p style="color: #000;">We have solid experience managing, building and evaluating the economic <strong>reputations of African nation brands</strong>. The main aim of most of our nation branding efforts is for our client countries to attract their fair share of global <strong>trade, foreign direct investment (FDI)</strong> and thereafter, tourists and global events.</p>
-                                                    <br>
-                                                    <em><strong style="color: #f78da7;">Partner with us to purpose-build your own unique African brand!</strong></em>
-                                            </div>
-                                            <div class="col-lg-6 column mt-lg-0 mt-4">
-                                                <img src="assets/images/s6.jpg" class="img-fluid radius-image" alt="">
-                                            </div>
-                                        </div>
-                                    </section>
-    
-                                    <section id="content3" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>“Define your identity, unlock your unique purpose!”</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                    <br>
-                                                    <p style="color: #000;"><strong>Boosting genuine inter-Africa regional trade</strong></p>
-                                                    <p style="color: #000;">We facilitate trade &amp; investment with a focus on Inter-Africa Regional Trade, Integration and Economic Indigenisation. By creating demand for <strong>“Made by Africa”</strong> goods through promoting the <strong>“Buy African”</strong> concept to African consumers and resellers, we help get Africans to do business with each other. This boosts local manufacturing (industrialisation) while building a strong equity for <strong>“Brand Africa”</strong> on the Continent and abroad.</p>
-                                                    <p style="color: #000;">We also conduct investment and trade missions taking African business people to explore opportunities in other African and global markets.</p>
-                                                    <br>
-                                                    <strong style="color: #f78da7;">Work with us to transform Africa’s economic landscape by prioritising home-grown offerings!</strong>
-                                            </div>
-                                            <div class="col-lg-6 column mt-lg-0 mt-4">
-                                                <img src="assets/images/s5.jpg" class="img-fluid radius-image" alt="">
-                                            </div>
-                                        </div>
-                                    </section>
-    
-                                    <section id="content4" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">We address audiences and facilitate discussions on matters pertaining to Africa's economy and competitive identity. Some of the recent conferences at which we have spoken include:</p>
-                                                <br>
-                                                <div class="table-responsive">
-                                                    <table class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>Conference</th>
-                                                                <th>Country</th>
-                                                                <th>Date</th>
-                                                                <th>Audience</th>
-                                                                <th>Theme/s</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>1. Africa Haguruka</td>
-                                                                <td>Rwanda (Kigali)</td>
-                                                                <td>2017, July</td>
-                                                                <td>Business, Youth</td>
-                                                                <td>Africa Economy; Identity, Mentorship</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>2.&nbsp;Africa Leadership Summit</td>
-                                                                <td>Lesotho (Maseru)</td>
-                                                                <td>2017,&nbsp;April</td>
-                                                                <td>Leaders</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>3.&nbsp;Israel Advocacy Summit</td>
-                                                                <td>SA (Johannesburg)</td>
-                                                                <td>2017,&nbsp;March</td>
-                                                                <td>Jewish/Christian</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>4. Africa-Israeli Chamber of Commerce (AICC)</td>
-                                                                <td>SA (Johannesburg)</td>
-                                                                <td>2017,&nbsp;February</td>
-                                                                <td>Business</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>5. AICC</td>
-                                                                <td>Nigeria (various)</td>
-                                                                <td>2016, July</td>
-                                                                <td>Business</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>6.&nbsp;Waterbrook Business Network</td>
-                                                                <td>Kenya (Nairobi)</td>
-                                                                <td>2016, July</td>
-                                                                <td>Business</td>
-                                                                <td>Christian Business</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>7.&nbsp;Global Business Roundtable</td>
-                                                                <td>SA (Johannesburg)</td>
-                                                                <td>2016,&nbsp;April</td>
-                                                                <td>Business</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>8.&nbsp;AICC</td>
-                                                                <td>Kenya (Nairobi)</td>
-                                                                <td>2016,&nbsp;March</td>
-                                                                <td>Business</td>
-                                                                <td>Africa-Israel Trade</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>9.&nbsp;Africa Leadership Summit</td>
-                                                                <td>Israel, Jerusalem</td>
-                                                                <td>2015,&nbsp;August</td>
-                                                                <td>Business</td>
-                                                                <td>Africa Economic Outlook</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>10.&nbsp;Africa Arise</td>
-                                                                <td>Ethiopia (Addis)</td>
-                                                                <td>2015, January</td>
-                                                                <td>Business</td>
-                                                                <td>Christian Business, Mentorship</td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                                <br>
-                                                <em><strong style="color: #f78da7;">Take your company, organisation or brand to new heights!</strong></em>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    
-    
-                                </div>
-    
-                            </div>
-    
-                        </div>
-
-    </section>
-    <!-- //Services -->
 
     <!-- content-6-section -->
-    <section class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
-        <style>
-            .w3l-content-mid {
-                position: relative;
-            }
-
-            .w3l-content-mid video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
-            }
-
-            .card {
-                width: 100%;
-                height: 750px; /* Set a fixed height for each card */
-                overflow: hidden; /* Hide any content that exceeds the height */
-                border-radius: 10px;
-                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-                transition: all 0.3s ease-in-out;
-              }
-              
-              .card:hover {
-                transform: translateY(-10px);
-  box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-              }
-
-              .card img {
-                width: 100%;
-                height: 200px;
-                object-fit: cover;
-                transition: transform 0.3s ease;
-              }
-
-              .card:hover img {
-                transform: scale(1.2);
-              }
-
-               .w3l-content-mid .text-container {
-                position: relative;
-                z-index: 1;
-                text-align: center;
-                color: #000;
-                padding: 50px 0;
-            }
-
-            .w3l-content-mid h3.title-w3l {
-                animation: bounceIn 1s;
-                font-size: 3rem;
-                text-align: center;
-            }
-
-            ol {
-                text-align: center;
-              }
-              
-              ol li {
-                display: inline-block;
-                text-align: center;
-                margin-right: 20px;
-              }
-
-            
-
-            @keyframes bounceIn {
-
-                from,
-                20%,
-                40%,
-                60%,
-                80%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                }
-
-                0% {
-                    opacity: 0;
-                    transform: scale3d(0.3, 0.3, 0.3);
-                }
-
-                20% {
-                    transform: scale3d(1.1, 1.1, 1.1);
-                }
-
-                40% {
-                    transform: scale3d(0.9, 0.9, 0.9);
-                }
-
-                60% {
-                    opacity: 1;
-                    transform: scale3d(1.03, 1.03, 1.03);
-                }
-
-                80% {
-                    transform: scale3d(0.97, 0.97, 0.97);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: scale3d(1, 1, 1);
-                }
-            }
-
-            .services-page-purple-list li {
-                margin-bottom: 10px;
-              }
-
-              @media screen and (max-width: 768px) {
-
-                .card {
-                  height: auto;
-                }
-              
-                .card img {
-                  height: 100%;
-                }
-              
-                .service-details {
-                  padding: 1rem;
-                }
-              
-                .service-heading {
-                  font-size: 1.2rem;
-                }
-              
-                .title-w3l {
-                  font-size: 2rem;
-                }
-
-                .card {
-                    margin-bottom: 20px;
-                }
-
-                
-              
-              }
-            
+    <style>
+        .w3l-content-mid .card {
+          border: none;
+          transition: transform 0.3s ease-in-out;
+        }
+        
+        .w3l-content-mid .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        
+        .w3l-content-mid .card-img-top {
+          height: 200px;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+        
+        .w3l-content-mid .card:hover .card-img-top {
+          transform: scale(1.2);
+        }
+        
+        .w3l-content-mid .card-title {
+          color: #9b51e0;
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-top: 1rem;
+        }
+        
+        .w3l-content-mid .services-page-purple-list {
+          text-align: center;
+          margin-top: 1rem;
+        }
+        
+        .w3l-content-mid .services-page-purple-list li {
+          margin-bottom: 0.5rem;
+        }
         </style>
-
-
-        <div class="service-section py-5" style="background-color: rgb(255, 255, 255);">
-            <div class="text-container">
-                <h3 class="title-w3l" style="animation: bounce 2s infinite; color:#000" >
-                     Our Best Services
-                </h3>
-            </div>
-            <style>
-                @keyframes bounce {
-    
-                    0%,
-                    100% {
-                        transform: translateY(0);
-                    }
-    
-                    50% {
-                        transform: translateY(-10px);
-                    }
-                }
-            </style>
-            <div class="container py-md-5 py-4 HomePageImageServices">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative border-0">
-                                <a href="services">
-                                    <img class="d-block img-responsive"
-                                        src="assets/images/s4.jpg"
-                                        alt="card-image" style="width: 100%; height: 250px; object-fit: cover;">
-                                </a>
-                            </div>
-                            <div class="card-body service-details" style="text-align: center;">
-                                <span class="label-style" style="color: #9b51e0; font-size: 1.2rem; font-weight: 600;">
-                                    Strategy Services
-                                </span>
-                                <div class="service-heading" style="color: #000; font-size: 1.08rem; font-weight: 600; margin: 1rem 0;">
-                                    <ol class="services-page-purple-list" style="text-align: center;">
-                                        <li>1. Development</li>
-                                        <li>2. Implementation</li>
-                                        <li>3. Economic Development</li>
-                                        <li>4. Business Development</li>
-                                        <li>5. Resource Mobilisation</li>
-                                        <li>6. Market Entry</li>
-                                        <li>7. Facilitation</li>
-                                    </ol>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="card">
-                          <div class="card-header p-0 position-relative border-0">
-                            <a href="services">
-                              <img class="d-block img-responsive"
-                                src="assets/images/s3.jpg"
-                                alt="card-image" style="width: 100%; height: 250px; object-fit: cover;">
-                            </a>
-                          </div>
-                          <div class="card-body service-details" style="text-align: center;">
-                            <span class="label-style" style="color: #9b51e0; font-size: 1.2rem; font-weight: 600;">
-                              Branding Services
-                            </span>
-                            <div class="service-heading" style="color: #000; font-size: 1.08rem; font-weight: 600; margin: 1rem 0;">
-                                <ol class="services-page-purple-list">
-                                    <li>1. Design</li>
-                                    <li>2. Development</li>
-                                    <li>3. Branding</li>
-                                    <li>4. Brand Identity &amp; CI</li>
-                                    <li>5. Brand Architecture</li>
-                                    <li>6. Brand Blueprints</li>
-                                    <li>7. Marketing  &amp; Communication Plans</li>
-                                </ol>
-                            </div>
-
-                          </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative border-0">
-                                <a href="services">
-                                    <img class="d-block img-responsive"
-                                        src="assets/images/s2.jpg"
-                                        alt="card-image" style="width: 100%; height: 250px; object-fit: cover;">
-                                </a>
-                            </div>
-                            <div class="card-body service-details" style="text-align: center;">
-                                <span class="label-style" style="color: #9b51e0; font-size: 1.2rem; font-weight: 600;">
-                                    Trade & Investment Services
-                                </span>
-                                <div class="service-heading" style="color: #000; font-size: 1.08rem; font-weight: 600; margin: 1rem 0;">
-                                    <ol class="services-page-purple-list">
-                                        <li>1. Promotion</li>
-                                        <li>2. Facilitation</li>
-                                        <li>3. InterAfrica Trade &amp; Integration</li>
-                                        <li>4. Economic Indigenisation</li>
-                                        <li>5. Investment &amp; Trade Missions</li>
-                                        <li>6. Policy Advice</li>
-                                    </ol>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="card">
-                            <div class="card-header p-0 position-relative border-0">
-                                <a href="services">
-                                    <img class="d-block img-responsive"
-                                        src="assets/images/s7.jpg"
-                                        alt="card-image" style="width: 100%; height: 250px; object-fit: cover;">
-                                </a>
-                            </div>
-                            <div class="card-body service-details" style="text-align: center;">
-                                <span class="label-style" style="color: #9b51e0; font-size: 1.2rem; font-weight: 600;">
-                                    Public Speaking Services
-                                </span>
-                                <div class="service-heading" style="color: #000; font-size: 1.08rem; font-weight: 600; margin: 1rem 0;">
-                                    <ol class="services-page-purple-list">
-                                        <li>1. Talks</li>
-                                        <li>2. Facilitation</li>
-                                        <li>3. Discussions</li>
-                                        <li>4. Presentations</li>
-                                        <li>5. Lectures</li>
-                                        <li>6. Consultations</li>
-                                        <li>7.Interviews</li>
-                                    </ol>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+        
+        <section class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
+          <div class="container py-md-5 py-4">
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <img class="card-img-top" src="assets/images/s4.jpg" alt="card-image">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Strategy Services</h5>
+                    <ul class="services-page-purple-list">
+                      <li>Development</li>
+                      <li>Implementation</li>
+                      <li>Economic Development</li>
+                      <li>Business Development</li>
+                      <li>Resource Mobilization</li>
+                      <li>Market Entry</li>
+                      <li>Facilitation</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <img class="card-img-top" src="assets/images/s3.jpg" alt="card-image">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Branding Services</h5>
+                    <ul class="services-page-purple-list">
+                      <li>Design</li>
+                      <li>Development</li>
+                      <li>Branding</li>
+                      <li>Brand Identity &amp; CI</li>
+                      <li>Brand Architecture</li>
+                      <li>Brand Blueprints</li>
+                      <li>Marketing &amp; Communication Plans</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <img class="card-img-top" src="assets/images/s2.jpg" alt="card-image">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Trade & Investment Services</h5>
+                    <ul class="services-page-purple-list">
+                      <li>Promotion</li>
+                      <li>Facilitation</li>
+                      <li>InterAfrica Trade &amp; Integration</li>
+                      <li>Economic Indigenization</li>
+                      <li>Investment &amp; Trade Missions</li>
+                      <li>Policy Advice</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <img class="card-img-top" src="assets/images/s7.jpg" alt="card-image">
+                  </a>
+                  <div class="card-body">
+                    <h5 class="card-title">Public Speaking Services</h5>
+                    <ul class="services-page-purple-list">
+                      <li>Talks</li>
+                      <li>Facilitation</li>
+                      <li>Discussions</li>
+                      <li>Presentations</li>
+                      <li>Lectures</li>
+                      <li>Consultations</li>
+                      <li>Interviews</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-
-
-    </section>
+          </div>
+        </section>
+        
     <!-- //content-6-section -->
 
     <!-- footer -->

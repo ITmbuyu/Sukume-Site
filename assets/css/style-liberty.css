@@ -12511,7 +12511,7 @@ h3.title-style {
 }
 
 h3.title-style-2 {
-  font-size: 35px;
+  font-size: 25px;
   line-height: 45px;
   font-weight: bold;
   color: #000;
@@ -12919,10 +12919,7 @@ h3.title-w3l {
 
 /* services section */
 
-.service-section {
-  height: 800px; /* Adjust the height value as per your requirement */
-  /* Other styles... */
-}
+
 .service-section .card {
   border: none;
   background: var(--bg-color);
