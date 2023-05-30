@@ -12553,7 +12553,7 @@ h5.small-title-2 {
 
 @media (max-width: 414px) {
   h3.title-style-2 {
-    font-size: 30px;
+    font-size: 15px;
     line-height: 40px;
   }
 
@@ -12723,7 +12723,7 @@ h5.small-title-2 {
 }
 
 .footer-contact.active {
-  background-color: #999999;
+  background-color: #42204e;
 }
 
 .footer-contact a,

@@ -12,6 +12,7 @@
     <!-- //google-fonts -->
     <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <script src="https://kit.fontawesome.com/a5ce0f9f64.js" crossorigin="anonymous"></script>
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Custom CSS -->
@@ -177,155 +178,145 @@
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
                 <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>About Us</li>
-                </ul>
             </div>
         </div>
     </section>
     <!-- //inner banner -->
 
     <!-- about section -->
-    <section class="w3l-content-mid py-5 w3l-text-6 " id="about" style="background-color: rgb(255, 255, 255);">
-        <style>
-            .w3l-content-mid {
-                position: relative;
+    <style>
+        .w3l-content-mid {
+            position: relative;
+        }
+
+       
+
+        h3, h5, p {
+            color: #000;
+        }
+    
+        /* Fade in effect for headers */
+        h3, h5 {
+            animation: fadeIn 1s;
+        }
+    
+        /* Fade in effect for paragraphs */
+        p {
+            animation: fadeIn 1.5s;
+            margin-top: -10px; /* Adjust the value as needed */
+        }
+    
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+    
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .w3l-content-mid h3.title-w3l {
+            animation: bounceIn 1s;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+
+        @keyframes bounceIn {
+
+            from,
+            20%,
+            40%,
+            60%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             }
 
-           
-
-            h3, h5, p {
-                color: #000;
+            0% {
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3);
             }
+
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+
+            40% {
+                transform: scale3d(0.9, 0.9, 0.9);
+            }
+
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+
+            80% {
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        ol.alphabet-list {
+            list-style-type: lower-alpha;
+        }
         
-            /* Fade in effect for headers */
-            h3, h5 {
-                animation: fadeIn 1s;
-            }
-        
-            /* Fade in effect for paragraphs */
-            p {
-                animation: fadeIn 1.5s;
-            }
-        
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                    transform: translateY(20px);
-                }
-        
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
+    </style>
+    <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about" style="background-color: rgb(255, 255, 255); margin-top: -50px;">
+        <div class="container AboutPageAbout">
 
-            .w3l-content-mid h3.title-w3l {
-                animation: bounceIn 1s;
-                font-size: 2.5rem;
-                text-align: center;
-            }
+            <div class="row top-cont-grid align-items-center">
 
-            @keyframes bounceIn {
-
-                from,
-                20%,
-                40%,
-                60%,
-                80%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                }
-
-                0% {
-                    opacity: 0;
-                    transform: scale3d(0.3, 0.3, 0.3);
-                }
-
-                20% {
-                    transform: scale3d(1.1, 1.1, 1.1);
-                }
-
-                40% {
-                    transform: scale3d(0.9, 0.9, 0.9);
-                }
-
-                60% {
-                    opacity: 1;
-                    transform: scale3d(1.03, 1.03, 1.03);
-                }
-
-                80% {
-                    transform: scale3d(0.97, 0.97, 0.97);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: scale3d(1, 1, 1);
-                }
-            }
-
-            ol.alphabet-list {
-                list-style-type: lower-alpha;
-              }
-            
-        </style>
-
-        <div class="text-6-mian py-md-5 py-4">
-            <div class="container AboutPageAbout">
-
-                <div class="row top-cont-grid align-items-center">
-
-                    <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
-                        <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid" />
-                        <div class="row mt-3">
-                            <div class="col-6 img-pad pr-2">
-                                <img src="assets/images/about2.jpg" alt="" class="img-responsive img-fluid" />
-                            </div>
-                            <div class="col-6 img-pad-2 pl-2">
-                                <img src="assets/images/about3.jpg" alt="" class="img-responsive img-fluid" />
-                            </div>
+                <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
+                    <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid" />
+                    <div class="row mt-3">
+                        <div class="col-6 img-pad pr-2">
+                            <img src="assets/images/about2.jpg" alt="" class="img-responsive img-fluid" />
+                        </div>
+                        <div class="col-6 img-pad-2 pl-2">
+                            <img src="assets/images/about3.jpg" alt="" class="img-responsive img-fluid" />
                         </div>
                     </div>
-
-                    <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
-                        <h3 class="title-style-2 mb-3" style="animation: bounce 2s infinite;text-align: center;">
-                            Promoting<br>Transformative Economic Development <br> in Africa   </h3>
-                            <p>Sukume is an economic development consultancy focusing on Place/Country Branding, SME Development, Intra-African Trade, as well as Public Speaking on our 3 focus areas. Basically, we build the brands, the business, and the economies that build Africa. We do this through:</p>
-
-                            <ol class="alphabet-list">
-                                <li>Designing and implementing relevant strategies and projects that deliver global competitiveness and socio-economic transformation across African communities</li>
-                                <li>Creating and supporting platforms that promote Made-by-African goods and services, particularly for SMEs</li>
-                                <li>Facilitating trade and investment between African SMEs and large pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities</li>
-                              </ol>
-                            
-                            <p class="mt-4">Our customers include African economic development entities, places/countries, businesses, and brands.</p>
-                            <p>Despite the significant growth of African economies in the last few decades, this has not translated into much developmental change nor benefit for local people. They remain mired in the triple evils of unemployment, poverty, and inequality. To deal with this, just about every government in Africa recognizes the need for rapid industrialization through local manufacturing and export-led economies.</p>
-
-<p class="mt-4">Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a foundation for development planning, implementation, and brand positioning. We designed the Competitiveness & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building world-class African economies, businesses, and brands in ways that guarantee social and economic transformation among local communities.</p>
-                    </div>
-                    <style>
-                        @keyframes bounce {
-            
-                            0%,
-                            100% {
-                                transform: translateY(0);
-                            }
-            
-                            50% {
-                                transform: translateY(-10px);
-                            }
-                        }
-                    </style>
-
                 </div>
 
-            </div>
-        </div>
+                <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
+                    <h3 class="title-style-2 mb-3" style="animation: bounce 2s infinite;text-align: center; margin-top: -40px;">
+                        Promoting<br>Transformative Economic Development <br> in Africa   </h3>
+                        <p>Sukume is an economic development consultancy focusing on Place/Country Branding, SME Development, Intra-African Trade, as well as Public Speaking on our 3 focus areas. Basically, we build the brands, the business, and the economies that build Africa. We do this through:</p>
+
+                        <ol class="alphabet-list">
+                            <li>a. Designing and implementing relevant strategies and projects that deliver global competitiveness and socio-economic transformation across African communities</li>
+                            <li>b. Creating and supporting platforms that promote Made-by-African goods and services, particularly for SMEs</li>
+                            <li>c. Facilitating trade and investment between African SMEs and large pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities</li>
+                        </ol>
+                        <p >Our customers include African economic development entities, places/countries, businesses, and brands.</p>
+                        <p class="mt-4">Despite the significant growth of African economies in the last few decades, this has not translated into much developmental change nor benefit for local people. They remain mired in the triple evils of unemployment, poverty, and inequality. To deal with this, just about every government in Africa recognizes the need for rapid industrialization through local manufacturing and export-led economies.Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a foundation for development planning, implementation, and brand positioning. We designed the Competitiveness & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building world-class African economies, businesses, and brands in ways that guarantee social and economic transformation among local communities.</p>
+                </div>
+                <style>
+                    @keyframes bounce {
         
-     </section>
+                        0%,
+                        100% {
+                            transform: translateY(0);
+                        }
+        
+                        50% {
+                            transform: translateY(-10px);
+                        }
+                    }
+                </style>
+
+            </div>
+
+        </div>
+    </div>
     <!-- //about section -->
 
     <!-- Our Values -->
@@ -361,7 +352,7 @@
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
                         <div class="icon mb-4">
-                            <span class="fas fa-pencil-alt"></span>
+                            <i class="fa-solid fa-bullseye-arrow"></i>
                         </div>
                         <div class="info" >
                             <h4><a href="#url">Our Vision</a>
