@@ -164,27 +164,311 @@
       
     <!--// loading animation-->
 
-    <!-- inner banner -->
-    <section class="inner-banner">
-        <style>
+     <!-- inner banner -->
+  <section class="inner-banner">
+    <style>
+        .inner-banner {
+            background-image: url('assets/images/inner-bannerb.jpg');
+            background-size: contain;
+            background-position: center;
+            height: 400px;
+        }
+
+        /* Adjust the height and background-size for mobile devices */
+        @media (max-width: 767px) {
             .inner-banner {
-                background-image: url('assets/images/inner-bannerb.jpg');
-                background-size: cover;
-                background-position: center;
-                height: 300px;
+                height: 350px;
+                background-size: contain;
             }
-        </style>
-        <div class="w3l-breadcrumb py-5">
-            <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 class="inner-text-title font-weight-bold mb-sm-2">Why Us</h4>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Why Us</li>
-                </ul>
+            .inner-banner .inner-text-title {
+                margin-top: 205px;
+            }
+        }
+    </style>
+    <div class="w3l-breadcrumb py-5">
+        <div class="container py-xl-5 py-md-4 mt-5">
+            <h4 class="inner-text-title font-weight-bold mb-sm-2">Why Us</h4>
+        </div>
+    </div>
+</section>
+
+<!-- //inner banner -->
+
+    <!--Place Nation Branding Clients logo brands section -->
+     
+
+    <div class="w3l-content-mid py-5 container pb-md-5 pb-4 HomePageClients" style="background-color: rgb(255, 255, 255); margin-top: 5px;">
+        <div>
+            <div class="text-container">
+                <h3 class="title-w3l" style="color: #000;margin-top: -70px;">
+                    Place/ Nation Branding & Strategy Clients
+                </h3>
+            </div>
+            <style>
+                @keyframes bounce {
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-10px);
+                    }
+                }
+
+                .logos-container {
+                    display: flex;
+                    overflow: hidden;
+                }
+
+                .logos-container .logo-item {
+                    flex-shrink: 0;
+                    width: 150px;
+                    padding: 10px;
+                    margin-right: 15px;
+                    border: 2px solid #a0a0a0;
+                    border-radius: 4px;
+                }
+
+                .logos-container .logo-expand {
+                    background: #fff;
+                    padding: 15px 10px;
+                    border-radius: 4px;
+                    transition: .3s ease;
+                    -webkit-transition: .3s ease;
+                    -moz-transition: .3s ease;
+                    -ms-transition: .3s ease;
+                    -o-transition: .3s ease;
+                }
+
+                .logos-container .logo-expand:hover {
+                    transform: scale(1.1);
+                }
+            </style>
+            <div class="logos-container" id="logosContainer" style="margin-top: -45px;">
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo5.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo6.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo7.png" alt="" class="img-fluid logo-expand"></a>
+                </div> -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo8.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo9.png" alt="" class="img-fluid logo-expand"></a>
+                </div>-->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo10.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!-- Duplicate the logos to achieve seamless scrolling -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo5.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo6.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo7.png" alt="" class="img-fluid logo-expand"></a>
+                </div> -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo8.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo9.png" alt="" class="img-fluid logo-expand"></a>
+                </div>-->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo10.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
             </div>
         </div>
-    </section>
-    <!-- //inner banner -->
+    </div>
+
+    <script>
+        function scrollLogos() {
+            const container = document.getElementById('logosContainer');
+            const scrollAmount = 2; // Adjust the scroll speed as needed
+            const logoWidth = 165; // Adjust the logo width including margin-right as needed
+            const totalLogos = container.children.length;
+            const containerWidth = container.offsetWidth;
+            const maxScroll = logoWidth * totalLogos - containerWidth;
+
+            if (container.scrollLeft >= maxScroll) {
+                container.scrollLeft = 0;
+            } else {
+                container.scrollLeft += scrollAmount;
+            }
+        }
+
+        setInterval(scrollLogos, 20); // Adjust the scroll interval as needed
+    </script>
+
+    <!--Place Nation Branding Clients logo brands section -->
+
+    <!--SME Development Clients logo brands section -->
+     
+
+    <div class="w3l-content-mid py-5 container pb-md-5 pb-4 HomePageClients" style="background-color: rgb(255, 255, 255); margin-top: 5px;">
+        <div>
+            <div class="text-container">
+                <h3 class="title-w3l" style="color: #000;margin-top: -70px;">
+                    SME Development Clients
+                </h3>
+            </div>
+            <style>
+                @keyframes bounce {
+                    0%,
+                    100% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(-10px);
+                    }
+                }
+
+                .logos-container {
+                    display: flex;
+                    overflow: hidden;
+                }
+
+                .logos-container .logo-item {
+                    flex-shrink: 0;
+                    width: 150px;
+                    padding: 10px;
+                    margin-right: 15px;
+                    border: 2px solid #a0a0a0;
+                    border-radius: 4px;
+                }
+
+                .logos-container .logo-expand {
+                    background: #fff;
+                    padding: 15px 10px;
+                    border-radius: 4px;
+                    transition: .3s ease;
+                    -webkit-transition: .3s ease;
+                    -moz-transition: .3s ease;
+                    -ms-transition: .3s ease;
+                    -o-transition: .3s ease;
+                }
+
+                .logos-container .logo-expand:hover {
+                    transform: scale(1.1);
+                }
+            </style>
+            <div class="logos-container" id="logosContainer" style="margin-top: -45px;">
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo5.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo6.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo7.png" alt="" class="img-fluid logo-expand"></a>
+                </div> -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo8.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo9.png" alt="" class="img-fluid logo-expand"></a>
+                </div>-->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo10.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!-- Duplicate the logos to achieve seamless scrolling -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo1.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo2.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo3.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo4.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo5.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo6.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo7.png" alt="" class="img-fluid logo-expand"></a>
+                </div> -->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo8.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+                <!--<div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo9.png" alt="" class="img-fluid logo-expand"></a>
+                </div>-->
+                <div class="logo-item">
+                    <a href="#url"><img src="assets/images/logo10.png" alt="" class="img-fluid logo-expand"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function scrollLogos() {
+            const container = document.getElementById('logosContainer');
+            const scrollAmount = 2; // Adjust the scroll speed as needed
+            const logoWidth = 165; // Adjust the logo width including margin-right as needed
+            const totalLogos = container.children.length;
+            const containerWidth = container.offsetWidth;
+            const maxScroll = logoWidth * totalLogos - containerWidth;
+
+            if (container.scrollLeft >= maxScroll) {
+                container.scrollLeft = 0;
+            } else {
+                container.scrollLeft += scrollAmount;
+            }
+        }
+
+        setInterval(scrollLogos, 20); // Adjust the scroll interval as needed
+    </script>
+
+    <!--SME Development Clients logo brands section -->
+
+
 
     <!-- OurExperience Footprint -->
     <section class="w3l-content-mid py-5 home-services py-" style="background-color: rgb(255, 255, 255);">
@@ -455,28 +739,68 @@
                                     <section id="content7" class="tab-content">
                                         <div class="row content12 align-items-center">
                                             <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
+                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote">
+                                                    <strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br>
+                                                    <span>Vuyelwa Nyakaza</span>
+                                                </div>
                                                 <br>
                                                 <p style="color: #000;">We have experience conceptualising, planning and co/hosting large high-level pan-African and global trade &amp; investment as well as leadership events including:</p>
                                                 <br>
-                                                <ol>
-                                                    <li><strong>Africa Maritime Indaba, </strong>Johannesburg, South Africa (2013)</li>
-                                                    <li><strong>Vuka Africa Foundation, </strong>launch, Johannesburg, South Africa (2014)</li>
-                                                    <li><strong>Africa Arise conference, </strong>Addis Ababa, Ethiopia (January, 2015)</li>
-                                                    <li><strong>Africa Leadership Summit conferences:</strong>
-                                                        <ul>
-                                                            <li>Israel: Jerusalem (August, 2015)</li>
-                                                            <li>Kenya: Nairobi, Nakuru (March, 2016)</li>
-                                                            <li>Nigeria: Calabar, Ile Ife, Abuja, Lagos (July, 2016)</li>
-                                                            <li>Lesotho: Maseru (April 2017)</li>
-                                                            <li>Israel: Jerusalem (August, 2017)</li>
-                                                        </ul>
-                                                    </li>
-                                                </ol>
+                                                <table>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Event</th>
+                                                            <th>Location</th>
+                                                            <th>Date</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Africa Maritime Indaba</td>
+                                                            <td>Johannesburg, South Africa</td>
+                                                            <td>2013</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Vuka Africa Foundation launch</td>
+                                                            <td>Johannesburg, South Africa</td>
+                                                            <td>2014</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Arise conference</td>
+                                                            <td>Addis Ababa, Ethiopia</td>
+                                                            <td>January, 2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Leadership Summit conferences</td>
+                                                            <td>Israel: Jerusalem</td>
+                                                            <td>August, 2015</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Leadership Summit conferences</td>
+                                                            <td >Kenya: Nairobi, Nakuru</td>
+                                                            <td>March, 2016</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Leadership Summit conferences</td>
+                                                            <td >Nigeria: Calabar, Ile Ife,<br> Abuja, Lagos</td>
+                                                            <td>July, 2016</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Leadership Summit conferences</td>
+                                                            <td >Lesotho: Maseru</td>
+                                                            <td>April 2017</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Africa Leadership Summit conferences</td>
+                                                            <td >Israel: Jerusalem</td>
+                                                            <td>August, 2017</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                           
                                         </div>
                                     </section>
+                                    
     
                                     <section id="content8" class="tab-content">
                                         <div class="row content12 align-items-center">
@@ -505,7 +829,7 @@
                                     <section id="content10" class="tab-content">
                                         <div class="row content12 align-items-center">
                                             <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
+                                                <div style=" color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
                                                 <br>
                                                 <p style="color: #000;">We are proud to be a 100% black, female-owned and managed business.</p>
                                             </div>
@@ -516,8 +840,34 @@
                                 </div>
     
                             </div>
+
+                            <script>
+                                // Add event listeners to the radio buttons to handle tab switching
+                                var tabs = document.querySelectorAll('input[name="tabs"]');
+                                tabs.forEach(function(tab) {
+                                  tab.addEventListener('change', function() {
+                                    var tabContents = document.querySelectorAll('.tab-content');
+                                    tabContents.forEach(function(content) {
+                                      content.style.display = 'none';
+                                    });
+                                    var target = this.getAttribute('id').replace('tab', 'content');
+                                    var targetContent = document.getElementById(target);
+                                    if (targetContent) {
+                                      targetContent.style.display = 'block';
+                                    }
+                                  });
+                                });
+                              </script>
+                             
+                              
+                              
+                              
+                              
+                              
+                              
+                              
     
-                        </div>
+    </div>
     
     </section>
     <!-- // 10 Reasons to partner with usn -->

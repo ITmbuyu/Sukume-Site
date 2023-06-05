@@ -13980,7 +13980,7 @@ h4.inner-text-title {
 }
 
 .box-wrap:hover .icon {
-  background-color: var(--primary-color);
+  background-color: #42204e;
   transition: 0.3s ease-in-out;
 }
 
@@ -13990,7 +13990,7 @@ h4.inner-text-title {
 }
 
 .box-wrap .icon span {
-  color: var(--primary-color);
+  color: #3b3c3e;
   font-size: 40px;
   line-height: 100px;
 }
