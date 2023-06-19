@@ -171,22 +171,36 @@
                     background-image: url('assets/images/inner-bannerc.jpg');
                     background-size: cover;
                     background-position: center;
-                    height: 300px;
+                    height: 550px;
                 }
+                .inner-banner .inner-text-title {
+                    margin-top: 300px;
+                }
+
+                 /* Adjust the height and background-size for mobile devices */
+            @media (max-width: 767px) {
+                .inner-banner {
+                    height: 310px;
+                    background-size: contain;
+                }
+                .inner-banner .inner-text-title {
+                    margin-top: 150px;
+                }
+            }
             </style>
-            <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 class="inner-text-title font-weight-bold mb-sm-2">Contact Us</h4>
-                <ul class="breadcrumbs-custom-path">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><span class="fa fa-chevron-right mx-2" aria-hidden="true"></span>Contact Us</li>
-                </ul>
+            <div class="w3l-breadcrumb py-5">
+                <div class="container py-xl-5 py-md-4 mt-5">
+                    <h4 class="inner-text-title font-weight-bold mb-sm-2">Contact Us</h4>
+                </div>
             </div>
         </div>
     </section>
     <!-- //inner banner -->
 
+    
+
     <!-- contact -->
-    <section class="w3l-content-mid py-5 w3l-contact-info-main py-5" style="background-color: rgb(255, 255, 255);" id="contact" >
+    <div class="w3l-content-mid py-5 w3l-contact-info-main py-5" style="background-color: rgb(255, 255, 255);margin-bottom: 50px;" id="contact">
         <style>
             .w3l-content-mid {
                 position: relative;
@@ -237,7 +251,7 @@
 
             .w3l-content-mid h3.title-w3l {
                 animation: bounceIn 1s;
-                font-size: 3rem;
+                font-size: 2.5rem;
                 text-align: center;
             }
 
@@ -285,8 +299,8 @@
 
 
         <div class="service-section py-5">
-            <div class="text-container">
-                <h3 class="title-w3l" style="animation: bounce 2s infinite;">
+            <div class="text-container" style="margin-top: -100px; ">
+                <h3 class="title-w3l" style="animation: bounce 2s infinite;color: black">
                     Get in Touch
                 </h3>
             </div>
@@ -304,7 +318,7 @@
                 }
             </style>
             
-            <div class="container py-md-5 py-4 ContactSection">
+            <div class="container py-md-5 py-4 ContactSection" style="margin-top: -70px;">
                 <div class="row justify-content-center">
 
                     <div class="col-lg-4 col-md-6">
@@ -318,7 +332,11 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="map-contact col-lg-12 mt-4 d-md-none">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.004476185124!2d28.10241481003327!3d-25.967893554294783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95702cbf735277%3A0x7fef571ac517fc6d!2sCarlswald%20Creek!5e0!3m2!1sen!2sza!4v1687164923152!5m2!1sen!2sza" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
+                        </div>
                     </div>
+                    
 
                     <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
                         <div class="contact-address p-4">
@@ -349,8 +367,15 @@
 
                 </div>
 
-
-                <div class="contact-w3pvt-form mt-5 pt-lg-4 ContactPageForm">
+                <div class="map-contact col-lg-12 mt-4">
+                    <div class="map-contact col-lg-12 mt-4 d-none d-md-block">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.004476185124!2d28.10241481003327!3d-25.967893554294783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95702cbf735277%3A0x7fef571ac517fc6d!2sCarlswald%20Creek!5e0!3m2!1sen!2sza!4v1687164923152!5m2!1sen!2sza" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
+                    </div>
+                   
+                </div>
+  
+                
+                <div class="contact-w3pvt-form mt-5 pt-lg-4 ContactPageForm" style="margin-bottom: -110px;">
                     <form method="post" class="w3layouts-contact-fm" action="">
                         <div class="row main-cont-sec">
                             <div class="col-md-6 left-cont-contact">
@@ -383,19 +408,14 @@
             </div>
            
         </div>
-    </section>
-
-    <div class="map-contact">
-        <iframe class="map-w3layouts"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
-            width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
     </div>
+    
     <!-- //contact -->
 
     <!-- footer -->
-    <footer class="w3l-footer-22 py-5">
+    <footer class="w3l-footer-22 py-5" style="margin-top: -40px;" >
 
-        <div class="container py-md-5 py-4 ExecutionFooter">
+        <div class="container py-md-5 py-4 ExecutionFooter" >
             <div class="row sub-columns ">
                 <div class="col-lg-4 col-sm-6 sub-one-left">
                     <h6>About </h6>
@@ -483,7 +503,7 @@
                         <span class="fas fa-envelope-open" aria-hidden="true"></span>
                         <div>
                             <a href="mailto:info@sukume.com">info@sukume.com</a>
-                            <p>Drop Us a Line</p>
+                            <p>Drop Us A Line</p>
                         </div>
                     </div>
 

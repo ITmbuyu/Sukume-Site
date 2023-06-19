@@ -285,63 +285,69 @@
         }
     </style>
     <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about"
-        style="background-color: rgb(255, 255, 255); margin-top: -50px;">
-        <div class="container AboutPageAbout">
-            <div class="row top-cont-grid align-items-center">
-                <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
-                    <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid" />
-                    <div class="row mt-3">
-                        <div class="col-6 img-pad pr-2">
-                            <img src="assets/images/about2.jpg" alt="" class="img-responsive img-fluid" />
-                        </div>
-                        <div class="col-6 img-pad-2 pl-2">
-                            <img src="assets/images/about3.jpg" alt="" class="img-responsive img-fluid" />
-                        </div>
+    style="background-color: rgb(255, 255, 255); margin-top: -50px;">
+    <div class="container AboutPageAbout">
+        <div class="row top-cont-grid align-items-center">
+            <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
+                <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid flag-animation" />
+                <div class="row mt-3">
+                    <div class="col-6 img-pad pr-2">
+                        <img src="assets/images/about2.jpg" alt="" class="img-responsive img-fluid flag-animation" />
+                    </div>
+                    <div class="col-6 img-pad-2 pl-2">
+                        <img src="assets/images/about3.jpg" alt="" class="img-responsive img-fluid flag-animation" />
                     </div>
                 </div>
-                <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
-                    <h3 class="title-style-2 mb-3"
-                        style="font-size: 15px;text-align: center; margin-top: -40px;">Promoting<br>Transformative
-                        Economic Development <br> in Africa </h3>
-                    <p>Sukume is an economic development consultancy with 10 years’ experience focusing on SME Development, Intra-African Trade and Place/Country Branding.  
-                        We also do Public Speaking on our 3 focus areas. We do this through:</p>
-                    <ol class="alphabet-list" style="color: #000;">
-                        <li>a. Designing and implementing relevant strategies and projects that deliver global competitiveness
-                            and socio-economic transformation across African communities</li>
-                        <li>b. Creating and supporting platforms that promote Made-by-African goods and services, particularly
-                            for SMEs</li>
-                        <li>c. Facilitating trade and investment between African SMEs and large pan-African corporations,
-                            governments, and their global counterparts in ways that foster shared economic growth and empowerment
-                            for local communities</li>
-                    </ol>
-                    <p>Our customers include African economic development entities, places/countries, businesses, and brands.
-                    </p>
-                    <p class="mt-4">Despite the significant growth of African economies in the last few decades, this has not
-                        translated into much developmental change nor benefit for local people. They remain mired in the triple
-                        evils of unemployment, poverty, and inequality. To deal with this, just about every government in
-                        Africa recognizes the need for rapid industrialization through local manufacturing and export-led
-                        economies.Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a
-                        foundation for development planning, implementation, and brand positioning. We designed the Competitiveness
-                        & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building
-                        world-class African economies, businesses, and brands in ways that guarantee social and economic
-                        transformation among local communities.</p>
-                </div>
-                <style>
-                    @keyframes bounce {
-    
-                        0%,
-                        100% {
-                            transform: translateY(0);
-                        }
-    
-                        50% {
-                            transform: translateY(-10px);
-                        }
-                    }
-                </style>
+            </div>
+            <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
+                <h3 class="title-style-2 mb-3"
+                    style="font-size: 15px;text-align: center; margin-top: -40px;">Promoting<br>Transformative
+                    Economic Development <br> in Africa </h3>
+                <p>Sukume is an economic development consultancy with 10 years’ experience focusing on SME Development, Intra-African Trade and Place/Country Branding.
+                    We also do Public Speaking on our 3 focus areas. We do this through:</p>
+                <ol class="alphabet-list" style="color: #000;">
+                    <li>a. Designing and implementing relevant strategies and projects that deliver global competitiveness
+                        and socio-economic transformation across African communities</li>
+                    <li>b. Creating and supporting platforms that promote Made-by-African goods and services, particularly
+                        for SMEs</li>
+                    <li>c. Facilitating trade and investment between African SMEs and large pan-African corporations,
+                        governments, and their global counterparts in ways that foster shared economic growth and empowerment
+                        for local communities</li>
+                </ol>
+                <p>Our customers include African economic development entities, places/countries, businesses, and brands.
+                </p>
+                <p class="mt-4">Despite the significant growth of African economies in the last few decades, this has not
+                    translated into much developmental change nor benefit for local people. They remain mired in the triple
+                    evils of unemployment, poverty, and inequality. To deal with this, just about every government in
+                    Africa recognizes the need for rapid industrialization through local manufacturing and export-led
+                    economies.Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a
+                    foundation for development planning, implementation, and brand positioning. We designed the Competitiveness
+                    & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building
+                    world-class African economies, businesses, and brands in ways that guarantee social and economic
+                    transformation among local communities.</p>
             </div>
         </div>
     </div>
+</div>
+
+<style>
+    @keyframes flag-bounce {
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+
+    .flag-animation {
+        animation: flag-bounce 2s infinite;
+    }
+</style>
+
     
     <!-- //about section -->
 
@@ -370,7 +376,7 @@
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
                         <div class="icon mb-4">
-                            <span class="fas fa-pencil"></span>
+                            <span>  <img src="assets/images/Vision.png" alt="Logo" width="100px" height="100px"> </span>
                         </div>
                         <div class="info" >
                             <h4><a href="#url">Our Vision</a>
@@ -384,7 +390,7 @@
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
                         <div class="icon mb-4">
-                            <span class="fas fa-envelope-open-text"></span>
+                            <span> <img src="assets/images/mission.png" alt="Logo" width="100px" height="100px"> </span>
                         </div>
                         <div class="info">
                             <h4><a href="#url">Our Mission</a>
@@ -399,7 +405,7 @@
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
                         <div class="icon mb-4">
-                            <span class="fas fa-laptop-code"></span>
+                            <span><img src="assets/images/Values.png" alt="Logo" width="100px" height="100px"> </span>
                         </div>
                         <div class="info">
                             <h4><a href="#url">Our Values</a>
