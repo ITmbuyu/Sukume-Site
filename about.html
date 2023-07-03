@@ -19,53 +19,54 @@
     <style>
         /* Define styles for the loading animation */
         #loader-wrapper {
-           position: fixed;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background: #6c5ce7;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           z-index: 9999;
-         }
-         
-         #loader {
-           width: 80px;
-           height: 80px;
-           border-radius: 50%;
-           border: 8px solid #f1f2f6;
-           border-top-color: #ffffff;
-           animation: spin 2s linear infinite;
-         }
-         
-         #loader-inner {
-           width: 100%;
-           height: 100%;
-           background: #ffffff;
-           border-radius: 50%;
-           animation: spin-reverse 2s linear infinite;
-         }
-         
-         @keyframes spin {
-           to {
-             transform: rotate(360deg);
-           }
-         }
-         
-         @keyframes spin-reverse {
-           to {
-             transform: rotate(-360deg);
-           }
-         }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #6c5ce7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
 
-       body {
-           font-family: 'Corbel';
-       }
+        #loader {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 8px solid #f1f2f6;
+            border-top-color: #ffffff;
+            animation: spin 2s linear infinite;
+        }
 
-   </style>
+        #loader-inner {
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 50%;
+            animation: spin-reverse 2s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin-reverse {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+
+        body {
+            font-family: "Cobalt", sans-serif;
+            /* Replace "Corbel" with the desired font name */
+        }
+    </style>
 </head>
+
 
 <body>
     <!--header-->
@@ -169,29 +170,70 @@
     <section class="inner-banner">
         <style>
             .inner-banner {
-                background-image: url('assets/images/inner-banner.jpg');
-                background-size: contain;
-                background-position: center;
+                position: relative;
                 height: 400px;
+                overflow: hidden;
             }
     
-            /* Adjust the height and background-size for mobile devices */
+            .inner-banner .video-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+            }
+    
+            .inner-banner video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+    
+            .inner-banner .inner-text {
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                transform: translate(0, -50%);
+                text-align: left;
+                color: #ffffff;
+                z-index: 1;
+            }
+    
+            /* Adjust the height for mobile devices */
             @media (max-width: 767px) {
                 .inner-banner {
                     height: 350px;
-                    background-size: contain;
                 }
-                .inner-banner .inner-text-title {
-                    margin-top: 205px;
+                .inner-banner .inner-text {
+                    left: 5%;
                 }
             }
         </style>
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
+                <div class="inner-text">
+                    <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
+                </div>
             </div>
         </div>
+        <div class="video-container">
+            <video id="banner-video" autoplay muted loop>
+                <source src="assets/videos/SUKUMEVIDDDDD.mp4" type="video/mp4">
+                <source src="assets/videos/SUKUMEVIDDD.mp4" type="video/mp4">
+                <!-- Add additional source elements for other video formats if needed -->
+            </video>
+        </div>
     </section>
+    
+    <script>
+        var videoElement = document.getElementById('banner-video');
+    
+        videoElement.addEventListener('loadedmetadata', function() {
+            videoElement.play();
+        });
+    </script>
     
     <!-- //inner banner -->
 
@@ -208,6 +250,7 @@
         /* Fade in effect for headers */
         h3, h5 {
             animation: fadeIn 1s;
+            
         }
     
         /* Fade in effect for paragraphs */
@@ -292,7 +335,7 @@
                 <img src="assets/images/about1.jpg" alt="" class="img-responsive img-fluid flag-animation" />
                 <div class="row mt-3">
                     <div class="col-6 img-pad pr-2">
-                        <img src="assets/images/about2.jpg" alt="" class="img-responsive img-fluid flag-animation" />
+                        <img src="assets/images/image.png" alt="" class="img-responsive img-fluid flag-animation" />
                     </div>
                     <div class="col-6 img-pad-2 pl-2">
                         <img src="assets/images/about3.jpg" alt="" class="img-responsive img-fluid flag-animation" />
@@ -301,9 +344,9 @@
             </div>
             <div class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
                 <h3 class="title-style-2 mb-3"
-                    style="font-size: 15px;text-align: center; margin-top: -40px;">Promoting<br>Transformative
-                    Economic Development <br> in Africa </h3>
-                <p>Sukume is an economic development consultancy with 10 years’ experience focusing on SME Development, Intra-African Trade and Place/Country Branding.
+                style="font-size: 15px; text-align: center; margin-top: -40px; text-transform: uppercase;">Promoting<br>Transformative
+                Economic Development <br> in Africa </h3>            
+                <p>Sukume is an economic development consultancy with 10 years’ experience focusing on SME Development, Intra-African Trade and Place/Nation Branding.
                     We also do Public Speaking on our 3 focus areas. We do this through:</p>
                 <ol class="alphabet-list" style="color: #000;">
                     <li>a. Designing and implementing relevant strategies and projects that deliver global competitiveness
@@ -314,17 +357,17 @@
                         governments, and their global counterparts in ways that foster shared economic growth and empowerment
                         for local communities</li>
                 </ol>
-                <p>Our customers include African economic development entities, places/countries, businesses, and brands.
+                <p>Our clients include African economic development entities, places/nations, businesses, and brands.
                 </p>
                 <p class="mt-4">Despite the significant growth of African economies in the last few decades, this has not
                     translated into much developmental change nor benefit for local people. They remain mired in the triple
                     evils of unemployment, poverty, and inequality. To deal with this, just about every government in
                     Africa recognizes the need for rapid industrialization through local manufacturing and export-led
-                    economies.Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a
+                    economies. Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a
                     foundation for development planning, implementation, and brand positioning. We designed the Competitiveness
                     & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building
                     world-class African economies, businesses, and brands in ways that guarantee social and economic
-                    transformation among local communities.</p>
+                    transformation among local communities.</p>                
             </div>
         </div>
     </div>
@@ -370,58 +413,49 @@
             
         </style>
         
-        <div class="container py-md-5 py-4 AboutPageServices"  style="margin-top: -100px;">
-            <div class="row justify-content-center">
-
+        <div class="container py-md-5 py-4 AboutPageServices" style="margin-top: -100px;">
+            <div class="row justify-content-center align-items-center">
+        
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
-                        <div class="icon mb-4">
-                            <span>  <img src="assets/images/Vision.png" alt="Logo" width="100px" height="100px"> </span>
-                        </div>
-                        <div class="info" >
-                            <h4><a href="#url">Our Vision</a>
-                            </h4>
-                        </div>
-                        <p class="mt-3">
-                            To see prosperous African economies and businesses rooted in their unique purpose </p>
-                    </div>
-                </div>
-
-                <div class="box-wrap col-lg-4 col-md-6 mt-5">
-                    <div class="box-wrap-grid text-center">
-                        <div class="icon mb-4">
-                            <span> <img src="assets/images/mission.png" alt="Logo" width="100px" height="100px"> </span>
+                        <div class="icon mb-4 d-flex justify-content-center align-items-center">
+                            <span><img src="assets/images/Vision2.png" alt="Logo" width="150px" height="100px"></span>
                         </div>
                         <div class="info">
-                            <h4><a href="#url">Our Mission</a>
-                            </h4>
+                            <h4><a href="#url">Our Vision</a></h4>
                         </div>
-                        <p class="mt-3">
-                            To develop African brands, businesses and economies for global competitiveness and socio-economic transformation </p>
+                        <p class="mt-3">To see prosperous African economies and businesses rooted in their unique purpose</p>
                     </div>
                 </div>
-
-
+        
                 <div class="box-wrap col-lg-4 col-md-6 mt-5">
                     <div class="box-wrap-grid text-center">
-                        <div class="icon mb-4">
-                            <span><img src="assets/images/Values.png" alt="Logo" width="100px" height="100px"> </span>
+                        <div class="icon mb-4 d-flex justify-content-center align-items-center">
+                            <span><img src="assets/images/mission2.png" alt="Logo" width="150px" height="100px"></span>
                         </div>
                         <div class="info">
-                            <h4><a href="#url">Our Values</a>
-                            </h4>
+                            <h4><a href="#url">Our Mission</a></h4>
                         </div>
-                        <p class="mt-3">
-                            Excellence | Integrity | Relationships | Leadership | Authenticity
-                        </p>
+                        <p class="mt-3">To develop African brands, businesses and economies for global competitiveness and socio-economic transformation</p>
                     </div>
                 </div>
-
+        
+                <div class="box-wrap col-lg-4 col-md-6 mt-5">
+                    <div class="box-wrap-grid text-center">
+                        <div class="icon mb-4 d-flex justify-content-center align-items-center">
+                            <span><img src="assets/images/Values2.png" alt="Logo" width="150px" height="100px"></span>
+                        </div>
+                        <div class="info">
+                            <h4><a href="#url">Our Values</a></h4>
+                        </div>
+                        <p class="mt-3">Excellence | Integrity | Relationships | Leadership | Authenticity</p>
+                    </div>
+                </div>
+        
             </div>
-
         </div>
-       
-    </section>
+
+        </section>
     <!-- //Our Values -->
 
    
@@ -450,7 +484,7 @@
                       <div class="team-block-single">
                         <div class="team-grids">
                             <a href="#url">
-            <img src="assets/images/team1.jpg"
+            <img src="assets/images/ceo.png"
                 class="img-fluid" alt="">
             <div class="team-info">
                 <div class="social-icons-section">
@@ -478,47 +512,14 @@
                 </div>
             </div>
                     </div>
-                    <div class="col-md-3">
-                      <!-- Card 2 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/team2.jpg"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1 active"><a href="#url">Aida Joe</a>
-                    </h5>
-                    <small>Marketing Head</small>
-                </div>
-                </div>
-                    </div>
-                  </div>
+
                   <div class="row">
                     <div class="col-md-3">
                       <!-- Card 3 -->
                       <div class="team-block-single">
                         <div class="team-grids">
                             <a href="#url">
-                    <img src="assets/images/team4.jpg"
+                    <img src="assets/images/1.png"
                         class="img-fluid" alt="">
                     <div class="team-info">
                         <div class="social-icons-section">
@@ -541,9 +542,9 @@
                     </a>
                 </div>
                 <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Teri Dac</a>
+                    <h5 class="member mb-1"><a href="#url">Vuyelwa Nyakaza</a>
                     </h5>
-                    <small>Sales Manager</small>
+                    <small>Managing director</small>
                 </div>
                 </div>
                     </div>
@@ -552,7 +553,7 @@
                       <div class="team-block-single">
                         <div class="team-grids">
                             <a href="#url">
-                    <img src="assets/images/team3.jpg"
+                    <img src="assets/images/2.png"
                         class="img-fluid" alt="">
                     <div class="team-info">
                         <div class="social-icons-section">
@@ -575,9 +576,9 @@
                     </a>
                 </div>
                 <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Anton Bne</a>
+                    <h5 class="member mb-1"><a href="#url">Miles Kubheka</a>
                     </h5>
-                    <small>Event Organizer</small>
+                    <small>Chief entrepreneurship developer</small>
                 </div>
                 </div>
                     </div>
@@ -586,7 +587,7 @@
                       <div class="team-block-single">
                         <div class="team-grids">
                             <a href="#url">
-            <img src="assets/images/team3.jpg"
+            <img src="assets/images/3.png"
                 class="img-fluid" alt="">
             <div class="team-info">
                 <div class="social-icons-section">
@@ -608,9 +609,9 @@
                     </a>
                 </div>
                 <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Olive Yew</a>
+                    <h5 class="member mb-1"><a href="#url">Molapokatse Fanana</a>
                     </h5>
-                    <small>Web Developer</small>
+                    <small>Chief brand marketing</small>
                 </div>
             </div>
                     </div>
@@ -619,7 +620,7 @@
                       <div class="team-block-single">
                         <div class="team-grids">
                             <a href="#url">
-                    <img src="assets/images/team2.jpg"
+                    <img src="assets/images/4.png"
                         class="img-fluid" alt="">
                     <div class="team-info">
                         <div class="social-icons-section">
@@ -641,149 +642,15 @@
                     </a>
                 </div>
                 <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1 active"><a href="#url">Aida Joe</a>
+                    <h5 class="member mb-1 active"><a href="#url">Amanuel Mengistu</a>
                     </h5>
-                    <small>Marketing Head</small>
+                    <small>Chief content & creative</small>
                 </div>
                 </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-3">
-                      <!-- Card 7 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/team4.jpg"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-            
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Teri Dac</a>
-                    </h5>
-                    <small>Sales Manager</small>
-                </div>
-                </div>  
-                    </div>
-                    <div class="col-md-3">
-                      <!-- Card 8 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/team1.jpg"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-            
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Anton Bne</a>
-                    </h5>
-                    <small>Event Organizer</small>
-                </div>
-                </div>
-                    </div>
-                    <div class="col-md-3">
-                      <!-- Card 9 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-            <img src="assets/images/team3.jpg"
-                class="img-fluid" alt="">
-            <div class="team-info">
-                <div class="social-icons-section">
-                                                                                            <a class="fac"
-                        href="https://www.facebook.com/w3layouts/">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                        <span class="fab fa-google-plus-g"></span>
-                    </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Olive Yew</a>
-                    </h5>
-                    <small>Web Developer</small>
-                </div>
-            </div>
-                    </div>
-                    <div class="col-md-3">
-                      <!-- Card 10 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/team1.jpg"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-            
-                            <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Anton Bne</a>
-                    </h5>
-                    <small>Event Organizer</small>
-                </div>
-                </div>
-                    </div>
+
+
                   </div>
             </div>  
 

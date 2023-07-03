@@ -167,195 +167,328 @@
     <!--// loading animation-->
 
     <!-- inner banner -->
-    <!-- inner banner -->
-  <section class="inner-banner">
-    <style>
-        .inner-banner {
-            background-image: url('assets/images/inner-bannero.jpg');
-            background-size: contain;
-            background-position: center;
-            height: 400px;
-        }
+    <!-- inner banner 
+    <section class="inner-banner">
+      <style>
+          .inner-banner {
+              background-color: #f5f5f5;
+              height: 400px;
+              background-image: none; /* Remove the background image */
+          }
+  
+          /* Adjust the height for mobile devices */
+          @media (max-width: 767px) {
+              .inner-banner {
+                  height: 320px;
+              }
+              .inner-banner .inner-text-title {
+                  margin-top: 210px;
+              }
+          }
+      </style>
+      <div class="w3l-breadcrumb py-5">
+          <div class="container py-xl-5 py-md-4 mt-5">
+              <h4 class="inner-text-title font-weight-bold mb-sm-2">Services</h4>
+          </div>
+      </div>
+  </section> 
 
-        /* Adjust the height and background-size for mobile devices */
-        @media (max-width: 767px) {
-            .inner-banner {
-                height: 320px;
-                background-size: contain;
-            }
-            .inner-banner .inner-text-title {
-                margin-top: 210px;
-            }
-        }
-    </style>
-    <div class="w3l-breadcrumb py-5">
-        <div class="container py-xl-5 py-md-4 mt-5">
-            <h4 class="inner-text-title font-weight-bold mb-sm-2">Services</h4>
-        </div>
-    </div>
-</section>
-
-<!-- //inner banner -->
+ -->
 
   
     
     <!-- Focus Areas -->
     <div class="w3l-content-mid w3l-content-12-main content-12 text-left py-5" style="background-color: white;">
       <div class="text-container">
-          <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -20px;">
-               Our Focus Areas
-          </h3>
+        <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: 100px;">
+          Our Focus Areas
+        </h3>
       </div>
       <style>
-          @keyframes bounce {
-
-              0%,
-              100% {
-                  transform: translateY(0);
-              }
-
-              50% {
-                  transform: translateY(-10px);
-              }
+        @keyframes bounce {
+          0%,
+          100% {
+            transform: translateY(0);
           }
+          50% {
+            transform: translateY(-10px);
+          }
+        }
+
+        .image-container {
+          height: 700px; /* Adjust the height as needed */
+          width: 1400px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .image-container img {
+          max-height: 100%;
+          max-width: 100%;
+          object-fit: contain;
+        }
+
       </style>
-
-      <div class="row justify-content-center" mar>
-
-          <img src="assets/images/focusareas.png" alt="" class="img-responsive img-fluid" />   
-
-      </div>     
-  </div>    
+    
+    <div class="row justify-content-center">
+      <div class="image-container">
+        <img src="assets/images/s1.png" alt="" class="img-responsive img-fluid" />
+      </div>
+    </div>
+    
+      
 
     <!-- //Focus Areas -->
+
+        <!-- content-6-section -->
+        <style>
+          .w3l-content-mid .card {
+            border: none;
+            transition: transform 0.3s ease-in-out;
+          }
+          
+          .w3l-content-mid .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+          }
+          
+          .w3l-content-mid .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+          
+          .w3l-content-mid .card:hover .card-img-top {
+            transform: scale(1.2);
+          }
+          
+          .w3l-content-mid .card-title {
+            color: #592985;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 1rem;
+          }
+          
+          .w3l-content-mid .services-page-purple-list {
+            text-align: center;
+            margin-top: 1rem;
+          }
+          
+          .w3l-content-mid .services-page-purple-list li {
+            margin-bottom: 0.5rem;
+          }
+          </style>
+          
+          <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-bottom: 5px;">
+            <div class="text-container">
+              <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -100px;  margin-bottom: 40px">
+                Our Focus Areas
+              </h3>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <div class="text-container">
+                      <h3 class="title-w3l" style="font-size: 1.3rem; text-align: center; background-color: #592985; color: #ffffff; margin-top: -20px;">
+                        SME DEVELOPMENT
+                      </h3>
+                    </div>
+                  </a>
+                  <div class="card-body" >
+                    <ul class="services-page-purple-list">
+                      <li>Business Development Services</li>
+                      <li>Market Access Platforms</li>
+                      <li>Trade Missions</li>
+                      <li>Capacity Building</li>
+                      <li>Female Entrepreneurship Development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <div class="text-container">
+                      <h3 class="title-w3l" style="font-size: 1.3rem; text-align: center; color:  #592985; margin-top: -20px;">
+                        INTRA-AFRICAN TRADE
+                      </h3>
+                    </div>
+                  </a>
+                  <div class="card-body">
+                    <ul class="services-page-purple-list">
+                      <li>Trade Platforms</li>
+                      <li>Trade Promotion &amp; Facilitation</li>
+                      <li>Buy African thought - Leadership &amp; Advocacy</li>
+                      <li>Export Training &amp; Development</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 item">
+                <div class="card">
+                  <a href="services">
+                    <div class="text-container">
+                      <h3 class="card" style="font-size: 1.3rem; text-align: center;background-color: #592985; color: #ffffff; margin-top: -50px;">
+                        PLACE/NATION BRANDING
+                      </h3>
+                    </div>
+                  </a>
+                  <div class="card-body">
+
+                    <ul class="services-page-purple-list">
+                      <li>Strategy Development</li>
+                      <li>Strategy Implementation</li>
+                      <li>Strategy Facilitation</li>
+                      <li>Stakeholder Management</li>
+                      <li>Promotion of Buy Local</li>
+                      <li>Reputation Management</li>
+                      <li>Policy Advice</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <style>
+            .services-page-purple-list li {
+              text-align: left;
+              color: #000;
+            }
+          </style>
+        <!-- //content-6-section -->
 
     
 
     <!-- content-6-section -->
     <style>
-        .w3l-content-mid .card {
-          border: none;
-          transition: transform 0.3s ease-in-out;
-        }
-        
-        .w3l-content-mid .card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-        }
-        
-        .w3l-content-mid .card-img-top {
-          height: 200px;
-          object-fit: cover;
-          transition: transform 0.3s ease;
-        }
-        
-        .w3l-content-mid .card:hover .card-img-top {
-          transform: scale(1.2);
-        }
-        
-        .w3l-content-mid .card-title {
-          color: #9b51e0;
-          font-size: 1.2rem;
-          font-weight: 600;
-          margin-top: 1rem;
-        }
-        
-        .w3l-content-mid .services-page-purple-list {
-          text-align: center;
-          margin-top: 1rem;
-        }
-        
-        .w3l-content-mid .services-page-purple-list li {
-          margin-bottom: 0.5rem;
-        }
-        </style>
-        
-        <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-bottom: 5px;">
-          <div class="text-container">
-            <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -100px;">
-                 Our Services
-            </h3>
-        </div>
-        <br>
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 item">
-              <div class="card">
-                <a href="services">
-                  <img class="card-img-top" src="assets/images/s4.jpg" alt="card-image">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Strategy Services</h5>
-                  <ul class="services-page-purple-list">
-                    <li>Development</li>
-                    <li>Implementation</li>
-                    <li>Economic Development</li>
-                    <li>Business Development</li>
-                    <li>Resource Mobilization</li>
-                    <li>Market Entry</li>
-                    <li>Facilitation</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="card">
-                <a href="services">
-                  <img class="card-img-top" src="assets/images/s3.jpg" alt="card-image">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Branding Services</h5>
-                  <ul class="services-page-purple-list">
-                    <li>Design</li>
-                    <li>Development</li>
-                    <li>Branding</li>
-                    <li>Brand Identity &amp; CI</li>
-                    <li>Brand Architecture</li>
-                    <li>Brand Blueprints</li>
-                    <li>Marketing &amp; Communication Plans</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="card">
-                <a href="services">
-                  <img class="card-img-top" src="assets/images/s2.jpg" alt="card-image">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Trade & Investment Services</h5>
-                  <ul class="services-page-purple-list">
-                    <li>Promotion</li>
-                    <li>Facilitation</li>
-                    <li>InterAfrica Trade &amp; Integration</li>
-                    <li>Economic Indigenization</li>
-                    <li>Investment &amp; Trade Missions</li>
-                    <li>Policy Advice</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 item">
-              <div class="card">
-                <a href="services">
-                  <img class="card-img-top" src="assets/images/s7.jpg" alt="card-image">
-                </a>
-                <div class="card-body">
-                  <h5 class="card-title">Public Speaking Services</h5>
-                  <ul class="services-page-purple-list">
-                    <li>Talks</li>
-                    <li>Facilitation</li>
-                    <li>Discussions</li>
-                    <li>Presentations</li>
-                    <li>Lectures</li>
-                    <li>Consultations</li>
-                    <li>Interviews</li>
-                  </ul>
-                </div>
-              </div>
+      .w3l-content-mid .card {
+        border: none;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .w3l-content-mid .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+      }
+      
+      .w3l-content-mid .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      
+      .w3l-content-mid .card:hover .card-img-top {
+        transform: scale(1.2);
+      }
+      
+      .w3l-content-mid .card-title {
+        color: #9b51e0;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 1rem;
+        text-align: center;
+      }
+      
+      .w3l-content-mid .services-page-purple-list {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      
+      .w3l-content-mid .services-page-purple-list li {
+        margin-bottom: 0.5rem;
+        text-align: left;
+      }
+    </style>
+    
+    <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-bottom: 5px;">
+      <div class="text-container">
+        <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -50px;">
+          Our Services
+        </h3>
+      </div>
+      <br>
+      <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-6 item">
+          <div class="card">
+            <a href="services">
+              <img class="card-img-top" src="assets/images/1st.png" alt="card-image">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Strategy Services</h5>
+              <ul class="services-page-purple-list">
+                <li>Development</li>
+                <li>Implementation</li>
+                <li>Economic Development</li>
+                <li>Business Development</li>
+                <li>Resource Mobilization</li>
+                <li>Market Entry</li>
+                <li>Facilitation</li>
+              </ul>
             </div>
           </div>
         </div>
-        
+        <div class="col-lg-3 col-md-6 item">
+          <div class="card">
+            <a href="services">
+              <img class="card-img-top" src="assets/images/2nd.png" alt="card-image">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Branding Services</h5>
+              <ul class="services-page-purple-list">
+                <li>Design</li>
+                <li>Development</li>
+                <li>Branding</li>
+                <li>Brand Identity &amp; CI</li>
+                <li>Brand Architecture</li>
+                <li>Brand Blueprints</li>
+                <li>Marketing &amp; Communication Plans</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 item">
+          <div class="card">
+            <a href="services">
+              <img class="card-img-top" src="assets/images/3rd.png" alt="card-image">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Trade & Investment Services</h5>
+              <ul class="services-page-purple-list">
+                <li>Promotion</li>
+                <li>Facilitation</li>
+                <li>InterAfrica Trade &amp; Integration</li>
+                <li>Economic Indigenization</li>
+                <li>Investment &amp; Trade Missions</li>
+                <li>Policy Advice</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 item">
+          <div class="card">
+            <a href="services">
+              <img class="card-img-top" src="assets/images/4th.png" alt="card-image">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Public Speaking Services</h5>
+              <ul class="services-page-purple-list">
+                <li>Talks</li>
+                <li>Facilitation</li>
+                <li>Discussions</li>
+                <li>Presentations</li>
+                <li>Lectures</li>
+                <li>Consultations</li>
+                <li>Interviews</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- //content-6-section -->
 
     <!-- footer -->
