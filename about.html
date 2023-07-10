@@ -184,11 +184,13 @@
     
             .inner-banner video {
                 position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
             }
     
             .inner-banner .inner-text {
@@ -234,6 +236,7 @@
             videoElement.play();
         });
     </script>
+    
     
     <!-- //inner banner -->
 
@@ -466,198 +469,167 @@
             position: relative;
         }
         
+        .team-block-single {
+            margin-bottom: 30px;
+            overflow: hidden; /* To prevent the image from overflowing */
+        }
+        
+        .team-grids img {
+            transition: transform 0.3s ease; /* Add transition for smooth zoom effect */
+        }
+        
+        /* Apply zoom effect on hover */
+        .team-grids:hover img {
+            transform: scale(1.1); /* Increase the scale value to zoom in more */
+        }
+        
+        .team-bottom-block {
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        
+        .team-bottom-block h5 {
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .team-bottom-block small {
+            color: #777;
+        }
+        
+        .social-icons-section a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #777;
+            font-size: 18px;
+        }
+        
+        .social-icons-section a:hover {
+            color: #000;
+        }
     </style>
-
+    
+    <!-- Your existing HTML code here -->
+    
+    
     <div class="w3l-content-mid w3l-team py-5 container py-md-5 py-4 AboutPageTeam" style="background-color: white;margin-top: -75px;">
         <div class="row align-items-center mb-5">
             <div class="col-md-6 section-heading">
-                <h3 class="title-style-2" style="font-size: 25px;">
-                    Our Team</h3>
+                <h3 class="title-style-2" style="font-size: 25px;">Our Team</h3>
             </div>
         </div>
         <div class="row text-center justify-content-center">
-        
-            <div>
-                <div class="row ">
-                    <div class="col-md-3">
-                      <!-- Card 1 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-            <img src="assets/images/ceo.png"
-                class="img-fluid" alt="">
-            <div class="team-info">
-                <div class="social-icons-section">
-                                                                                            <a class="fac"
-                        href="https://www.facebook.com/w3layouts/">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                        <span class="fab fa-google-plus-g"></span>
-                    </a>
-            
-                        </div>
+            <div class="col-md-3">
+                <!-- Card 1 -->
+                <div class="team-block-single">
+                    <div class="team-grids">
+                        <a href="#url">
+                            <img src="assets/images/ceo2.png" class="img-fluid" alt="">
+                            <div class="team-info">
+                                <div class="social-icons-section">
+                                    <a class="fac" href="https://www.facebook.com/w3layouts/">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                    <a class="twitter mx-2" href="https://twitter.com/W3layouts">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                    <a class="google" href="https://w3layouts.com/tag/email-templates/">
+                                        <span class="fab fa-google-plus-g"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Vuyelwa Nyakaza</a>
-                    </h5>
-                    <small>CEO</small>
+                    <div class="team-bottom-block p-4">
+                        <h5 class="member mb-1"><a href="#url">Vuyelwa Nyakaza</a></h5>
+                        <small>Managing Director</small>
+                    </div>
                 </div>
             </div>
+            <div class="col-md-3">
+                <!-- Card 2 -->
+                <div class="team-block-single">
+                    <div class="team-grids">
+                        <a href="#url">
+                            <img src="assets/images/2.png" class="img-fluid" alt="">
+                            <div class="team-info">
+                                <div class="social-icons-section">
+                                    <a class="fac" href="https://www.facebook.com/w3layouts/">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                    <a class="twitter mx-2" href="https://twitter.com/W3layouts">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                    <a class="google" href="https://w3layouts.com/tag/email-templates/">
+                                        <span class="fab fa-google-plus-g"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-
-                  <div class="row">
-                    <div class="col-md-3">
-                      <!-- Card 3 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/1.png"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-            
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
+                    <div class="team-bottom-block p-4">
+                        <h5 class="member mb-1"><a href="#url">Miles Kubheka</a></h5>
+                        <small>Chief Entrepreneurship Developer</small>
                     </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Vuyelwa Nyakaza</a>
-                    </h5>
-                    <small>Managing director</small>
-                </div>
-                </div>
-                    </div>
-                    <div class="col-md-3">
-                      <!-- Card 4 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/2.png"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-            
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Miles Kubheka</a>
-                    </h5>
-                    <small>Chief entrepreneurship developer</small>
-                </div>
-                </div>
-                    </div>
-                    <div class="col-md-3">
-                      <!-- Card 5 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-            <img src="assets/images/3.png"
-                class="img-fluid" alt="">
-            <div class="team-info">
-                <div class="social-icons-section">
-                                                                                            <a class="fac"
-                        href="https://www.facebook.com/w3layouts/">
-                        <span class="fab fa-facebook-f"></span>
-                    </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                        <span class="fab fa-twitter"></span>
-                    </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                        <span class="fab fa-google-plus-g"></span>
-                    </a>
-            
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1"><a href="#url">Molapokatse Fanana</a>
-                    </h5>
-                    <small>Chief brand marketing</small>
                 </div>
             </div>
+            <div class="col-md-3">
+                <!-- Card 3 -->
+                <div class="team-block-single">
+                    <div class="team-grids">
+                        <a href="#url">
+                            <img src="assets/images/3.png" class="img-fluid" alt="">
+                            <div class="team-info">
+                                <div class="social-icons-section">
+                                    <a class="fac" href="https://www.facebook.com/w3layouts/">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                    <a class="twitter mx-2" href="https://twitter.com/W3layouts">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                    <a class="google" href="https://w3layouts.com/tag/email-templates/">
+                                        <span class="fab fa-google-plus-g"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-md-3">
-                      <!-- Card 6 -->
-                      <div class="team-block-single">
-                        <div class="team-grids">
-                            <a href="#url">
-                    <img src="assets/images/4.png"
-                        class="img-fluid" alt="">
-                    <div class="team-info">
-                        <div class="social-icons-section">
-                                                                                                    <a class="fac"
-                                href="https://www.facebook.com/w3layouts/">
-                                <span class="fab fa-facebook-f"></span>
-                            </a>
-            
-                            <a class="twitter mx-2" href="https://twitter.com/W3layouts">
-                                <span class="fab fa-twitter"></span>
-                            </a>
-            
-                            <a class="google" href="https://w3layouts.com/tag/email-templates/">
-                                <span class="fab fa-google-plus-g"></span>
-                            </a>
-            
-                        </div>
+                    <div class="team-bottom-block p-4">
+                        <h5 class="member mb-1"><a href="#url">Molapokatse Fanana</a></h5>
+                        <small>Chief Brand Marketing</small>
                     </div>
-                    </a>
                 </div>
-                <div class="team-bottom-block p-4">
-                    <h5 class="member mb-1 active"><a href="#url">Amanuel Mengistu</a>
-                    </h5>
-                    <small>Chief content & creative</small>
-                </div>
-                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Card 4 -->
+                <div class="team-block-single">
+                    <div class="team-grids">
+                        <a href="#url">
+                            <img src="assets/images/4.png" class="img-fluid" alt="">
+                            <div class="team-info">
+                                <div class="social-icons-section">
+                                    <a class="fac" href="https://www.facebook.com/w3layouts/">
+                                        <span class="fab fa-facebook-f"></span>
+                                    </a>
+                                    <a class="twitter mx-2" href="https://twitter.com/W3layouts">
+                                        <span class="fab fa-twitter"></span>
+                                    </a>
+                                    <a class="google" href="https://w3layouts.com/tag/email-templates/">
+                                        <span class="fab fa-google-plus-g"></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                  </div>
-
-
-                  </div>
-            </div>  
-
-            
-
+                    <div class="team-bottom-block p-4">
+                        <h5 class="member mb-1 active"><a href="#url">Amanuel Mengistu</a></h5>
+                        <small>Chief Content & Creative</small>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
+    
     <!-- //team setion -->
 
     <!-- footer -->

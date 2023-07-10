@@ -10,6 +10,8 @@
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
+  --navlink: #443962;
+  --navline: #4f3559;
   --pink: #e83e8c;
   --red: #dc3545;
   --orange: #fd7e14;
@@ -12058,8 +12060,8 @@ nav ul li a:hover {
 
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-item.active .nav-link,
 .nav-fixed .navbar-expand-lg .navbar-nav .nav-link:hover {
-  color: var(--primary-color);
-  border-bottom: 1px solid var(--primary-color);
+  color: var(--navlink);
+  border-bottom: 1px solid var(--navline);
 }
 
 .navbar .search-right {

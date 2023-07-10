@@ -3,171 +3,172 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sukume &#8211; Services</title>
-    <!-- google-fonts -->
-    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
-    <!-- //google-fonts -->
-    <!-- Font-Awesome-Icons-CSS -->
-    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
-    <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="assets/css/style-liberty.css">
-    <!-- Custom CSS -->
-    <style>
-        /* Define styles for the loading animation */
-        #loader-wrapper {
-           position: fixed;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background: #6c5ce7;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           z-index: 9999;
-         }
-         
-         #loader {
-           width: 80px;
-           height: 80px;
-           border-radius: 50%;
-           border: 8px solid #f1f2f6;
-           border-top-color: #000fff;
-           animation: spin 2s linear infinite;
-         }
-         
-         #loader-inner {
-           width: 100%;
-           height: 100%;
-           background: #000fff;
-           border-radius: 50%;
-           animation: spin-reverse 2s linear infinite;
-         }
-         
-         @keyframes spin {
-           to {
-             transform: rotate(360deg);
-           }
-         }
-         
-         @keyframes spin-reverse {
-           to {
-             transform: rotate(-360deg);
-           }
-         }
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Sukume &#8211; Services</title>
+  <!-- google-fonts -->
+  <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+  <!-- //google-fonts -->
+  <!-- Font-Awesome-Icons-CSS -->
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+  <script src="https://kit.fontawesome.com/a5ce0f9f64.js" crossorigin="anonymous"></script>
+  <!-- Template CSS Style link -->
+  <link rel="stylesheet" href="assets/css/style-liberty.css">
+  <!-- Custom CSS -->
+  <style>
+      /* Define styles for the loading animation */
+      #loader-wrapper {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: #6c5ce7;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+      }
 
-       body {
-           font-family: 'Corbel';
-          
-       }
-   </style>
+      #loader {
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          border: 8px solid #f1f2f6;
+          border-top-color: #ffffff;
+          animation: spin 2s linear infinite;
+      }
+
+      #loader-inner {
+          width: 100%;
+          height: 100%;
+          background: #ffffff;
+          border-radius: 50%;
+          animation: spin-reverse 2s linear infinite;
+      }
+
+      @keyframes spin {
+          to {
+              transform: rotate(360deg);
+          }
+      }
+
+      @keyframes spin-reverse {
+          to {
+              transform: rotate(-360deg);
+          }
+      }
+
+      body {
+          font-family: "Cobalt", sans-serif;
+          /* Replace "Corbel" with the desired font name */
+      }
+  </style>
 </head>
 
+
 <body>
-    <!--header-->
-    <header id="site-header" class="fixed-top">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg stroke">
-                <div id="logo">
-                    <h1> 
-                        <a  href="index.html">
-                            <span>  <a  href="#index.html">
-                              <img src="assets\images/Logo-small.png"  class="responsive" alt="Your logo" title="Your logo" style="max-width:100%;height: 70px;" />
-                          </a></span>
-                        </a> 
-                    </h1>
-                </div>
-               
-                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
-                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-                </button>
+  <!--header-->
+  <header id="site-header" class="fixed-top">
+      <div class="container">
+          <nav class="navbar navbar-expand-lg stroke">
+              <div id="logo">
+                  <h1> 
+                      <a  href="index.html">
+                          <span>  <a  href="#index.html">
+                            <img src="assets\images/Logo-small.png"  class="responsive" alt="Your logo" title="Your logo" style="max-width:100%;height: 70px;" />
+                        </a></span>
+                      </a> 
+                  </h1>
+              </div>
 
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="services.html">Our Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Experience <span class="fa fa-angle-down"></span>
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a href="blog.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
-                                                <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                       
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-    <!--//header-->
+              <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                  data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                  <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+              </button>
 
-    <!--loading animation-->  
-    <div class="loading">
-        <div class="spinner">
-          <div class="circle"></div>
-          <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
-        </div>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul class="navbar-nav ml-lg-auto">
+                      <li class="nav-item">
+                          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="about.html">About</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="services.html">Our Services</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Our Experience <span class="fa fa-angle-down"></span>
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                              <a href="blogs.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
+                                              <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
       </div>
-      
-      <style>
-      .loading {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        background-color: purple;
+  </header>
+  <!--//header-->
+
+  <!--loading animation-->  
+  <div class="loading">
+      <div class="spinner">
+        <div class="circle"></div>
+        <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
+      </div>
+    </div>
+    
+    <style>
+    .loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9999;
+      background-color: purple;
+    }
+    
+    .spinner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+    .circle {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 5px solid white;
+      border-top-color: transparent;
+      animation: spin 1s infinite;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
       }
-      
-      .spinner {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-      }
-      
-      .circle {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 5px solid white;
-        border-top-color: transparent;
-        animation: spin 1s infinite;
-      }
-      
-      @keyframes spin {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-      </style>
-      
-    <!--// loading animation-->
+    }
+    </style>
+    
+  <!--// loading animation-->
 
     <!-- inner banner -->
-    <!-- inner banner 
+    <!-- inner banner --> 
     <section class="inner-banner">
       <style>
           .inner-banner {
@@ -193,11 +194,11 @@
       </div>
   </section> 
 
- -->
+ <!-- inner banner --> 
 
   
     
-    <!-- Focus Areas -->
+    <!-- Focus Areas 
     <div class="w3l-content-mid w3l-content-12-main content-12 text-left py-5" style="background-color: white;">
       <div class="text-container">
         <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: 100px;">
@@ -239,7 +240,7 @@
     
       
 
-    <!-- //Focus Areas -->
+  -->
 
         <!-- content-6-section -->
         <style>
@@ -280,7 +281,7 @@
           }
           </style>
           
-          <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-bottom: 5px;">
+          <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-top: 100px;  margin-bottom: 5px;">
             <div class="text-container">
               <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -100px;  margin-bottom: 40px">
                 Our Focus Areas
@@ -291,11 +292,19 @@
               <div class="col-lg-3 col-md-6 item">
                 <div class="card">
                   <a href="services">
+                  <!-- attached but purple background 
                     <div class="text-container">
                       <h3 class="title-w3l" style="font-size: 1.3rem; text-align: center; background-color: #592985; color: #ffffff; margin-top: -20px;">
                         SME DEVELOPMENT
                       </h3>
                     </div>
+                  -->
+                  <div class="text-container">
+                    <h3 class="card" style="font-size: 1.3rem; text-align: center;background-color: #592985; color: #ffffff; margin-top: -35px;">
+                      SME DEVELOPMENT
+                    </h3>
+                  </div>
+                    
                   </a>
                   <div class="card-body" >
                     <ul class="services-page-purple-list">
@@ -311,8 +320,15 @@
               <div class="col-lg-3 col-md-6 item">
                 <div class="card">
                   <a href="services">
+                    <!-- purple text
                     <div class="text-container">
                       <h3 class="title-w3l" style="font-size: 1.3rem; text-align: center; color:  #592985; margin-top: -20px;">
+                        INTRA-AFRICAN TRADE
+                      </h3>
+                    </div>
+                    -->
+                    <div class="text-container">
+                      <h3 class="card" style="font-size: 1.3rem; text-align: center;background-color: #592985; color: #ffffff; margin-top: -35px;">
                         INTRA-AFRICAN TRADE
                       </h3>
                     </div>
@@ -331,7 +347,7 @@
                 <div class="card">
                   <a href="services">
                     <div class="text-container">
-                      <h3 class="card" style="font-size: 1.3rem; text-align: center;background-color: #592985; color: #ffffff; margin-top: -50px;">
+                      <h3 class="card" style="font-size: 1.3rem; text-align: center;background-color: #592985; color: #ffffff; margin-top: -35px;">
                         PLACE/NATION BRANDING
                       </h3>
                     </div>
@@ -385,7 +401,7 @@
       }
       
       .w3l-content-mid .card-title {
-        color: #9b51e0;
+        color: #4c3661;
         font-size: 1.2rem;
         font-weight: 600;
         margin-top: 1rem;
