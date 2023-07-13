@@ -13095,7 +13095,7 @@ a.btn.btn-style.btn-style-normal {
 .w3l-content-12-main .content-12 input:checked+label.tabtle {
   border-bottom: 2px solid var(--primary-color);
   text-align: center;
-  color: var(--primary-color);
+  color: #42204e;
 }
 
 .w3l-content-12-main .content-12 #tab1:checked~#content1,
