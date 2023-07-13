@@ -166,77 +166,33 @@
       
     <!--// loading animation-->
 
-    <!-- inner banner -->
-    <section class="inner-banner">
+     <!-- inner banner -->
+     <section class="inner-banner">
         <style>
             .inner-banner {
-                position: relative;
+                background-image: url('assets/images/inner-banner.jpg');
+                background-size: contain;
+                background-position: center;
                 height: 400px;
-                overflow: hidden;
             }
     
-            .inner-banner .video-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
-    
-            .inner-banner video {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                min-width: 100%;
-                min-height: 100%;
-                width: auto;
-                height: auto;
-            }
-    
-            .inner-banner .inner-text {
-                position: absolute;
-                top: 50%;
-                left: 10%;
-                transform: translate(0, -50%);
-                text-align: left;
-                color: #ffffff;
-                z-index: 1;
-            }
-    
-            /* Adjust the height for mobile devices */
+            /* Adjust the height and background-size for mobile devices */
             @media (max-width: 767px) {
                 .inner-banner {
                     height: 350px;
+                    background-size: contain;
                 }
-                .inner-banner .inner-text {
-                    left: 5%;
+                .inner-banner .inner-text-title {
+                    margin-top: 205px;
                 }
             }
         </style>
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
-                <div class="inner-text">
-                    <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
-                </div>
+                <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
             </div>
         </div>
-        <div class="video-container">
-            <video id="banner-video" autoplay muted loop>
-                <source src="assets/videos/SUKUMEVIDDDDD.mp4" type="video/mp4">
-                <source src="assets/videos/SUKUMEVIDDD.mp4" type="video/mp4">
-                <!-- Add additional source elements for other video formats if needed -->
-            </video>
-        </div>
     </section>
-    
-    <script>
-        var videoElement = document.getElementById('banner-video');
-    
-        videoElement.addEventListener('loadedmetadata', function() {
-            videoElement.play();
-        });
-    </script>
-    
     
     <!-- //inner banner -->
 
