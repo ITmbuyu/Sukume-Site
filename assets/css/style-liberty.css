@@ -13687,7 +13687,7 @@ button.owl-next {
 
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--primary-color);
+  background: #42204e;
   width: 10px;
   height: 10px;
 }

@@ -108,27 +108,55 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item ">
+                       <!--  <li class="nav-item ">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Our Services</a>
+                            <a class="nav-link" href="services.html">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Work</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="why-us.html">Why-Us</a>
-                        </li>
-                        <!-- 
+                        </li>                        
+                        -->
                         <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Experience <span class="fa fa-angle-down"></span>
+                                About <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="About.html#ourpurpose" class="dropdown-item" id="menu-item-31">Our Purpose</a>
+                                                <a href="About.html#capabilities" class="dropdown-item" id="menu-item-31">Capabilities</a>
+                                                <a href="About.html#leadership" class="dropdown-item" id="menu-item-31">Leadership</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Expertise<span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                                 <a href="blogs.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
                                                 <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
                             </div>
                         </li>
-                        -->
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Work <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="Clients.html#clients-section" class="dropdown-item" id="menu-item-31">Our Clients</a>
+                                                <a href="Case Studies.html" class="dropdown-item" id="menu-item-31">Case Studies</a>
+                                                <a href="Testimonials.html" class="dropdown-item" id="menu-item-31">Testimonials</a>
+                                                <a href="Footprint.html" class="dropdown-item" id="menu-item-31">Footprint</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Why-Us</a>
+                        </li>    
                         <li class="nav-item ">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
@@ -254,6 +282,7 @@
                     typeSpeed: 50,
                     loop: true,
                     backDelay: 2000, // Delay before typing starts again in the loop
+                    showCursor: false,
                   };
       
                   var typed = new Typed(
@@ -267,6 +296,7 @@
                           typeSpeed: 50,
                           loop: true,
                           backDelay: 2000, // Delay before typing starts again in the loop
+                          showCursor: false,
                         }
                   );
                 </script>
@@ -371,10 +401,7 @@
         <div class="w3l-content-mid py-5 container pb-md-5 pb-4 HomePageClients" style="background-color: rgb(255, 255, 255); margin-top: 0; margin-bottom: -10px;">
             <div>
                 <div class="text-container">
-                    <h3 class="title-w3l" style="color: #000; margin-top: -120px; margin-bottom: 100;">
-                        About
-                    </h3>
-                    <p class="about-paragraph" style="color: #000; font-size: 1rem; margin-bottom: -5rem;"> 
+                    <p class="about-paragraph" style="color: #000; font-size: 1rem; margin-top: -8rem;"> 
                         In Africa and other emerging markets, economies and businesses can grow and prosper while the vast majority of communities from which they derive their wealth remain poor. Besides being mind-bogglingly unjust, this creates high levels of inequality which, in turn, breeds its own social evils like crime, classism, ill-health, degradation, etc.
                     </p>
                 </div>
@@ -510,7 +537,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 
     <div class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
         <div class="text-container">
-            <h3 class="title-w3l" style=" color: #000;margin-top: -140px;">
+            <h3 class="title-w3l" style=" color: #000;margin-top: -200px;">
                  Our Services
             </h3>
         </div>
@@ -527,7 +554,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
                 }
             }
         </style>
-        <div class="container py-md-5 py-4 HomePageImageServices" style="margin-top: -150px; ">
+        <div class="container py-md-5 py-4 HomePageImageServices" style="margin-top: -200px; ">
 
             <div class="row justify-content-center">
                 <div class="col-lg-3 col-md-6 item">
@@ -753,7 +780,374 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
     
     <!-- //logo brands section -->
 
-
+     <!-- testimonials section -->
+    <style>
+        .w3l-content-mid {
+            position: relative;
+        }
+        .w3l-content-mid video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+     
+        .w3l-content-mid h3.title-w3l {
+            animation: bounceIn 1s;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        @keyframes bounceIn {
+            from,
+            20%,
+            40%,
+            60%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                transform: scale3d(0.9, 0.9, 0.9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+        
+    </style>
+    <div class="w3l-content-mid py-5 w3l-clients  container py-md-5 py-4 HomePageTestimonials" id="testimonials"  style="background-color: rgb(255, 255, 255);margin-top: -35px;">
+        <div class="text-container">
+            <h3 class="title-w3l" style="color: #000;margin-top: -90px;">
+                 Our Clients Testimonials
+            </h3>
+        </div>
+        <style>
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+        <div id="owl-demo2" class="owl-carousel owl-theme pb-5" style="margin-top: -60px;">
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>We were impressed</q>
+                        </blockquote>
+                        <p> by Sukume’s global insight, their capacity to think beyond
+                            the obvious and their ability to take strategic concepts and turn them into
+                            practical outcomes. We thus recommend Sukume Consulting without
+                            reservation.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi1.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Gaorekwe </h3>
+                            <p class="identity">
+                                Executive Director: Botswana Investment and Trade Centre </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume has consistently</q>
+                        </blockquote>
+                        <p>displayed high levels of excellence, integrity and
+                            depth of insight. Their passion for developing strategies, branding nations
+                            and boosting economic development for African countries is expressed in
+                            everything they do</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Marina Mapitso Bizabani </h3>
+                            <p class="identity">
+                                Manager, Foreign Direct Investment, Lesotho National Development Centre </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Beyond the call of duty</q>
+                        </blockquote>
+                        <p>Sukume exceeded expectations, crafting a compelling theme and creative
+                             content for Namibia's Expo 2020 pavilion, despite tight deadlines, 
+                             showcasing high-quality and inspiring work. Grateful for their dedication.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi3.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ndiitah Nghipondoka-Robiati </h3>
+                            <p class="identity">
+                                Chief Executive Officer Namibia Trade Forum </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume is adept</q>
+                        </blockquote>
+                        <p>at designing, implementing, and managing systems, processes, 
+                            and tools for business establishment and operational efficiency, 
+                            consistently demonstrating strategic depth and unwavering commitment to achieving goals</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi3.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Miles Kubheka </h3>
+                            <p class="identity">
+                                CEO: Wakanda Food Accelerator </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume understands</q>
+                        </blockquote>
+                        <p>Sukume's Big-Small Business Coaching Approach recognizes the aspirations of small businesses. It effectively equips entrepreneurs 
+                            with the mindset and tools to grow into solid, scalable companies, leaving us impressed</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi1.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Charlotte Nsubuka-Mukasa </h3>
+                            <p class="identity">
+                                Head of Marketing: Momentum </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume consistently</q>
+                        </blockquote>
+                        <p>Sukume consistently uses a thorough approach, infusing creativity, great
+                            insight, passion, and excellence in doing their work. I, therefore, recommend
+                            Sukume Consulting without any reservations</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                International President: Africa-Israel Chamber of Commerce </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Hands-on expertise</q>
+                        </blockquote>
+                        <p>Sukume consistently uses a thorough approach, infusing creativity, great
+                            insight, passion, and excellence in doing their work. I, therefore, recommend
+                            Sukume Consulting without any reservations</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                International President: Africa-Israel Chamber of Commerce </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume introduced</q>
+                        </blockquote>
+                        <p>At the East and West African Leadership Summit conferences, Vuyelwa, through Sukume,
+                             introduced the Africa-Israel Chamber of Commerce. This initiative facilitates connections
+                             between African businesses and their counterparts in Africa and Israel, 
+                             fostering business opportunities and partnerships.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                International President: Africa-Israel Chamber of Commerce </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume assisted</q>
+                        </blockquote>
+                        <p>Through Vuyelwa, Sukume and the Vuka Africa team have facilitated South African SMEs'
+                             participation in trade missions to countries like Ethiopia, Nigeria, and Israel,
+                              promoting intra-Africa trade and transforming entrepreneurs' outlook on the continent's potential.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Linda Gobodo </h3>
+                            <p class="identity">
+                                Founder: Vuka Afrika Foundation </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Professionalism</q>
+                        </blockquote>
+                        <p>We highly appreciate your professionalism, knowledge, and clear passion for
+                            this topic. The positive feedback we received from some of the participants is a
+                            testament to the high-quality, engaging manner and interesting experiences and
+                            views of the panel. Once again, thank you so much!</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ron Osman Omar </h3>
+                            <p class="identity">
+                                Senior Policy Officer: African Union Commission </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sterling Work</q>
+                        </blockquote>
+                        <p>On behalf of the Department of Trade, Investment and Competition, I hereby
+                            express our gratitude for your sterling work in moderating the Trade and
+                            Investment Knowledge Network Dialogue. We look forward to your future support
+                            and participation in our strategic stakeholder engagement initiatives</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ms Nontombi Matomela </h3>
+                            <p class="identity">
+                                Acting COO: Department of Trade, Investment and Competition </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Effectively presents</q>
+                        </blockquote>
+                        <p>Vuyelwa, aside from co-organizing the Africa Leadership Summit (ALS) conference for years,
+                             consistently serves as a speaker. She effectively presents
+                              the updated African Economic Outlook to over 200 leaders, participates in business panels,
+                               and facilitates Q&A sessions, playing a pivotal role in the event's success</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/testi2.jpg"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                CEO: Africa Leadership Summit </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //testimonials section -->
     
 
     <!-- footer -->
