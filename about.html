@@ -209,29 +209,37 @@
                 background-size: contain;
                 background-position: center;
                 height: 370px;
-                
             }
     
             /* Adjust the height and background-size for mobile devices */
             @media (max-width: 767px) {
                 .inner-banner {
                     height: 350px;
-                    background-size: cover;
+                    background-image: url('assets/images/inner-bannerphone.jpg');
+                    background-size: contain;
                 }
                 .inner-banner .inner-text-title {
                     margin-top: 205px;
+                }
+    
+                .inner-banner .inner-text-title span {
+                    display: none; /* Hide the span */
+                }
+    
+                .inner-banner .inner-text-title br {
+                    display: none; /* Hide the <br> */
                 }
             }
         </style>
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
-                    <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
+                <h4 style="color: #ffffff; margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
+                    Transformative <br> Economic Development
                 </h4>
             </div>
         </div>
-        
     </section>
+    
     
     <!-- //inner banner -->
 
