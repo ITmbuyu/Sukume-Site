@@ -202,43 +202,52 @@
     <!--// loading animation-->
 
      <!-- inner banner -->
-     <section class="inner-banner">
-        <style>
+     <!-- inner banner -->
+<section class="inner-banner">
+    <style>
+        .inner-banner {
+            background-image: url('assets/images/inner-banner.jpg');
+            background-size: contain;
+            background-position: center;
+            height: 370px;
+        }
+
+        /* Adjust the height and background-size for mobile devices */
+        @media (max-width: 767px) {
             .inner-banner {
-                background-image: url('assets/images/inner-banner.jpg');
+                height: 350px;
+                background-image: url('assets/images/inner-bannerphone.jpg');
                 background-size: contain;
-                background-position: center;
-                height: 370px;
             }
-    
-            /* Adjust the height and background-size for mobile devices */
-            @media (max-width: 767px) {
-                .inner-banner {
-                    height: 350px;
-                    background-image: url('assets/images/inner-bannerphone.jpg');
-                    background-size: contain;
-                }
-                .inner-banner .inner-text-title {
-                    margin-top: 205px;
-                }
-    
-                .inner-banner .inner-text-title span {
-                    display: none; /* Hide the span */
-                }
-    
-                .inner-banner .inner-text-title br {
-                    display: none; /* Hide the <br> */
-                }
+            .inner-banner .inner-text-title {
+                margin-top: 205px;
             }
-        </style>
-        <div class="w3l-breadcrumb py-5">
-            <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 style="color: #ffffff; margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
-                    Transformative <br> Economic Development
-                </h4>
-            </div>
+
+            /* Hide the laptop element on mobile devices */
+            #laptop {
+                display: none;
+            }
+        }
+
+        /* Display the laptop element on screens wider than 767px */
+        @media (min-width: 768px) {
+            #phone {
+                display: none;
+            }
+        }
+    </style>
+    <div class="w3l-breadcrumb py-5">
+        <div class="container py-xl-5 py-md-4 mt-5">
+            <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
+                <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
+            </h4>
+            <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="phone">
+                Transformative Economic Development
+            </h4>
         </div>
-    </section>
+    </div>
+</section>
+
     
     
     <!-- //inner banner -->
@@ -367,13 +376,17 @@
        
                         <h3 class="title-style-2 mb-3"
                         style="font-size: 15px; text-align: center; margin-top: -2px; text-transform: uppercase; font-size: 2.5rem">Capabilities </h3>            
-                        <p>1. Designing and implementing relevant strategies and projects that deliver global competitiveness
-                            and socio-economic transformation across African communities</p>
-                        <p>2. Creating and supporting platforms that promote Made-by-African goods and services, particularly
-                            for SMEs</p>
-                        <p>3. Facilitating trade and investment between African SMEs and large pan-African corporations,
-                            governments, and their global counterparts in ways that foster shared economic growth and empowerment
-                            for local communities</p>
+                        <div style="margin-top: 50px;">
+                            <p>1. Designing and implementing relevant strategies and projects that deliver global competitiveness
+                                and socio-economic transformation across African communities</p>
+                                <br>
+                            <p>2. Creating and supporting platforms that promote Made-by-African goods and services, particularly
+                                for SMEs</p>
+                                <br>
+                            <p> 3. Facilitating trade and investment between African SMEs and large pan-African corporations,
+                                governments, and their global counterparts in ways that foster shared economic growth and empowerment
+                                for local communities</p>
+                        </div>
                         </section>
             </div>
             <div id="ourpurpose" class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
@@ -503,8 +516,8 @@
                             </div>
                         </div>
                         <div class="team-bottom-block p-4">
-                            <h5 class="member mb-1 active"><a href="#team">Tuduetso Mokgosi</a></h5>
-                            <small>CHIEF RESEARCH STRATEGY</small>
+                            <h5 class="member mb-1 active"><a href="#team">Molapokatse Fanana </a></h5>
+                            <small>CHIEF BRAND MARKETING</small>
                         </div>
                     </div>
                 </div>
@@ -529,8 +542,8 @@
                             </a>
                         </div>
                         <div class="team-bottom-block p-4">
-                            <h5 class="member mb-1"><a href="#team">Amanuel Mengistu</a></h5>
-                            <small>CHIEF CONTENT & CREATIVE</small>
+                            <h5 class="member mb-1"><a href="#team">Tuduetso Mokgosi</a></h5>
+                            <small>CHIEF RESEARCH STRATEGY</small>
                         </div>
                     </div>
                 </div>
