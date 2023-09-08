@@ -208,14 +208,15 @@
                 background-image: url('assets/images/inner-banner.jpg');
                 background-size: contain;
                 background-position: center;
-                height: 400px;
+                height: 370px;
+                
             }
     
             /* Adjust the height and background-size for mobile devices */
             @media (max-width: 767px) {
                 .inner-banner {
                     height: 350px;
-                    background-size: contain;
+                    background-size: cover;
                 }
                 .inner-banner .inner-text-title {
                     margin-top: 205px;
@@ -224,9 +225,12 @@
         </style>
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 class="inner-text-title font-weight-bold mb-sm-2">About Us</h4>
+                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
+                    <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
+                </h4>
             </div>
         </div>
+        
     </section>
     
     <!-- //inner banner -->
@@ -317,29 +321,52 @@
         /* Adjust the margin-top for laptops */
         @media (min-width: 992px) {
             .w3l-content-mid .left-img {
-                margin-top: -380px;
+                margin-top: -80px;
             }
+        }
+
+        .with-bevel {
+            position: relative;
+        }
+        
+        .with-bevel::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 20px; /* Adjust the width as needed */
+            background-color: #fff; /* Background color for the bevel */
+            transform: skewX(-45deg); /* Skew the pseudo-element to create the bevel effect */
+            transform-origin: 100% 0;
+            z-index: -1;
         }
     </style>
     <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about"
     style="background-color: rgb(255, 255, 255); margin-top: -50px;">
     <div class="container AboutPageAbout">
         <div class="row top-cont-grid align-items-center">
-            <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last">
+            <div class="col-lg-6 left-img pr-lg-4 order-lg-first order-last with-bevel">
                 <h3 class="title-style-2 mb-3"
                 style="font-size: 15px; text-align: center; margin-top: -40px; text-transform: uppercase; font-size: 2.5rem">Our Purpose </h3>
-                <p class="mt-4">For the past 10 years and onwards, our purpose
-                    is to develop African brands, businesses and
-                    economies for global competitiveness and
-                    socio-economic transformation. We take our
-                    mission so seriously that we work exclusively
-                    with clients and partners with the same organi-
-                    sation mandate or project goals of transforma-
-                    tive economic development.</p> 
-                    
+                <p class="mt-4">For the past 10 years and onwards, our purpose is to develop <b>African brands, businesses and economies</b> for global competitiveness and socio-economic transformation. We take our mission so seriously that we work exclusively with clients and partners with the same organisation mandate or project goals of <b>transformative economic development </b></p> <br>
                     <p>
-                        We believe in co-building with and sharing pros- perity with the communities in which we operate. We galvanise and support our clients and partners to do the same.
+                        We believe in co-building with and sharing prosperity with the communities in which we operate. We galvanise and support our clients and partners to do the same.
                     </p>
+
+
+                    <section class="w3l-content-mid py-5 home-services py-" style="background-color: rgb(255, 255, 255);">
+       
+                        <h3 class="title-style-2 mb-3"
+                        style="font-size: 15px; text-align: center; margin-top: -2px; text-transform: uppercase; font-size: 2.5rem">Capabilities </h3>            
+                        <p>1. Designing and implementing relevant strategies and projects that deliver global competitiveness
+                            and socio-economic transformation across African communities</p>
+                        <p>2. Creating and supporting platforms that promote Made-by-African goods and services, particularly
+                            for SMEs</p>
+                        <p>3. Facilitating trade and investment between African SMEs and large pan-African corporations,
+                            governments, and their global counterparts in ways that foster shared economic growth and empowerment
+                            for local communities</p>
+                        </section>
             </div>
             <div id="ourpurpose" class="col-lg-6 text-6-info mb-lg-0 mb-5 pl-xl-5 order-lg-last order-first">
                 
@@ -414,26 +441,7 @@
 </style>
 
     
-    <!-- //about section -->
-
-    <!-- Our Values -->
-    <section class="w3l-content-mid py-5 home-services py-" style="background-color: rgb(255, 255, 255);">
-       
-        <h3 class="title-style-2 mb-3"
-        style="font-size: 15px; text-align: center; margin-top: -40px; text-transform: uppercase; font-size: 2.5rem">Capabilities </h3>            
-        <ol class="alphabet-list" style="color: #000;">
-            <li>a. Designing and implementing relevant strategies and projects that deliver global competitiveness
-                and socio-economic transformation across African communities</li>
-            <li>b. Creating and supporting platforms that promote Made-by-African goods and services, particularly
-                for SMEs</li>
-            <li>c. Facilitating trade and investment between African SMEs and large pan-African corporations,
-                governments, and their global counterparts in ways that foster shared economic growth and empowerment
-                for local communities</li>
-        </ol>
-        <p>Our clients include African economic development entities, places/nations, businesses, and brands.
-        </p>
-        </section>
-    <!-- //Our Values -->
+   
 
    
 
