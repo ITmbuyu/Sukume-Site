@@ -203,83 +203,51 @@
 
      <!-- inner banner -->
      <!-- inner banner -->
-<section class="inner-banner">
-    <style>
-        .inner-banner {
-            background-image: url('assets/images/inner-banner.jpg');
-            background-size: contain;
-            background-position: center;
-            height: 370px;
-        }
-
-        /* Adjust the height and background-size for mobile devices */
-        @media (max-width: 767px) {
+     <section class="inner-banner">
+        <style>
             .inner-banner {
-                height: 350px;
-                background-image: url('assets/images/inner-bannerphone.jpg');
-                background-size: contain;
-            }
-            .inner-banner .inner-text-title {
-                margin-top: 65px;
-            }
-
-            /* Hide the laptop element on mobile devices */
-            #laptop {
-                display: none;
-            }
-        }
-
-        @media (max-width: 2648px) {
-            .inner-banner {
-                background-image: url('assets/images/inner-bannerphone2648.jpg');
-                background-size: contain;
+                background-image: url('assets/images/inner-banner.jpg');
+                background-size: cover;
                 background-position: center;
-                height: 280px;
+                height: 370px;
             }
-        }
         
-        @media (max-width: 2560px) {
-            .inner-banner {
-                background-image: url('assets/images/inner-bannerphone2560.jpg');
-            }
-        }
+            /* Hide the laptop caption on mobile devices */
+            @media (max-width: 767px) {
+                .inner-banner {
+                    height: 350px;
+                }
         
-        @media (max-width: 759px) {
-            .inner-banner {
-                background-image: url('assets/images/inner-bannerphone759.jpg');
+                .inner-banner #laptop {
+                    display: none;
+                }
+        
+                /* Adjust the margin-top for the mobile caption */
+                .inner-banner #phone {
+                    margin-top: 80px; /* Adjust this value as needed */
+                }
             }
-        }
-
-        @media (max-width: 425px) {
-            .inner-banner {
-                background-image: url('assets/images/inner-bannerphone425.jpg');
+        
+            /* Hide the phone caption on screens wider than 767px */
+            @media (min-width: 768px) {
+                .inner-banner #phone {
+                    display: none;
+                }
             }
-        }
-
-        @media (max-width: 375px) {
-            .inner-banner {
-                background-image: url('assets/images/inner-bannerphone375.jpg');
-            }
-        }
-
-        /* Display the laptop element on screens wider than 767px */
-        @media (min-width: 768px) {
-            #phone {
-                display: none;
-            }
-        }
-    </style>
-    <div class="w3l-breadcrumb py-5">
-        <div class="container py-xl-5 py-md-4 mt-5">
-            <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
-                <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
-            </h4>
-            <h4 style="color: #ffffff;margin-left: 10px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
-                Transformative Economic Development
-            </h4>
+        </style>
+        
+        <div class="w3l-breadcrumb py-5">
+            <div class="container py-xl-5 py-md-4 mt-5">
+                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
+                    <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
+                </h4>
+                <h4 style="color: #ffffff;margin-left: 10px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
+                    Transformative Economic Development
+                </h4>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+    
 
     
     
