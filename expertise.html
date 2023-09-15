@@ -400,7 +400,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
   </style>
 
 
-  <div class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
+  <div id="expertise" class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
       <div class="text-container">
           <h3 class="title-w3l" style=" color: #000;margin-top: -25px;">
                Expertise
@@ -527,11 +527,17 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         
         .tab {
           cursor: pointer;
-          padding: 10px 20px;
           background-color: #eee;
           border: 1px solid #ccc;
           border-radius: 5px;
           margin-right: 10px;
+          width: 100%;
+          height: 500px; /* Set a fixed height for each card */
+          overflow: hidden; /* Hide any content that exceeds the height */
+          border-radius: 10px;
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          transition: all 0.3s ease-in-out;
+          align-items: center;
         }
         
         .accordion {
@@ -541,45 +547,112 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           border-radius: 5px;
           margin-top: 10px;
         }
+
+        .icon-row {
+          display: flex;
+          justify-content: space-between;
+        }
+        
+        .icon {
+          width: 369px;
+          height: 315px;
+          margin-right: 10px;
+        }
+
+        .w3l-content-mid .card {
+          border: none;
+          transition: transform 0.3s ease-in-out;
+          box-shadow: none; /* Remove initial box shadow */
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+    
+        .w3l-content-mid .card-img {
+          height: 500px;
+          width: 100%;
+          object-fit: cover;
+          transition: transform 0.3s ease;
+        }
+    
+        .w3l-content-mid .card-title {
+          color: #4c3661;
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-top: 1rem;
+          text-align: center;
+        }
+    
+        .w3l-content-mid .services-page-purple-list {
+          text-align: center;
+          margin-top: 1rem;
+        }
+    
+        .w3l-content-mid .services-page-purple-list li {
+          margin-bottom: 0.5rem;
+          text-align: left;
+        }
+    
+  
+        
+    
+        
         
       </style>
+    
+      
 
-      <div class="row justify-content-center">
-        <!-- Card 1 -->
-        <div class="col-lg-3 col-md-6 item">
-          <div class="card" style="border: 1px solid #ccc; border-radius: 15px;">
-            <div class="card-body service-details text-center">
-              <a href="services.html" class="service-heading mb-3"
-                style="color: #000; font-size: 1.58rem; font-weight: 450; font-family: Corbel;">
-                Place/Nation Branding
-              </a>
-              <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
-                We align national/development planning with country branding using national identity to deliver country competitiveness and transformation.
-              </p>
-              <div class="card-header p-0 position-relative border-0">
-                <a href="services">
-                  <img class="d-block img-fluid"
-                    src="assets/images/J3.jpg"
-                    alt="card-image">
-                </a>
-              </div>
-            </div>
+      <div  class="tabs">
+        <div class="tab" onclick="toggleAccordion(1)">
+          <div class="card" data-color="#FFC0CB" onclick="handleCardClick(this)">
+            <img style=" width: 100%;
+            height: 500px;
+            object-fit: inherit;
+            transition: transform 0.3s ease;"  src="assets/images/P.png" alt="Strategy Services">
           </div>
         </div>
-        
-        <!-- Card 2 (similar structure for other cards) -->
-        
-      </div>
-
-      <div class="tabs">
-        <div class="tab" onclick="toggleAccordion(1)"><img class="card-img" src="assets/images/Strategy Services.png" alt="Strategy Services"></div>
-        <div class="tab" onclick="toggleAccordion(2)">SME Development</div>
-        <div class="tab" onclick="toggleAccordion(3)">Intra-African Trade</div>
-        <div class="tab" onclick="toggleAccordion(4)">Public Speaking</div>
+        <div class="tab" onclick="toggleAccordion(2)">
+          <div class="card" data-color="#ADD8E6" onclick="handleCardClick(this)">
+            <img style=" width: 100%;
+            height: 500px;
+            object-fit: inherit;
+            transition: transform 0.3s ease;"  src="assets/images/SME.png" alt="Branding Services">
+          </div>
+        </div>
+        <div class="tab" onclick="toggleAccordion(3)">
+          <div class="card" data-color="#98FB98" onclick="handleCardClick(this)">
+            <img style=" width: 100%;
+            height: 500px;
+            object-fit: inherit;
+            transition: transform 0.3s ease;"  src="assets/images/IAT.png" alt="Trade & Investment Services">
+          </div>
+        </div>
+        <div class="tab" onclick="toggleAccordion(4)">
+          <div class="card" data-color="#FFFF00" onclick="handleCardClick(this)">      
+            <img style=" width: 100%;
+            height: 500px;
+            object-fit: inherit;
+            transition: transform 0.3s ease;"  src="assets/images/PSS.png" alt="Public Speaking Services">
+          </div>
+        </div>
       </div>
       
       <div class="accordion" id="accordion1">
         <!-- Card 1 content here -->
+         <!-- Card 1 content -->
+  <div class="icon-row">
+    <!-- First row of icons -->
+    <div class="icon"><img src="assets/images/P1.png" alt="Icon 1"></div>
+    <div class="icon"><img src="assets/images/P2.png" alt="Icon 2"></div>
+    <div class="icon"><img src="assets/images/P3.png" alt="Icon 3"></div>
+  </div>
+  <div class="icon-row">
+    <!-- First row of icons -->
+    <div class="icon"><img src="assets/images/P4.png" alt="Icon 1"></div>
+    <div class="icon"><img src="assets/images/P5.png" alt="Icon 2"></div>
+    <div class="icon"><img src="assets/images/P6.png" alt="Icon 3"></div>
+  </div>
+  <!-- Add more icon rows as needed -->
       </div>
       <div class="accordion" id="accordion2">
         <!-- Card 2 content here -->
@@ -603,255 +676,26 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           const accordionId = `accordion${cardNumber}`;
           const selectedAccordion = document.getElementById(accordionId);
           selectedAccordion.style.display = 'block';
+
+          function handleCardClick(card) {
+            // Remove glow effect from all cards
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => card.style.boxShadow = 'none');
+      
+            // Add glow effect to the selected card
+            const color = card.dataset.color;
+            card.style.boxShadow = `0 0 20px ${color}`;
+          }
         }
+
+      
         
       </script>
     </section>
 
-    <!-- content-6-section -->
-    <style>
-      .w3l-content-mid .card {
-        border: none;
-        transition: transform 0.3s ease-in-out;
-        box-shadow: none; /* Remove initial box shadow */
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-  
-      .w3l-content-mid .card-img {
-        height: 500px;
-        width: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-      }
-  
-      .w3l-content-mid .card-title {
-        color: #4c3661;
-        font-size: 1.2rem;
-        font-weight: 600;
-        margin-top: 1rem;
-        text-align: center;
-      }
-  
-      .w3l-content-mid .services-page-purple-list {
-        text-align: center;
-        margin-top: 1rem;
-      }
-  
-      .w3l-content-mid .services-page-purple-list li {
-        margin-bottom: 0.5rem;
-        text-align: left;
-      }
-    </style>
     
-    <div class="container py-md-5 py-4 w3l-content-mid py-5" style="background-color: rgb(255, 255, 255); margin-bottom: 5px;">
-      <div class="text-container">
-        <h3 class="title-w3l" style="font-size: 2rem; text-align: center; color: #000; margin-top: -50px;">
-          Our Services
-        </h3>
-      </div>
-      <br>
-      <div class="row justify-content-center">
-        <div class="col-lg-3 col-md-6 item">
-          <div class="card" data-color="#FFC0CB" onclick="handleCardClick(this)">
-            <div class="card-body">
-              <h5 class="card-title">Strategy Services</h5>
-            </div>
-            <img class="card-img" src="assets/images/Strategy Services.png" alt="Strategy Services">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 item">
-          <div class="card" data-color="#ADD8E6" onclick="handleCardClick(this)">
-            <div class="card-body">
-              <h5 class="card-title">Branding Services</h5>
-            </div>
-            <img class="card-img" src="assets/images/Branding services.png" alt="Branding Services">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 item">
-          <div class="card" data-color="#98FB98" onclick="handleCardClick(this)">
-            <div class="card-body">
-              <h5 class="card-title">Trade & Investment Services</h5>
-            </div>
-            <img class="card-img" src="assets/images/Trade and Invest.png" alt="Trade & Investment Services">
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 item">
-          <div class="card" data-color="#FFFF00" onclick="handleCardClick(this)">
-            <div class="card-body">
-              <h5 class="card-title">Public Speaking Services</h5>
-            </div>
-            <img class="card-img" src="assets/images/Public Speaking.png" alt="Public Speaking Services">
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <script>
-      function handleCardClick(card) {
-        // Remove glow effect from all cards
-        const cards = document.querySelectorAll('.card');
-        cards.forEach(card => card.style.boxShadow = 'none');
-  
-        // Add glow effect to the selected card
-        const color = card.dataset.color;
-        card.style.boxShadow = `0 0 20px ${color}`;
-      }
-    </script>
-    
-    <!-- //content-6-section -->
  
     
-
-    <article class="content container-fluid capabilityContainer">
-      <div class=row>
-          <h2 class=sectionHeading>Our capabilities extend across four broad areas</h2>
-          <p>We use our Unconventional Wisdom<sup>®</sup> to connect the dots and unearth new meaning.
-              <div class=tabs>
-                  <ul class=tab-list>
-                      <li data-tab=growth-strategy class=active id=growth-strategy><img src=/media/1604/growth-strategy.png alt="Growth Strategy">
-                          <h2>Growth<br>Strategy</h2>
-                          <p><span>We use our unconventional wisdom to uncover ways to drive sustainable growth for our clients.</span>
-                              <li data-tab=comm-strategy id=comm-strategy><img src=/media/1602/communications-strategy.png alt="Communication Strategy">
-                                  <h2>Communication<br>Strategy</h2>
-                                  <p><span>We use data, insights and in-culture context to drive people-first creative &amp; communications excellence for disruptive business growth.</span>
-                                      <li data-tab=data-insights id=data-insights><img src=/media/1603/data-insights.png alt="Data Strategy">
-                                          <h2>Data<br>Strategy</h2>
-                                          <p><span>We use data as a tool to unlock strategic insights enabling sustainable business growth.</span>
-                                              <li data-tab=youth-strategy id=youth-strategy><img src=/media/1605/youth-strategy.png alt="Youth Strategy">
-                                                  <h2>Youth<br>Strategy</h2>
-                                                  <p><span>We are always keeping our eye on the future by staying on the pulse of young people. Our strategies are informed and shaped by the youth as we define opportunities for growth now and in the future.</span></ul>
-              </div>
-              <div class=accordian>
-                  <div class=row>
-                      <ul class=acc-list>
-                          <li class="growth-strategy active">
-                              <header class=acc-header><img src=/media/1604/growth-strategy.png alt="Growth Strategy">
-                                  <h2>Growth Strategy</h2>
-                                  <p><span>We use our unconventional wisdom to uncover ways to drive sustainable growth for our clients.</span>
-                                      <h3 class=growth-strategy>View Capabilities<span class=icon-arrow-down2></span></h3>
-                              </header>
-                              <section class=tab-container>
-                                  <div class=tab-content>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1590/01-brand-strategy.png alt=capabilities>
-                                              <h4>Brand Strategy<span style=display:block> (positioning and architecture)</span></h4>
-                                              <p><a href="/capabilities/brand-strategy/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1591/02-market-entry.png alt=capabilities>
-                                              <h4>Market Entry <span style=display:block>Strategy</span></h4>
-                                              <p><a href="/capabilities/market-entry-strategy/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1592/03-purpose-vision.png alt=capabilities>
-                                              <h4>Purpose, vision and<span style=display:block> values development</span></h4>
-                                              <p><a href="/capabilities/purpose-vision-and-values-development/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1593/04-customer-value.png alt=capabilities>
-                                              <h4>Customer value<span style=display:block> proposition development</span></h4>
-                                              <p><a href="/capabilities/customer-value-proposition-development/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1594/05-go-to-market.png alt=capabilities>
-                                              <h4>Go-to-market <span style=display:block> strategy</span></h4>
-                                              <p><a href="/capabilities/go-to-market-strategy/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      <div class="col-sm-6 col-md-4 col-lg-4 tabs-body-text growth-strategy mt-4 mb-4">
-                                          <p><img src=/media/1595/06-new-brand.png alt=capabilities>
-                                              <h4>New brand development<span style=display:block> and naming</span></h4>
-                                              <p><a href="/capabilities/new-brand-development-and-naming/">Read more <span class=icon-arrow-right2></span></a></div>
-                                  </div>
-                              </section>
-                              <li class=comm-strategy>
-                                  <header class=acc-header><img src=/media/1602/communications-strategy.png alt="Communication Strategy">
-                                      <h2>Communication Strategy</h2>
-                                      <p><span>We use data, insights and in-culture context to drive people-first creative &amp; communications excellence for disruptive business growth.</span>
-                                          <h3 class=comm-strategy>View Capabilities<span class=icon-arrow-down2></span></h3>
-                                  </header>
-                                  <section class=tab-container>
-                                      <div class=tab-content>
-                                          <div class="col-sm-4 tabs-body-text comm-strategy mt-4 mb-4">
-                                              <p><img src=/media/1581/01-communication-creative.png alt=capabilities>
-                                                  <h4>Communication and <span style=display:block>creative strategy</span></h4>
-                                                  <p><a href="/capabilities/communication-and-creative-strategy/">Read more <span class=icon-arrow-right2></span></a></div>
-                                          <div class="col-sm-4 tabs-body-text comm-strategy mt-4 mb-4">
-                                              <p><img src=/media/1582/02-communication-audit.png alt=capabilities>
-                                                  <h4>Communication <span style=display:block> audit</span></h4>
-                                                  <p><a href="/capabilities/communication-audit/">Read more <span class=icon-arrow-right2></span></a></div>
-                                          <div class="col-sm-4 tabs-body-text comm-strategy mt-4 mb-4">
-                                              <p><img src=/media/1583/03-culture-trends.png alt=capabilities>
-                                                  <h4>Cultures <span style=display:block> and trends</span></h4>
-                                                  <p><a href="/capabilities/culture-and-trends/">Read more <span class=icon-arrow-right2></span></a></div>
-                                      </div>
-                                  </section>
-                                  <li class=data-insights>
-                                      <header class=acc-header><img src=/media/1603/data-insights.png alt="Data Strategy">
-                                          <h2>Data Strategy</h2>
-                                          <p><span>We use data as a tool to unlock strategic insights enabling sustainable business growth.</span>
-                                              <h3 class=data-insights>View Capabilities<span class=icon-arrow-down2></span></h3>
-                                      </header>
-                                      <section class=tab-container>
-                                          <div class=tab-content>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1584/01-audience-segmentation.png alt=capabilities>
-                                                      <h4>Audience <span style=display:block> segmentation</span></h4>
-                                                      <p><a href="/capabilities/audience-segmentation/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1585/02-segmentation-internalisation.png alt=capabilities>
-                                                      <h4>Segmentation <span style=display:block> internalisation</span></h4>
-                                                      <p><a href="/capabilities/segmentation-internalisation/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1586/03-ethnographic-research.png alt=capabilities>
-                                                      <h4>Ethnographic <span style=display:block> research</span></h4>
-                                                      <p><a href="/capabilities/ethnographic-research/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1587/04-research-designs.png alt=capabilities>
-                                                      <h4>Research design <span style=display:block> &amp; methodology</span></h4>
-                                                      <p><a href="/capabilities/research-design-and-methodology/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1588/05-category.png alt=capabilities>
-                                                      <h4>Meta analysis <span style=display:block> of existing data</span></h4>
-                                                      <p><a href="/capabilities/meta-analysis-of-existing-data/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              <div class="col-sm-4 tabs-body-text data-insights mt-4 mb-4">
-                                                  <p><img src=/media/1589/05-meta-analysis.png alt=capabilities>
-                                                      <h4>Category and <span style=display:block> marketing audits</span></h4>
-                                                      <p><a href="/capabilities/category-and-marketing-audit/">Read more <span class=icon-arrow-right2></span></a></div>
-                                          </div>
-                                      </section>
-                                      <li class=youth-strategy>
-                                          <header class=acc-header><img src=/media/1605/youth-strategy.png alt="Youth Strategy">
-                                              <h2>Youth Strategy</h2>
-                                              <p><span>We are always keeping our eye on the future by staying on the pulse of young people. Our strategies are informed and shaped by the youth as we define opportunities for growth now and in the future.</span>
-                                                  <h3
-                                                      class=youth-strategy>View Capabilities<span class=icon-arrow-down2></span></h3>
-                                          </header>
-                                          <section class=tab-container>
-                                              <div class=tab-content>
-                                                  <div class="col-sm-4 tabs-body-text youth-strategy mt-4 mb-4">
-                                                      <p><img src=/media/1596/01-youth-segmentation.png alt=capabilities>
-                                                          <h4>Youth <span style=display:block> segmentation</span></h4>
-                                                          <p><a href="/capabilities/youth-segmentation/">Read more <span class=icon-arrow-right2></span></a></div>
-                                                  <div class="col-sm-4 tabs-body-text youth-strategy mt-4 mb-4">
-                                                      <p><img src=/media/1597/02-youth-culture.png alt=capabilities>
-                                                          <h4>Youth culture <span style=display:block> and trends</span></h4>
-                                                          <p><a href="/capabilities/youth-culture-and-trends/">Read more <span class=icon-arrow-right2></span></a></div>
-                                                  <div class="col-sm-4 tabs-body-text youth-strategy mt-4 mb-4">
-                                                      <p><img src=/media/1598/03-youth-strategy.png alt=capabilities>
-                                                          <h4>Youth <span style=display:block> strategy</span></h4>
-                                                          <p><a href="/capabilities/youth-strategy/">Read more <span class=icon-arrow-right2></span></a></div>
-                                                  <div class="col-sm-4 tabs-body-text youth-strategy mt-4 mb-4">
-                                                      <p><img src=/media/1599/04-junior-board.png alt=capabilities>
-                                                          <h4>Junior board of directors <span style=display:block> (research panels)</span></h4>
-                                                          <p><a href="/capabilities/junior-board-of-directors/">Read more <span class=icon-arrow-right2></span></a></div>
-                                                  <div class="col-sm-4 tabs-body-text youth-strategy mt-4 mb-4">
-                                                      <p><img src=/media/1600/05-sunday-times-gennext.png alt=capabilities>
-                                                          <h4>Sunday Times GenNext <span style=display:block>(coolest brand &amp; consumer behaviour)</span></h4>
-                                                          <p><a href="/capabilities/gen-next/">Read more <span class=icon-arrow-right2></span></a></div>
-                                              </div>
-                                          </section>
-                      </ul>
-                  </div>
-              </div>
-      </div>
-  </article>
 
     <!-- footer -->
     <style>
