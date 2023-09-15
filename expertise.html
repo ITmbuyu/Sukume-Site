@@ -206,29 +206,50 @@
     <!-- inner banner -->
   <section class="inner-banner">
     <style>
-        .inner-banner {
-            background-image: url('assets/images/inner-bannero.jpg');
-            background-size: contain;
-            background-position: center;
-            height: 400px;
-        }
+      .inner-banner {
+          background-size: cover;
+          background-position: center;
+          height: 400px;
+          transition: background-image 0.5s ease-in-out;
+      }
 
-        /* Adjust the height and background-size for mobile devices */
-        @media (max-width: 767px) {
-            .inner-banner {
-                height: 320px;
-                background-size: contain;
-            }
-            .inner-banner .inner-text-title {
-                margin-top: 210px;
-            }
-        }
-    </style>
-    <div class="w3l-breadcrumb py-5">
-        <div class="container py-xl-5 py-md-4 mt-5">
-            <h4 class="inner-text-title font-weight-bold mb-sm-2">Services</h4>
-        </div>
-    </div>
+      /* Adjust the height and background-size for mobile devices */
+      @media (max-width: 767px) {
+          .inner-banner {
+              height: 320px;
+              background-size: contain;
+          }
+      }
+  </style>
+
+</div>
+
+
+<script>
+// Array of image URLs
+const images = [
+    'assets/images/banner1.png',
+    'assets/images/banner2.png',
+    'assets/images/banner3.png',
+    'assets/images/banner4.png',
+];
+
+// Function to change the background image
+let currentImageIndex = 0;
+function changeBackgroundImage() {
+    const innerBanner = document.querySelector('.inner-banner');
+    innerBanner.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+
+    // Increment the index or reset to 0 if it reaches the end
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+}
+
+// Change the background image every 5 seconds (5000 milliseconds)
+setInterval(changeBackgroundImage, 5000);
+
+// Initial image
+changeBackgroundImage();
+</script>
 </section>
 
 <!-- //inner banner -->
@@ -402,7 +423,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 
   <div id="expertise" class="w3l-content-mid py-5" style="background-color: rgb(255, 255, 255);">
       <div class="text-container">
-          <h3 class="title-w3l" style=" color: #000;margin-top: -25px;">
+          <h3 class="title-w3l" style=" color: #000;margin-top: -50px;">
                Expertise
           </h3>
       </div>
@@ -419,19 +440,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
               }
           }
       </style>
-      <div class="container py-md-5 py-4 HomePageImageServices" style="margin-top: -20px; ">
+      <div class="container py-md-5 py-4 HomePageImageServices" style="margin-top: -50px; ">
 
           <div class="row justify-content-center">
             <div class="col-lg-3 col-md-6 item">
               <div class="card" style="border: 1px solid #ccc; border-radius: 15px;">
                   <div class="card-body service-details text-center">
-                      <a href="services.html" class="service-heading mb-3"
-                         style="color: #000; font-size: 1.58rem; font-weight: 450; font-family: Corbel;">
-                          Place/Nation Branding
-                      </a>
-                      <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
-                          We align national/development planning with country branding using national identity to deliver country competitiveness and transformation.
-                      </p>
+                                      
                       <div class="card-header p-0 position-relative border-0">
                           <a href="services">
                               <img class="d-block img-fluid"
@@ -439,6 +454,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
                                    alt="card-image">
                           </a>
                       </div>
+                      <a href="services.html" class="service-heading mb-3"
+                      style="color: #000; font-size: 1.58rem; font-weight: 450; font-family: Corbel;">
+                       Place/Nation Branding
+                   </a>    
+                      <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
+                        We align national/development planning with country branding using national identity to deliver country competitiveness and transformation.
+                    </p>
                   </div>
               </div>
           </div>
@@ -449,6 +471,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           <div class="col-lg-3 col-md-6 item">
             <div class="card" style="border: 1px solid #ccc; border-radius: 15px;">
                 <div class="card-body service-details text-center">
+                  <div class="card-header p-0 position-relative border-0">
+                    <a href="services.html">
+                        <img class="d-block img-fluid"
+                             src="assets/images/J1.jpg"
+                             alt="card-image">
+                    </a>
+                </div>
                     <a href="services.html" class="service-heading mb-3"
                        style="color: #000; font-size: 1.58rem; font-weight: 450; font-family: Corbel;">
                         SME Development
@@ -456,13 +485,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
                     <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
                         We develop and implement projects and strategies that support the growth and competitiveness of small businesses.
                     </p>
-                    <div class="card-header p-0 position-relative border-0">
-                        <a href="services.html">
-                            <img class="d-block img-fluid"
-                                 src="assets/images/J1.jpg"
-                                 alt="card-image">
-                        </a>
-                    </div>
+                   
                 </div>
             </div>
         </div>
@@ -470,6 +493,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         <div class="col-lg-3 col-md-6 item">
           <div class="card" style="border: 1px solid #ccc; border-radius: 15px;">
               <div class="card-body service-details text-center">
+                <div class="card-header p-0 position-relative border-0">
+                  <a href="services">
+                      <img class="d-block img-fluid"
+                           src="assets/images/J2.jpg"
+                           alt="card-image">
+                  </a>
+              </div>
                   <a href="services.html" class="service-heading mb-3"
                      style="color: #000; font-size: 1.48rem; font-weight: 450; font-family: Corbel;">
                       Intra-African Trade
@@ -477,13 +507,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
                   <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
                     We promote and facilitate trade in goods and services between or among African countries and the flow of goods and services between Africa and Africans in the Diaspora.
                   </p>
-                  <div class="card-header p-0 position-relative border-0">
-                      <a href="services">
-                          <img class="d-block img-fluid"
-                               src="assets/images/J2.jpg"
-                               alt="card-image">
-                      </a>
-                  </div>
+                  
               </div>
           </div>
       </div>
@@ -491,6 +515,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         <div class="col-lg-3 col-md-6 item">
           <div class="card" style="border: 1px solid #ccc; border-radius: 15px;">
               <div class="card-body service-details text-center">
+                <div class="card-header p-0 position-relative border-0">
+                  <a href="services">
+                      <img class="d-block img-fluid"
+                           src="assets/images/J6.jpg"
+                           alt="card-image">
+                  </a>
+              </div>
                   <a href="services.html" class="service-heading mb-3"
                      style="color: #000; font-size: 1.58rem; font-weight: 450; font-family: Corbel;">
                       Public Speaking
@@ -498,13 +529,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
                   <p class="mb-3" style="text-align: justify; line-height: 1.5;font-family: Corbel;">
                     We engage in public speaking, delivering speeches, talks, and presentations, influencing and informing audiences at various events.
                   </p>
-                  <div class="card-header p-0 position-relative border-0">
-                      <a href="services">
-                          <img class="d-block img-fluid"
-                               src="assets/images/J6.jpg"
-                               alt="card-image">
-                      </a>
-                  </div>
+                  
               </div>
           </div>
       </div>
@@ -555,8 +580,11 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         
         .icon {
           width: 369px;
-          height: 315px;
+          height: 350px;
           margin-right: 10px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
         }
 
         .w3l-content-mid .card {
@@ -594,9 +622,55 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         }
     
   
-        
+        .card-glow {
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
     
+        .read-more {
+          margin-top: 10px; /* Adjust the margin as needed */
+          text-align: center;
+        }
+
+        .selected-card {
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        }
         
+
+        /* Media query for mobile devices */
+      @media (max-width: 767px) {
+    .tabs {
+      flex-direction: column; /* Stack tabs vertically */
+    }
+    
+    .tab {
+      margin-bottom: 20px; /* Add some space between tabs */
+    }
+
+    .accordion {
+      display: none; /* Hide accordions by default */
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    .icon-row {
+      flex-direction: column; /* Display icons in a column on smaller screens */
+      align-items: center; /* Center-align icons horizontally */
+    }
+    
+    .icon {
+      width: 100%; /* Full width for each icon on smaller screens */
+      max-width: 369px; /* Limit the max-width to maintain consistency */
+      height: auto; /* Allow the height to adjust proportionally */
+      margin-right: 0; /* Remove right margin to stack icons vertically */
+    }
+
+    .icon img {
+      max-width: 100%; /* Set a maximum width for images to fit within their containers */
+      height: auto; /* Allow images to adjust proportionally */
+    }
+  }
         
       </style>
     
@@ -604,10 +678,10 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
 
       <div  class="tabs">
         <div class="tab" onclick="toggleAccordion(1)">
-          <div class="card" data-color="#FFC0CB" onclick="handleCardClick(this)">
+          <div class="card" data-color="#FFC0CB" onclick="handleCardClick(this, 1)">
             <img style=" width: 100%;
             height: 500px;
-            object-fit: inherit;
+            object-fit: contain;
             transition: transform 0.3s ease;"  src="assets/images/P.png" alt="Strategy Services">
           </div>
         </div>
@@ -615,7 +689,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           <div class="card" data-color="#ADD8E6" onclick="handleCardClick(this)">
             <img style=" width: 100%;
             height: 500px;
-            object-fit: inherit;
+            object-fit: contain;
             transition: transform 0.3s ease;"  src="assets/images/SME.png" alt="Branding Services">
           </div>
         </div>
@@ -623,7 +697,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           <div class="card" data-color="#98FB98" onclick="handleCardClick(this)">
             <img style=" width: 100%;
             height: 500px;
-            object-fit: inherit;
+            object-fit: contain;
             transition: transform 0.3s ease;"  src="assets/images/IAT.png" alt="Trade & Investment Services">
           </div>
         </div>
@@ -631,7 +705,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           <div class="card" data-color="#FFFF00" onclick="handleCardClick(this)">      
             <img style=" width: 100%;
             height: 500px;
-            object-fit: inherit;
+            object-fit: contain;
             transition: transform 0.3s ease;"  src="assets/images/PSS.png" alt="Public Speaking Services">
           </div>
         </div>
@@ -642,58 +716,228 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
          <!-- Card 1 content -->
   <div class="icon-row">
     <!-- First row of icons -->
-    <div class="icon"><img src="assets/images/P1.png" alt="Icon 1">
-      <br/>
-      <p style="text-align: center;">Read More</p></div>
+    <div class="icon">
+      <img src="assets/images/P1.png" alt="Icon 1">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
     
-    <div class="icon"><img src="assets/images/P2.png" alt="Icon 2"></div>
-    <div class="icon"><img src="assets/images/P3.png" alt="Icon 3"></div>
+    <div class="icon">
+      <img src="assets/images/P2.png" alt="Icon 2">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
+    <div class="icon">
+      <img src="assets/images/P3.png" alt="Icon 3">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
   </div>
   <div class="icon-row">
     <!-- First row of icons -->
-    <div class="icon"><img src="assets/images/P4.png" alt="Icon 1"></div>
-    <div class="icon"><img src="assets/images/P5.png" alt="Icon 2"></div>
-    <div class="icon"><img src="assets/images/P6.png" alt="Icon 3"></div>
+    <div class="icon">
+      <img src="assets/images/P4.png" alt="Icon 1">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
+    
+    <div class="icon">
+      <img src="assets/images/P5.png" alt="Icon 2">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
+    <div class="icon">
+      <img src="assets/images/P6.png" alt="Icon 3">
+      <div class="read-more">
+        <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+      </div>
+    </div>
   </div>
+
+  
   <!-- Add more icon rows as needed -->
       </div>
       <div class="accordion" id="accordion2">
         <!-- Card 2 content here -->
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/SME1.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          
+          <div class="icon">
+            <img src="assets/images/SME2.png" alt="Icon 2">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="assets/images/SME3.png" alt="Icon 3">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/SME4.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          
+          <div class="icon">
+            <img src="assets/images/SME5.png" alt="Icon 2">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="assets/images/SME6.png" alt="Icon 3">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="accordion" id="accordion3">
         <!-- Card 3 content here -->
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/IAT1.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          
+          <div class="icon">
+            <img src="assets/images/IAT2.png" alt="Icon 2">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="assets/images/IAT3.png" alt="Icon 3">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/IAT4.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="accordion" id="accordion4">
         <!-- Card 4 content here -->
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/PS1.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          
+          <div class="icon">
+            <img src="assets/images/PS2.png" alt="Icon 2">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="assets/images/PS3.png" alt="Icon 3">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/PS4.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          
+          <div class="icon">
+            <img src="assets/images/PS5.png" alt="Icon 2">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+          <div class="icon">
+            <img src="assets/images/PS6.png" alt="Icon 3">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
+        <div class="icon-row">
+          <!-- First row of icons -->
+          <div class="icon">
+            <img src="assets/images/PS7.png" alt="Icon 1">
+            <div class="read-more">
+              <p style="text-align: center;">Read More<span class=icon-arrow-right2></span></p>
+            </div>
+          </div>
+        </div>
       </div>
 
       <script>
-        function toggleAccordion(cardNumber) {
+        function toggleAccordion(cardNumber, tabElement) {
           // Hide all accordions
           const accordions = document.querySelectorAll('.accordion');
           accordions.forEach((accordion) => {
             accordion.style.display = 'none';
           });
-        
+      
           // Show the selected accordion
           const accordionId = `accordion${cardNumber}`;
           const selectedAccordion = document.getElementById(accordionId);
           selectedAccordion.style.display = 'block';
-
-          function handleCardClick(card) {
-            // Remove glow effect from all cards
-            const cards = document.querySelectorAll('.card');
-            cards.forEach(card => card.style.boxShadow = 'none');
       
-            // Add glow effect to the selected card
-            const color = card.dataset.color;
-            card.style.boxShadow = `0 0 20px ${color}`;
+          // Remove glow effect from all cards
+          const cards = document.querySelectorAll('.card');
+          cards.forEach(card => card.classList.remove('selected-card'));
+      
+          // Add glow effect to the selected card
+          const selectedCard = tabElement.querySelector('.card');
+          if (selectedCard) {
+            selectedCard.classList.add('selected-card');
           }
+      
+          // Scroll to the selected accordion
+          const offsetTop = tabElement.offsetTop;
+          window.scrollTo({
+            top: offsetTop - 10, // You can adjust this value as needed
+            behavior: 'smooth',
+          });
         }
+      </script>
+      
 
       
-        
-      </script>
+      
+      
+      
+      
     </section>
 
     
