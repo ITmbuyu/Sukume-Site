@@ -93,31 +93,61 @@
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                     <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item ">
+                       <!--  <li class="nav-item ">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Our Services</a>
+                            <a class="nav-link" href="services.html">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Work</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="why-us.html">Why-Us</a>
-                        </li>
-                        <!-- 
+                        </li>                        
+                        -->
                         <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Experience <span class="fa fa-angle-down"></span>
+                                About <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a href="blogs.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
-                                                <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
+                                                <a href="about.html#ourpurpose" class="dropdown-item" id="menu-item-31">Purpose</a>
+                                                <a href="about.html#capabilities" class="dropdown-item" id="menu-item-31">Capabilities</a>
+                                                <a href="about.html#leadership" class="dropdown-item" id="menu-item-31">Leadership</a>
                             </div>
                         </li>
-                        -->
-                        <li class="nav-item active">
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Expertise<span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Place/Nation Branding</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Intra-African Trade</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">SME Development</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Public Speaking</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Work <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="Clients.html#clients-section" class="dropdown-item" id="menu-item-31">Clients</a>
+                                                <a href="Case Studies.html" class="dropdown-item" id="menu-item-31">Case Studies</a>
+                                                <a href="Testimonials.html" class="dropdown-item" id="menu-item-31">Testimonials</a>
+                                                <a href="Footprint.html" class="dropdown-item" id="menu-item-31">Footprint</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Why-Us</a>
+                        </li>    
+                        <li class="nav-item ">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
@@ -357,9 +387,6 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="map-contact col-lg-12 mt-4 d-md-none">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3587.004476185124!2d28.10241481003327!3d-25.967893554294783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95702cbf735277%3A0x7fef571ac517fc6d!2sCarlswald%20Creek!5e0!3m2!1sen!2sza!4v1687164923152!5m2!1sen!2sza" width="100%" height="400" frameborder="0" style="border: 0px;" allowfullscreen=""></iframe>
-                        </div>
                     </div>
                     
 
@@ -393,7 +420,77 @@
                 </div>
 
                <!--Message Must Be Dispalyed here -->
-  
+               <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Function to get URL parameters
+                    function getUrlParameter(name) {
+                        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+                        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+                        var results = regex.exec(location.search);
+                        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+                    }
+                
+                    // Get the content parameter from the URL
+                    const contentKey = getUrlParameter("content");
+                
+                    // Define the content for each key (you can customize this)
+                    const contentMap = {
+                        "Strategy Development and Implementation": "A country’s identity is its soul. It is the ultimate source of national competitiveness.Our team of seasoned strategists combine high level experience to help place/ nation brands traverse the complex world of delivering place/ national development goals using nation branding.We designed and utilise the Competitiveness & Transformation Planner™ (CTP) model.  The CTP is an identity-based approach to build globally competitive African economies, businesses, and brands in ways that deliver socio-economic transformation in local communities.",
+                                        "Stakeholder Management": "This area is arguably the most important ingredient for successful project delivery.  However, it’s often regarded as a fringe activity or one that can be outsourced to business-as-usual functions. Project managers depend on people to respond to the outputs and benefits that they deliver. People will only respond if they are engaged.We craft innovative stakeholder management plans for our clients.  By making certain that key client stakeholders are involved from concept development, buy-in and implementation, we are able to ensure accurate adherence to intended strategy outcomes. We have seen that consistent and effective stakeholder engagement is often what separates the players from the winners.",
+                                        "Promotion of Buy Local": "Promoting of buying local is an important aspect of supporting the local economy. It helps to create jobs, boost the local economy, and promote the development of better public services and prosperity among the greater population. We  create platforms to promote Made-by-African brands through building their awareness as well as facilitating and providing market access for them. This enables our clients and partners  to help build local manufacturing, support home-grown brands and create more wealth in many local communities.",
+                                        "Reputation Management": "A good reputation is priceless. Besides helping organisations to protect and grow their brands, it can establish an excellent place/ brand image, generate trust and credibility amongst their customers, stakeholders, and the public.We design frameworks and  processes for managing and monitoring the perception of our clients’ public. This  involves an iterative process of researching, responding, and promoting. Our reputation management plans help improve and protect our clients’ corporate image for better public perceptions and engagement.",
+                                        "Policy Advice": "Policy advice assists decision-makers make informed choices, maximize the effectiveness of policies and identify potential risks.  The advice also promotes fairness and equity and encourage evidence-based decision-making. Besides informing decision-making, our policy advice is designed to maximizing effectiveness in achieving desired outcomes. We takes into account various factors, such as economic, social, and environmental considerations to develop policy recommendations that are well-aligned with national and institutional  goals.",
+                                        "Branding and Marketing Strategy": "Branding and marketing are two essential components of a successful business strategy.They play a crucial role in shaping how a company is perceived by its target audience and in driving its overall success. They work hand in hand to establish a strong presence in the market, create brand loyalty, and drive business success.Our branding experts design branding and marketing strategies and implementation plans based on the  unique strengths of a client’s brand.  These positioning strategies help businesses define their value propositions, connect with their audience, communicate their value promise, and achieve their goals in a dynamic and competitive environment.",
+                                        "Business Coaching or Business Development Services (BDS)": "Business coaching holds significant importance for SMEs seeking to achieve their goals, enhance performance, and overcome challenges. Our approach to business coaching is collaborative, allowing entrepreneurs to actively participate in addressing their issues and opportunities. We often offer challenging advice that is designed to push the entrepreneur to go beyond conventional solutions.  The process is adaptable and can be customized to suit the specific needs, goals, and preferences of the entrepreneurs and their businesses.   Our  tools and networks combine with a supportive environment to ensure that SMEs learn, develop, and move to the next level in their businesses.",
+                                        "Market Access Platforms": "These refer to online marketplaces that connect buyers and sellers, facilitating the transaction of goods and services. The platforms typically provide a range of services such as product listings, payment processing, customer reviews, and seller ratings.Our platforms promotes Made-by-African SME brands through building their awareness as well as facilitating and providing a broader buyer base for them to grow their brand awareness, footprint  and much-needed sales.",
+                                        "Trade and Investment Facilitation": "Trade and investment facilitation plays a vital role in enhancing international trade, boosting foreign exchange earnings and promoting economic growth.We facilitates trade and investment between African SMEs and pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities.",
+                                        "Trade Missions": "Trade missions offer opportunities for SMEs to explore new markets, establish connections, and gather valuable insights for strategic decision-making. We take SMSs on trade missions to other nations to find opportunities to exports their products and/ or find investment for them.  Our missions  involve careful planning, effective communication, cultural sensitivity, and a clear focus on achieving specific objectives. We collaborate with government entities, business leaders, and industry representatives for maximizing the benefits of trade missions for our entrepreneurs.",
+                                        "Capacity building": "The main role of capacity building is to enable growth, adaptability, and positive change across various domains of an organisation. Capacity building contributes to building more resilient, informed, and capable SMEs, entrepreneurs and organisations.Throughout the entire process, we communicate, engage, and collaborate.  Engaging participants, involving stakeholders, and maintaining open dialogue all contribute to the success of capacity building initiatives. Additionally, we employ flexibility and adaptability as the needs and contexts may evolve over time, requiring adjustments to each of our capacity building projects or initiatives.",
+                                        "Trade Platforms": "Trade platforms are important because they can help investors and traders to access the markets quickly, conveniently, and cost-effectively.We provide market data, analysis tools, and news.   We also provide various analytical tools and indicators to help traders make informed decisions. Our trade platforms provide research tools, educational resources, and market insights to help users understand the markets, make informed trading decisions, and stay updated with the latest news and trends.",
+                                        "Trade Promotion and Facilitation": "Trade promotion and facilitation are crucial for the growth and development of economies at both the national and international levels. We promote and facilitate international trade where countries can tap into new markets and increase exports and investments, which can lead to job creation, higher incomes, and improved living standards.  Through trade and investment promotion activities such as trade fairs, exhibitions, and business networking events, we help companies showcase their products and services, establish new business connections, attract investors and gain a competitive edge over their rivals.",
+                                        "Buy African Thought – Leadership and Advocacy": "African thought leadership and advocacy play a crucial role in shaping the future of the continent. It gives a voice to diverse perspectives and experiences of the continent. This is essential in challenging stereotypes, misinformation, and promoting a more accurate understanding of Africa’s complex realities.We understand Africa.  We have worked across Africa’s diverse markets from the least developed nations like Ethiopia and Lesotho to the upper-middle income economies of South Africa and Botswana. We are are passionate about developing African brands, businesses and economies for global competitiveness and socio-economic transformation.",
+                                        "Export training and development": "This capacitates SMEs to increase the number and value of exports, which contribute to economic growth, job creation and foreign exchange earnings.   It helps countries to improve local manufacturing, diversify their export base and reduce their dependence on foreign imports. Our training and development encourages innovation and learning by exposing businesses to new technologies, standards, and best practices.  We promote regional and international cooperation and integration by strengthening trade relations and partnerships.",
+                                        "Facilitation": "Facilitation promotes effective communication and collaboration among individuals and groups.The nature of our work allows us to enjoy access to African entrepreneurs, large corporations, and governments alike. We facilitate meetings, business forums, connect leadership teams, and add more value to the working relationships of our clients’ stakeholders and partners.",
+                                        "Interviews": "Presentations provide an opportunity for audience engagement and participation. The best presentations make creative use visuals, audio, verbal, and body language communication to effectively connect with their audiences, ensuring the message is understood and retained.We give thoughtful and creative presentations on various topic related to our field of expertise.  We also help SMEs to compile presentations for business pitching so that they can attract sponsors and investors.",
+                                        "business-valuation": "Interviews help audiences gain insights and knowledge from experts or experienced people in their field of interest. They help building audience knowledge, open up opportunities for networking and establish connections with potential clients, partners, collaborators, or employees. We do radio, podcast and television interviews on topics related to economic development in Africa.  We also attract channels to talk about  issues that affect entrepreneurs, place/ nation brands and intra-African trade.",
+                                        
+                                      // Define content for other keys in the same format
+                    };
+                
+                    // Get the container where content will be inserted
+                    const contentContainer = document.getElementById("content-transfer");
+                
+                    // Check if the contentKey exists in the contentMap
+                    if (contentKey in contentMap) {
+                        // Create a header element
+                        const headerElement = document.createElement("h2");
+                        headerElement.textContent = contentKey; // Set the header text
+                        headerElement.style.marginBottom = "10px"; // Add margin at the bottom of the header
+                
+                        // Create a paragraph element for the content
+                        const contentElement = document.createElement("p");
+                        contentElement.textContent = contentMap[contentKey]; // Set the content text
+                        contentElement.style.marginTop = "10px"; // Add margin at the top of the content
+                
+                        // Append the header and content elements to the container
+                        contentContainer.appendChild(headerElement);
+                        contentContainer.appendChild(contentElement);
+                    } else {
+                        // If contentKey not found, display a message
+                        contentContainer.textContent = "Content not found.";
+                    }
+                });
+                </script>
+                
+               <div style="text-align: center;" id="content-transfer"></div>
+               <script>
+                // Get the container where content will be inserted
+const contentContainer = document.getElementById("content-transfer");
+
+// Insert the content into the container
+contentContainer.innerHTML = contentMap[contentKey] || "Content not found.";
+
+               </script>
                 
                 <div class="contact-w3pvt-form mt-5 pt-lg-4 ContactPageForm" style="margin-bottom: -110px;">
                     <form method="post" class="w3layouts-contact-fm" action="">
