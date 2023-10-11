@@ -1,70 +1,72 @@
-
 <!doctype html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sukume &#8211; Why-Us </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Sukume &#8211; About</title>
     <!-- google-fonts -->
     <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
     <!-- //google-fonts -->
     <!-- Font-Awesome-Icons-CSS -->
     <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <script src="https://kit.fontawesome.com/a5ce0f9f64.js" crossorigin="anonymous"></script>
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Custom CSS -->
     <style>
         /* Define styles for the loading animation */
         #loader-wrapper {
-           position: fixed;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           background: #6c5ce7;
-           display: flex;
-           justify-content: center;
-           align-items: center;
-           z-index: 9999;
-         }
-         
-         #loader {
-           width: 80px;
-           height: 80px;
-           border-radius: 50%;
-           border: 8px solid #f1f2f6;
-           border-top-color: #000fff;
-           animation: spin 2s linear infinite;
-         }
-         
-         #loader-inner {
-           width: 100%;
-           height: 100%;
-           background: #000fff;
-           border-radius: 50%;
-           animation: spin-reverse 2s linear infinite;
-         }
-         
-         @keyframes spin {
-           to {
-             transform: rotate(360deg);
-           }
-         }
-         
-         @keyframes spin-reverse {
-           to {
-             transform: rotate(-360deg);
-           }
-         }
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #6c5ce7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
 
-       body {
-           font-family: 'Corbel', sans-serif;
-       }
-   </style>
+        #loader {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 8px solid #f1f2f6;
+            border-top-color: #ffffff;
+            animation: spin 2s linear infinite;
+        }
+
+        #loader-inner {
+            width: 100%;
+            height: 100%;
+            background: #ffffff;
+            border-radius: 50%;
+            animation: spin-reverse 2s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin-reverse {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+
+        body {
+            font-family: "Corbel", sans-serif;
+            /* Replace "Corbel" with the desired font name */
+        }
+    </style>
 </head>
+
 
 <body>
     <!--header-->
@@ -72,12 +74,14 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg stroke">
                 <div id="logo">
-                    <h1> 
-                        <a  href="index.html">
-                            <span>  <a  href="#index.html">
-                              <img src="assets\images/Logo-small.png"  class="responsive" alt="Your logo" title="Your logo" style="max-width:100%;height: 70px;" />
-                          </a></span>
-                        </a> 
+                    <h1>
+                        <a href="index.html">
+                            <span> <a href="#index.html">
+                                    <img src="assets\images/Logo-small.png"
+                                        class="responsive" alt="Your logo" title="Your logo"
+                                        style="max-width:100%;height: 70px;" />
+                                </a></span>
+                        </a>
                     </h1>
                 </div>
 
@@ -87,33 +91,64 @@
                     <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
                     <span class="navbar-toggler-icon fa icon-close fa-times"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="font-family: 'Corbel';">
                     <ul class="navbar-nav ml-lg-auto">
-                        <li class="nav-item">
+                        <li class="nav-item active">
                             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item ">
+                       <!--  <li class="nav-item ">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="services.html">Our Services</a>
+                            <a class="nav-link" href="services.html">Expertise</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Work</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="why-us.html">Why-Us</a>
-                        </li>
-                        <!-- 
+                        </li>                        
+                        -->
                         <li class="nav-item">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Our Experience <span class="fa fa-angle-down"></span>
+                                About <span class="fa fa-angle-down"></span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                <a href="blogs.html" class="dropdown-item" id="menu-item-31">Our Blogs</a>
-                                                <a href="why-us.html" class="dropdown-item" id="menu-item-31">Why Us</a>
+                                                <a href="about.html#ourpurpose" class="dropdown-item" id="menu-item-31">Purpose</a>
+                                                <a href="about.html#capabilities" class="dropdown-item" id="menu-item-31">Capabilities</a>
+                                                <a href="about.html#leadership" class="dropdown-item" id="menu-item-31">Leadership</a>
                             </div>
                         </li>
-                        -->
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Expertise<span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Place/Nation Branding</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Intra-African Trade</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">SME Development</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Public Speaking</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Work <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="work.html#clients" class="dropdown-item" id="menu-item-31">Clients</a>
+                                                <a href="work.html#casetudies" class="dropdown-item" id="menu-item-31">Case Studies</a>
+                                                <a href="work.html#testimonials" class="dropdown-item" id="menu-item-31">Testimonials</a>
+                                                <a href="work.html#experiencefootrptint" class="dropdown-item" id="menu-item-31">Footprint</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Why-Us</a>
+                        </li>    
                         <li class="nav-item ">
                             <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
@@ -170,434 +205,249 @@
     <!--// loading animation-->
 
      <!-- inner banner -->
-  <section class="inner-banner">
-    <style>
-        .inner-banner {
-            background-image: url('assets/images/inner-bannerb.jpg');
-            background-size: contain;
-            background-position: center;
-            height: 400px;
-        }
-
-        /* Adjust the height and background-size for mobile devices */
-        @media (max-width: 767px) {
-            .inner-banner {
-                height: 350px;
-                background-size: contain;
-            }
-            .inner-banner .inner-text-title {
-                margin-top: 205px;
-            }
-        }
-    </style>
-    <div class="w3l-breadcrumb py-5">
-        <div class="container py-xl-5 py-md-4 mt-5">
-            <h4 class="inner-text-title font-weight-bold mb-sm-2">Why Us</h4>
-        </div>
-    </div>
-</section>
-
-<!-- //inner banner -->
-
-    
-
-
-
-    <!-- OurExperience Footprint -->
-    <section class="w3l-content-mid py-5 home-services py-" style="background-color: rgb(255, 255, 255);">
+     <!-- inner banner -->
+     <section class="inner-banner">
         <style>
-            .w3l-content-mid {
-                position: relative;
+            .inner-banner {
+                background-image: url('assets/images/inner-banner.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 370px;
             }
-    
-            .w3l-content-mid video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
+        
+            /* Hide the laptop caption on mobile devices */
+            @media (max-width: 767px) {
+                .inner-banner {
+                    height: 350px;
+                }
+        
+                .inner-banner #laptop {
+                    display: none;
+                }
+        
+                /* Adjust the margin-top for the mobile caption */
+                .inner-banner #phone {
+                    margin-top: 80px; /* Adjust this value as needed */
+                }
             }
-            
+        
+            /* Hide the phone caption on screens wider than 767px */
+            @media (min-width: 768px) {
+                .inner-banner #phone {
+                    display: none;
+                }
+            }
         </style>
         
-        <div class="container py-md-5 py-4 AboutPageServices">
-    
-            <div class="section-heading text-center">
-                <h3 class="title-style-2" style="color: #000;">
-                    Our Experience Footprint</h3>
+        <div class="w3l-breadcrumb py-5">
+            <div class="container py-xl-5 py-md-4 mt-5">
+                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
+                    <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
+                </h4>
+                <h4 style="color: #ffffff;margin-left: 10px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
+                    Transformative Economic Development
+                </h4>
             </div>
-            <br>
-            <br>
-            <div class="row justify-content-center">
-    
-                <img src="assets/images/Map.png" alt="" class="img-responsive img-fluid" />   
-    
-            </div>
-    
         </div>
-       
     </section>
-    <!-- // OurExperience Footprint -->
+    
 
-    <!-- 10 Reasons to partner with us -->
-    <section class="w3l-content-mid py-5 w3l-content-12-main" style="background-color: rgb(255, 255, 255);">
-        <style>
-            .w3l-content-mid {
-                position: relative;
+    
+    
+    <!-- //inner banner -->
+
+    <!-- about section -->
+    <style>
+        .w3l-content-mid {
+            position: relative;
+        }
+    
+        h3, h5, p {
+            color: #000;
+        }
+    
+        /* Fade in effect for headers */
+        h3, h5 {
+            animation: fadeIn 1s;
+        }
+    
+        /* Fade in effect for paragraphs */
+        p {
+            animation: fadeIn 1.5s;
+            margin-top: -10px; /* Adjust the value as needed */
+        }
+    
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
             }
     
-            .w3l-content-mid video {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                z-index: -1;
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
+        .w3l-content-mid h3.title-w3l {
+            animation: bounceIn 1s;
+            font-size: 1.9rem;
+            text-align: center;
+        }
+    
+        @keyframes bounceIn {
+            from, 20%, 40%, 60%, 80%, to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
             }
     
-           
-    
-               .w3l-content-mid .text-container {
-                position: relative;
-                z-index: 1;
-                text-align: center;
-                color: #000;
-                padding: 50px 0;
+            0% {
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3);
             }
     
-            .w3l-content-mid h3.title-w3l {
-                animation: bounceIn 1s;
-                font-size: 2rem;
-                text-align: center;
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
             }
     
-            @keyframes bounceIn {
-    
-                from,
-                20%,
-                40%,
-                60%,
-                80%,
-                to {
-                    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-                }
-    
-                0% {
-                    opacity: 0;
-                    transform: scale3d(0.3, 0.3, 0.3);
-                }
-    
-                20% {
-                    transform: scale3d(1.1, 1.1, 1.1);
-                }
-    
-                40% {
-                    transform: scale3d(0.9, 0.9, 0.9);
-                }
-    
-                60% {
-                    opacity: 1;
-                    transform: scale3d(1.03, 1.03, 1.03);
-                }
-    
-                80% {
-                    transform: scale3d(0.97, 0.97, 0.97);
-                }
-    
-                to {
-                    opacity: 1;
-                    transform: scale3d(1, 1, 1);
-                }
+            40% {
+                transform: scale3d(0.9, 0.9, 0.9);
             }
     
-              @media (max-width: 767px) {
-                .table-responsive {
-                  width: 100%;
-                  margin-bottom: 15px;
-                  overflow-y: hidden;
-                  -ms-overflow-style: -ms-autohiding-scrollbar;
-                  border: 1px solid #ddd;
-                }
-                
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
             }
-              
     
-              
-              
+            80% {
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
     
-            
-        </style>
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
     
+        .why-us-ol {
+            list-style-type: decimal !important;
+            columns: 3;
+            -webkit-columns: 3;
+            -moz-columns: 3;
+            column-gap: 20px; /* Adjust the gap between columns */
+        }
     
-        <div class="content-12 text-left py-5">
-            <div class="text-container">
-                <h3 class="title-w3l" style="animation: bounce 2s infinite; color: #000;">
-                    10 Reasons to Partner with Us
-                </h3>
+        /* Adjust the margin-top for laptops */
+        @media (min-width: 992px) {
+            .w3l-content-mid .left-img {
+                margin-top: -80px;
+            }
+        }
+    
+        .with-bevel {
+            position: relative;
+        }
+    
+        .with-bevel::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 20px; /* Adjust the width as needed */
+            background-color: #fff; /* Background color for the bevel */
+            transform: skewX(-45deg); /* Skew the pseudo-element to create the bevel effect */
+            transform-origin: 100% 0;
+            z-index: -1;
+        }
+    </style>
+    
+    <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about"
+    style="background-color: rgb(255, 255, 255); margin-top: -50px;">
+    <div class="container AboutPageAbout">
+        <div class="textwidget">
+            <div class="sukume-bird-bg">
+                <h3 style="text-align: left; color: #32004b; font-size: 20px;">10 Reasons to Partner with Us</h3>
+                <ol style="list-style-type: decimal !important;">
+                    <li>
+                        <h6 style="color: #32004b; ">Economic Development Expertise</h6>
+                        <p>We <strong>only</strong> work with clients and on projects that have an economic development mandate or objective. This has embedded our mastery as leading edge experts in this area. Our key clients and experience includes:</p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Nation/Place Branding Expertise</h6>
+                        <p>Place/ Nation Branding is one of our focus areas and our biggest Unique Selling Propositions (USP). As a field, it is relatively new and nuanced. It therefore, requires a high level of hands-on experience to help place/ nation branding entities to traverse the complex world of managing the perceptions of global investors, traders, tourists, event owners, etc. We have in-depth experience positioning some African nation brands including South Africa, Botswana, Lesotho and Namibia.
+                            <br>
+                            Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a foundation for development planning, implementation, and brand positioning. We designed the Competitiveness & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building world-class African economies, businesses, and brands in ways that guarantee social and economic transformation among local communities.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Business Forums</h6>
+                        <p>We have experience planning and co/hosting high-level pan-African trade, investment and leadership conferences including:
+                        </p>
+                    </li>
+                    
+                </ol>
+                <div class="why-us-ol">
+                    <li>
+                        <h6 style="color: #32004b; ">Solid Experience</h6>
+                        <p>Our leadership team combines over 40 years’ experience in the areas of Entrepreneurship/ SME Development, Trade, Investment, Branding & Communications. Moreover, as entrepreneurs ourselves, our team adds an innovative flair with leading-edge thinking to the solutions they bring to our clients and partners.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Africa Passion &amp; Knowledge
+                        </h6>
+                        <p>We believe in Africa. The cradle of humanity and the founders of the first civilisations, Africans are rising once again to inspire the world to different ways. We are excited to be Africans and part of the rising generation that is working to transform African communities. We understand Africa. We have worked across Africa’s diverse markets from the least developed nations like Ethiopia and Lesotho to the upper-middle income economies of South Africa and Botswana. We have had to deal with the distinctions and contradictions between African cultures. Our gifted team combine deep roots in various African backgrounds combined with the requisite international experience/ exposure. This provides our clients and partners with a rich diversity of relevant insights and perspectives in providing solutions.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Good Relationships </h6>
+                        <p>The nature of our work allows us to enjoy access to African entrepreneurs, large corporations and governments alike. We use these networks to add value to and benefit our clients and partners.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Flexibility </h6>
+                        <p>We are as comfortable dealing with large multi-national corporations, international organisations and Governments as we are with SMEs and NGOs. We criss-cross smoothly between the emerged and emerging world - having experience with both. We travel extensively and work from Johannesburg, South Africa as well as client locations as is necessary. All this allows us the ability to transfer learnings and best practices from a variety of sources and experiences.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Passion for our Work </h6>
+                        <p>We love what we do and we do what  we love. Our drive spills over into the sometimes unorthodox but effective ways to solve our clients’ and partners’ challenges.
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b; ">Implementation Power </h6>
+                        <p>While sound strategy is critical, it is the effective and timely Implementation that separates the players from the winners. We create innovative project implementation plans for our clients. We get involved to manage those plans to ensure accurate adherence to intended strategy outcomes.
+                        </p>
+                    </li>
+                </div>
+                <ol start="10" style="list-style-type: decimal !important;">
+                    <li>
+                        <h6 style="color: #32004b; ">African Female Empowered</h6>
+                        <p>We are proud to be a 100% black, female-owned, managed and led business
+                        </p>
+                    </li>
+                </ol>
             </div>
-            <style>
-                @keyframes bounce {
-    
-                    0%,
-                    100% {
-                        transform: translateY(0);
-                    }
-    
-                    50% {
-                        transform: translateY(-10px);
-                    }
-                }
-            </style>
-    
-                            <div class="container py-md-5 py-4 HomePageContentTabs">
-    
-                                <div class="content-info-tabs text-center">
-    
-                                    <input id="tab1" type="radio" name="tabs" checked>
-                                    <label style="color: #000;" class="tabtle" for="tab1">1. Varied and Complimentary Experience</label>
-    
-                                    <input id="tab2" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab2">2. Transformative Economic Development Expertise</label>
-    
-                                    <input id="tab3" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab3">3. Nation/Place Branding Expertise</label>
-                                    
-                                    <input id="tab4" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab4">4. Africa & Emerging Markets Knowledge</label>
-                                    
-                                    <input id="tab5" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab5">5. Good Relationships</label>
-    
-                                    <input id="tab6" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab6">6. Flexibility</label>
-    
-                                    <input id="tab7" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab7">7. Business Forums</label>
-    
-                                    <input id="tab8" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab8">8. Value Addition</label>
-    
-                                    <input id="tab9" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab9">9. Presenting and Report Writing</label>
-    
-                                    <input id="tab10" type="radio" name="tabs">
-                                    <label style="color: #000;" class="tabtle" for="tab10">10. African Female Empowered</label>
-    
-                                    <section id="content1" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                <div style="text-align: center;color: #000;" class="sukume-pp-service-quote"><strong>“Strategic planning is the key to warfare; to win, you need a lot of good counsel."</strong><br><span>Prov. 24:6</span></div>
-                                                <br>
-                                                    <p style="color: #000;">We combine over <strong>15 years</strong> experience in Strategy, Trade & Investment and Branding</p>
-                                            </div>
-                                            
-    
-                                        </div>
-                                    </section>
-    
-                                    <section id="content2" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                    <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>“Define your identity, unlock your unique purpose!”</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                    <br>
-                                                    <p style="color: #000;">We have particular exposure, experience and a genuine passion for the core subject matter of transformative economic development. Our key clients include:</p>
-                                                    <br>
-                                                   
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content3" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div class="col-lg-6 column">
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>“Define your identity, unlock your unique purpose!”</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                    <br>
-                                                    <p style="color: #000;">Nation Branding (reputation management) is one of our biggest Unique Selling Propositions (USPs). As a field, it is relatively new, highly nuanced and therefore requires high levels and
-                                                        hand-on experience to help nations/regions/city-branding entities to traverse the complex world of managing the perceptions of global investors, traders, tourists, event owners, etc.
-                                                        We have in-depth experience positioning and managing the global reputations of African nation brands. We create value propositions that depict African countries as attractive destinations
-                                                        for doing business, visiting, living, etc.</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content4" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">We understand Africa and emerging markets. We have worked across Africa’s diverse markets from the least developed nations like Ethiopia and Lesotho to the middle to higher end economies
-                                                    of South Africa and Botswana. We have had to deal with the distinctions and contradictions between African cultures. We have successfully navigated the relatively unknown consumer
-                                                    markets of the “forgotten economies” at the bottom of the pyramid in Africa and to a lesser extent, the Middle East and Latin America.</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content5" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">The nature of our work allows us to enjoy great relationships with some African governments. Oftentimes who you know, really does make a difference!</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content6" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">We are as comfortable dealing with large multinational corporations, international organisations and Governments as we are with SMMEs and NGOs. We criss-cross smoothly between the emerged
-                                                    and emerging world - having experience with both. We travel extensively and work from Johannesburg, South Africa, Addis Ababa, Ethiopia as well as client locations as is necessary.
-                                                    All this allows us the ability to transfer learnings and best practices from a variety of sources and experiences.</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content7" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote">
-                                                    <strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br>
-                                                    <span>Vuyelwa Nyakaza</span>
-                                                </div>
-                                                <br>
-                                                <p style="color: #000;">We have experience conceptualising, planning and co/hosting large high-level pan-African and global trade &amp; investment as well as leadership events including:</p>
-                                                <br>
-                                                <table>
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Event</th>
-                                                            <th>Location</th>
-                                                            <th>Date</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Africa Maritime Indaba</td>
-                                                            <td>Johannesburg, South Africa</td>
-                                                            <td>2013</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Vuka Africa Foundation launch</td>
-                                                            <td>Johannesburg, South Africa</td>
-                                                            <td>2014</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Arise conference</td>
-                                                            <td>Addis Ababa, Ethiopia</td>
-                                                            <td>January, 2015</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Leadership Summit conferences</td>
-                                                            <td>Israel: Jerusalem</td>
-                                                            <td>August, 2015</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Leadership Summit conferences</td>
-                                                            <td >Kenya: Nairobi, Nakuru</td>
-                                                            <td>March, 2016</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Leadership Summit conferences</td>
-                                                            <td >Nigeria: Calabar, Ile Ife,<br> Abuja, Lagos</td>
-                                                            <td>July, 2016</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Leadership Summit conferences</td>
-                                                            <td >Lesotho: Maseru</td>
-                                                            <td>April 2017</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Africa Leadership Summit conferences</td>
-                                                            <td >Israel: Jerusalem</td>
-                                                            <td>August, 2017</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    
-    
-                                    <section id="content8" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">We add <strong>value beyond the call of our duty</strong> due to our own focus on African economic development, our understanding of key global and African economic trends, strategic
-                                                    sectors and our good relationships with some African Governments</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content9" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style="text-align: center; color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">As consultants, we have developed excellent presentation and report-writing skills. Our abilities in these areas are proven by the number of successful proposals and return business from
-                                                    our clients.</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                    <section id="content10" class="tab-content">
-                                        <div class="row content12 align-items-center">
-                                            <div>
-                                                <div style=" color: #000;" class="sukume-pp-service-quote"><strong>"If you can speak, you can influence. If you can influence, you can change lives"</strong><br><span>Vuyelwa Nyakaza</span></div>
-                                                <br>
-                                                <p style="color: #000;">We are proud to be a 100% black, female-owned and managed business.</p>
-                                            </div>
-                                           
-                                        </div>
-                                    </section>
-    
-                                </div>
-    
-                            </div>
-
-                            <script>
-                                // Add event listeners to the radio buttons to handle tab switching
-                                var tabs = document.querySelectorAll('input[name="tabs"]');
-                                tabs.forEach(function(tab) {
-                                  tab.addEventListener('change', function() {
-                                    var tabContents = document.querySelectorAll('.tab-content');
-                                    tabContents.forEach(function(content) {
-                                      content.style.display = 'none';
-                                    });
-                                    var target = this.getAttribute('id').replace('tab', 'content');
-                                    var targetContent = document.getElementById(target);
-                                    if (targetContent) {
-                                      targetContent.style.display = 'block';
-                                    }
-                                  });
-                                });
-                              </script>
-                             
-                              
-                              
-                              
-                              
-                              
-                              
-                              
-    
+        </div>
+    </div>
     </div>
     
-    </section>
-    <!-- // 10 Reasons to partner with usn -->
+
+
+<section>
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+      </ol> 
+</section>
+    
+   
+
+   
+
+
+
 
     <!-- footer -->
     <style>

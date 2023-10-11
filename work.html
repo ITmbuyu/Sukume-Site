@@ -1,0 +1,1418 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sukume &#8211; Why-Us </title>
+    <!-- google-fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- //google-fonts -->
+    <!-- Font-Awesome-Icons-CSS -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="assets/js/jquery.prettyPhoto.js">
+    <!-- Custom CSS -->
+    <style>
+        /* Define styles for the loading animation */
+        #loader-wrapper {
+           position: fixed;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           background: #6c5ce7;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           z-index: 9999;
+         }
+         
+         #loader {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+           border: 8px solid #f1f2f6;
+           border-top-color: #000fff;
+           animation: spin 2s linear infinite;
+         }
+         
+         #loader-inner {
+           width: 100%;
+           height: 100%;
+           background: #000fff;
+           border-radius: 50%;
+           animation: spin-reverse 2s linear infinite;
+         }
+         
+         @keyframes spin {
+           to {
+             transform: rotate(360deg);
+           }
+         }
+         
+         @keyframes spin-reverse {
+           to {
+             transform: rotate(-360deg);
+           }
+         }
+
+       body {
+           font-family: 'Corbel', sans-serif;
+       }
+   </style>
+</head>
+
+<body>
+    <!--header-->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg stroke">
+                <div id="logo">
+                    <h1>
+                        <a href="index.html">
+                            <span> <a href="#index.html">
+                                    <img src="assets\images/Logo-small.png"
+                                        class="responsive" alt="Your logo" title="Your logo"
+                                        style="max-width:100%;height: 70px;" />
+                                </a></span>
+                        </a>
+                    </h1>
+                </div>
+
+                <button class="navbar-toggler  collapsed bg-gradient" type="button" data-toggle="collapse"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+                    <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+                </button>
+                
+                
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="font-family: 'Corbel';">
+                    <ul class="navbar-nav ml-lg-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                       <!--  <li class="nav-item ">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Expertise</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Why-Us</a>
+                        </li>                        
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                About <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="about.html#ourpurpose" class="dropdown-item" id="menu-item-31">Purpose</a>
+                                                <a href="about.html#capabilities" class="dropdown-item" id="menu-item-31">Capabilities</a>
+                                                <a href="about.html#leadership" class="dropdown-item" id="menu-item-31">Leadership</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Expertise<span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Place/Nation Branding</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Intra-African Trade</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">SME Development</a>
+                                                <a href="expertise.html#expertise" class="dropdown-item" id="menu-item-31">Public Speaking</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Work <span class="fa fa-angle-down"></span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a href="work.html#clients" class="dropdown-item" id="menu-item-31">Clients</a>
+                                                <a href="work.html#casetudies" class="dropdown-item" id="menu-item-31">Case Studies</a>
+                                                <a href="work.html#testimonials" class="dropdown-item" id="menu-item-31">Testimonials</a>
+                                                <a href="work.html#experiencefootrptint" class="dropdown-item" id="menu-item-31">Footprint</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="why-us.html">Why-Us</a>
+                        </li>    
+                        <li class="nav-item ">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--//header-->
+
+    <!--loading animation-->  
+    <div class="loading">
+        <div class="spinner">
+          <div class="circle"></div>
+          <img src="assets/images/Logo-small.png" alt="Logo" width="30px" height="30px">
+        </div>
+      </div>
+      
+      <style>
+      .loading {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background-color: purple;
+      }
+      
+      .spinner {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: transparent;
+        animation: spin 1s infinite;
+      }
+      
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+    <!--// loading animation-->
+
+     <!-- inner banner -->
+  <section class="inner-banner">
+    <style>
+        .inner-banner {
+            background-image: url('assets/images/inner-bannerb.jpg');
+            background-size: contain;
+            background-position: center;
+            height: 400px;
+        }
+
+        /* Adjust the height and background-size for mobile devices */
+        @media (max-width: 767px) {
+            .inner-banner {
+                height: 350px;
+                background-size: contain;
+            }
+            .inner-banner .inner-text-title {
+                margin-top: 205px;
+            }
+        }
+    </style>
+    <div class="w3l-breadcrumb py-5">
+        <div class="container py-xl-5 py-md-4 mt-5">
+            <h4 class="inner-text-title font-weight-bold mb-sm-2">Why Us</h4>
+        </div>
+    </div>
+</section>
+
+<!-- //inner banner -->
+
+
+
+    <!--clients  -->
+
+    <style>
+        /* gallery */
+    
+        .subheading-block {
+            background: #7f7f7f;
+            padding: 15px;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+    
+    ul.portfolio-area li figure {
+        margin: 0;
+    }
+    
+    .portfolio-categ li {
+        color: #333;
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 25px;
+        font-weight: 600;
+        border-radius: 30px;
+        font-size: 1.1em;
+        margin: 0 0.1em;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+    
+    .portfolio-categ li a {
+        color: #333;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    
+    .image-block {
+        display: block;
+        position: relative;
+    }
+    
+    .portfolio-area li {
+        list-style-type: none;
+        overflow: hidden;
+        width: 290px;
+        margin: 10px;
+    }
+    
+    .home-portfolio-text {
+        margin-top: 10px;
+    }
+    
+    .portfolio-categ li.active {
+        background: #009688;
+        color: #fff;
+    }
+    
+    .portfolio-categ li.active a {
+        color: #fff;
+    }
+    
+    
+    /* //gallery */
+    </style>
+
+    <section id="clients" class="wthree-row w3-gallery py-sm-5 py-3" id="section3" style="margin-top: -100px;">
+        <div class="container-fluid py-md-5 py-3 text-center">
+            <h3 class="heading text-center text-capitalize mb-5">Clients</h3>
+            <!-- Row 1 -->
+            <div class="subheading-block">
+                <h4 class="subheading" style="color: #fff;">Place/Nation Branding</h4>
+            </div>
+            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                    <div>
+                        <span class="image-block img-hover">
+                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/dtc1.png"  class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/VUkaafrica1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/momentum.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/AICC1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/WAKS1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                
+    
+                
+                <!-- Add more portfolio items for Design here -->
+            </ul>
+    
+            <!-- Row 2 -->
+            <div class="subheading-block">
+                <h4 class="subheading" style="color: #fff;">SME Development</h4>
+            </div>
+            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                    <div>
+                        <span class="image-block img-hover">
+                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/au1.png"  class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/FoodNext1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/AMT1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/als1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/AICC1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                
+    
+                
+                <!-- Add more portfolio items for Design here -->
+            </ul>
+    
+            <!-- Row 3 -->
+            <div class="subheading-block" >
+                <h4 class="subheading" style="color: #fff;">Intra-African Trade</h4>
+            </div>
+            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                    <div>
+                        <span class="image-block img-hover">
+                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/SA1.png"  class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/Botswana1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/Namabia1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/LNDC1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                    <div>
+                        <span class="image-block">
+                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
+                                <img src="assets/images/au1.png" class="img-fluid w3layouts agileits" alt="">
+                            </a>
+                        </span>
+                    </div>
+                </li>
+                
+    
+                
+                <!-- Add more portfolio items for Design here -->
+            </ul>
+        </div>
+
+        <!-- //gallery container -->
+    </section>
+    
+<!-- //clients -->
+
+<!-- Case studies -->
+
+<section id="casetudies" class="wthree-row w3-gallery py-sm-5 py-3" id="section4" style="margin-top: -100px;">
+    <div class="container-fluid py-md-5 py-3 text-center">
+        <h3 class="heading text-center text-capitalize mb-5">Case Studies</h3>
+        <!-- Row 1 -->
+        <div class="subheading-block">
+            <h4 class="subheading" style="color: #fff;">Place/Nation Branding</h4>
+        </div>
+        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                <div>
+                    <span class="image-block img-hover">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Botswana Investment and Trade Centre/ Brand Botswana',
+                            projectType: 'Strategy Development',
+                            industry: 'Place/ Nation Branding',
+                            duration: '12 months',
+                            task: 'Develop a 5-year brand strategy for Brand Botswana',
+                            approach: '',
+                            outcome: 'We achieved two firsts in Brand Botswana’s history. One is a nation brand strategy that was developed in close collaboration with the country’s key stakeholders. This met the crucial goal of a unified national stakeholder partnership for effective and more impactful implementation. Two is that the CTP approach ensures closer alignment between the national planning and nation branding – a critical factor for effective country competitiveness and transformation. The latter facilitates ease of national brand and reputation management.',
+                            logo: 'assets/images/Botswana1.png', // Include the logo URL here
+                            testimonial: 'We were impressed by Sukume’s global insight, their capacity to think beyond the obvious and their ability to take strategic concepts and turn them into practical outcomes. We thus recommend Sukume Consulting without reservation.', 
+                            clientName: 'By:Gaorekwe , Executive Director',
+                            clientCompany: 'Botswana Investment and Trade Centre on Brand Botswana'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg"  class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Lesotho National Development Corporation',
+                            projectType: 'Strategy Development',
+                            industry: 'Place/ Nation Branding',
+                            duration: '6 months',
+                            task: 'Develop the original brand strategy and management framework for the to-be-defined LesothoBrand. Conduct a benchmark costing exercise as an input into the budget for implementing the strategy.',
+                            approach: 'We reviewed key strategic national documents and conducted online research to understand the global and regional context for Lesotho. Thereafter, we undertook consultations with key national stakeholders to determine the core elements of the national brand including the country’s brand positioning, unique value propositions, and brand concept. We provided a review of the general context and dynamics of nation branding entities (NBEs) and identified best practice performers and their processes. We also investigated general insights from established NBEs, advertising and communication agencies in South Africa, Lesotho, and Botswana. We then provided detailed structure and cost estimates for the establishment of an entirely new nation branding organization for Lesotho. The work was concluded with a detailed timing schedule to guide the implementation of the strategy.',
+                            outcome: 'A robust new nation brand strategy for Lesotho plus a framework to manage the delivery of the work. The strategy and framework were informed by relevant and up-to-date nation branding sector insights to avoid costly mistakes and optimise market entry. The benchmark information compiled gave Lesotho vital ‘institutional knowledge’ that may otherwise have take years to acquire.',
+                            logo: 'assets/images/LNDC1.png', // Include the logo URL here
+                            testimonial: 'Sukume has consistently displayed high levels of excellence, integrity and depth of insight. Their passion for developing strategies, branding nations and boosting economic development for African countries is expressed in everything they do.', 
+                            clientName: 'By: Marina Mapitso Bizabani: Manager, Foreign Direct Investment,',
+                            clientCompany: 'Lesotho National Development Centre on Brand Lesotho'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Namibia Trade Forum',
+                            projectType: 'Theme statement and creative',
+                            industry: 'Place/ Nation Branding',
+                            duration: '4 months',
+                            task: 'Develop a theme statement and and design related creative for Namibia’s country pavilion for the World Expo 2020 in Dubai. The statement and creative were to be in line with a given conference theme.',
+                            approach: 'We conducted research to understand Namibia’s unique and competitive strengths as a basis for an accurate, aligned and inspiring theme statement. We then developed the theme statement including professional and attractive creative materials. An expo logo and corporate identity (branding guidelines) were developed to guide the construction of the Namibian pavilion at the World Expo 2020. The given theme positioned Namibia as a sustainable renewable energy hub in Africa.',
+                            outcome: 'The theme statement and creative produced portrayed Namibia’s beautiful diversity of sceneries, culture, and sought to capture global interest in the country’s investment potential in Tourism, Energy, Mining, and Innovation. The pavilion promoted Namibia as a stable, diverse and the ultimate investment location. Overall, it stimulated interest in the world to discover Namibia as a destination with significant economic potential.',
+                            logo: 'assets/images/NTF2.jpg', // Include the logo URL here
+                            testimonial: 'In developing a theme statement and creative work for Namibia’s Expo 2020 pavilion, Sukume’s was given incredibly tight deadlines. Working over public holidays and weekends, they  went beyond the call of duty delivering high quality, professional and inspiring work.   We were proud of our showcasing at our national stand and grateful to have worked with Sukume.', 
+                            clientName: 'By: Ndiitah Nghipondoka-Robiati: Chief Executive Officer',
+                            clientCompany: 'Namibia Trade Forum'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            
+
+            
+            <!-- Add more portfolio items for Design here -->
+        </ul>
+
+        <!-- Row 2 -->
+        <div class="subheading-block">
+            <h4 class="subheading" style="color: #fff;">SME Development</h4>
+        </div>
+        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                <div>
+                    <span class="image-block img-hover">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Momentum',
+                            projectType: 'Strategy Development',
+                            industry: 'Business coaching, Business Development Services (BDS)',
+                            duration: '4 years running',
+                            task: '1. Help to select deserving entrepreneurs to win a share of R1 million cash 2. Provide business coaching/ business development services (BDS) for wining SMEs to address key constraints/ take advantage of key opportunities and ultimately, to build their capacity and grow',
+                            approach: 'We design the project proposal and implementation plan to provide business coaching/ BDS to entrepreneurs and are involved in the selection process to identify the winning SMEs. A Needs Analysis is conducted to gauge the most pressing challenges and the biggest opportunities for the SME businesses to address. Insights from the Needs Analysis, one-on-one interviews, site visits, business area immersions, etc. help to design a more customised approach to each BDS program. The delivery of business coaching to SMEs is done as an iterative process where entrepreneurs work with us to identify impact areas for the intervention, conduct research, develop and deliver content to address their selected impact areas be it operations, finance, marketing, etc. We guide the SMEs through providing clear assignment briefs, tools, and strategic advice in addressing the impact areas. Where necessary, we co-ordinate the involvement of other technical area experts to provide relevant inputs into the BDS program. We use the process to also train and develop young BDS/ Business coaching consultant experts for future interventions.',
+                            outcome: 'The business coaching interventions serve to help entrepreneurs gain the appropriate mindset, exposure and experience to identify, prioritise and solve their own problems and/ or take advantage of relevant market opportunities. Sukume’s approach ultimately empowers SME founders with life-long skills to shift their businesses closer to scaling and growth.',
+                            logo: 'assets/images/momentum.png', // Include the logo URL here
+                            testimonial: 'Sukume understands that most small businesses are kindled and sustained by the dream of becoming big companies. We were surprised and delighted by their Big-Small Business Approach to Business Coaching. This approach more thoroughly prepares entrepreneurs with the mindset, tools and technologies to grow into solid businesses with the capacity to scale into bigger businesses.', 
+                            clientName: 'By: Charlotte Nsubuka-Mukasa, Head of Marketing',
+                            clientCompany: 'Momentum '
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg"  class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Department of Trade, Industry and Competition',
+                            projectType: 'Market Research',
+                            industry: 'Business coaching, Business Development Services (BDS)',
+                            duration: '1 year',
+                            task: '1. Assess the effectiveness of selected marketing campaigns of the Department of Trade, Industry and Competition (DTIC) 2. Determine the communication needs of target audiences and key stakeholders of the DTIC',
+                            approach: 'We reviewed desk research on key selected projects and other relevant documents and conducted the DTIC’s client engagement workshop for key insights on the project context. We followed up by conducting one-on-one in-depth interviews with key internal stakeholders to understand the DTIC’s processes and assumptions in identifying and selecting export-ready entrepreneurs for capacity building and international trade. We also conducted qualitative research in the form of focus group discussions to understand the relevance and effectiveness of the DTIC’s communication to them. We reviewed the content, relevance, and platforms of DTIC’s marketing and communication initiatives. We thereafter conducted quantitative research in the form of CATI (computer-assisted telephone interviews) and CAPI (computer-assisted person interviews). The aim was to investigate the reach of the communication campaigns implemented by the DTIC and analyse the visibility of the DTIC programmes to the broader public and key stakeholders.',
+                            outcome: 'An outline of successes and shortcomings of the campaigns and recommendations on how the identified shortcomings should be avoided in future campaigns. The practical recommendations guided how future campaigns could effectively reach the target audience and the produced the type of communication channels and tools that are likely to have high impact for various audiences/stakeholders.',
+                            logo: 'assets/images/dtc1.png', // Include the logo URL here
+                            testimonial: '', 
+                            clientName: '',
+                            clientCompany: 'Department of Trade, Industry and Competition'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Africa-Israel Chamber of Commerce',
+                            projectType: 'Business establishment, Capacity building, Branding and marketing',
+                            industry: 'SME/ Entrepreneurship Development',
+                            duration: '3 years',
+                            task: 'Work with a Think Tank team to establish the Africa-Israel Chamber of Commerce (AICC), a pan-African and global chamber that aims to create strong links between African, Israeli and international businesses for mutual opportunities, networking and market access.',
+                            approach: 'We conducted research of Israel-related and other relevant chambers to learn and gather possible input for the AICC. We sought to understand best-practice models for chambers of commerce in Africa and globally. AICC structures, systems and operational procedures were established and and later, we designed the AICC brand logo and built the website. We toured Africa to promote the AICC amongst African entrepreneurs and later, travelled to Israel to engage business associations, government and state-owned entities, entrepreneurs, etc. to build networks to support the work of the AICC. Research on Africa’s economic prospects was done in preparation to present the Africa Economic Outlook to African and Israeli audiences at the Africa Leadership Summit conferences in Israel, Nigeria, South Africa, Kenya, Lesotho, etc.',
+                            outcome: 'Sukume’s involvement in establishing the AICC equipped the organisation with professional procedures and tools to enable it to grow. The branding and promotional work and tools established an appropriately global best practice organisational brand image and approach to help it appeal to the relevant target markets.',
+                            logo: 'assets/images/AICC1.png', // Include the logo URL here
+                            testimonial: 'Sukume consistently uses a thorough approach, infusing creativity, great insight, passion, and excellence in doing their work. I, therefore, recommend Sukume Consulting without any reservations', 
+                            clientName: 'By: Olusegun Olanipekun, International President',
+                            clientCompany: 'Africa-Israel Chamber of Commerce'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Wakanda Food Accelerator',
+                            projectType: 'Business establishment, Capacity building',
+                            industry: 'SME/ Entrepreneurship Development',
+                            duration: '2 years',
+                            task: '1. Assist to establish Wakanda including setting up the company’s operating processes and systems 2. Develop and manage the implementation of a 3-year corporate strategy and annual business plans 3. Hire, manage and train staff 4. Initiate and manage key projects',
+                            approach: 'The work began by an immersion into the daily operations of the newly-established business to understand its functioning. Once the operational context was better understood, networks were reached to capacitate the organization firstly with human resources. Thereafter, in-depth research was conducted at a global, regional (Africa) and local (South Africa) level as inputs to develop the corporate strategy. Then annual business planning and management occurred to ensure the implementation as well as the periodic evaluation of Wakanda’s strategy. Clear systems and processes were developed and implemented and as the organization grew, more staff and managers were hired, trained and capacitated.',
+                            outcome: 'Sukume brought operational order, greater efficiency and strategic depth and direction to the founding of Wakanda. Our first-rate corporate expertise, functional excellence, and high levels of commitment helped the company to achieve its business goals and served to prepare it for rapid growth.',
+                            logo: 'assets/images/WAKS1.png', // Include the logo URL here
+                            testimonial: 'Sukume is adept at designing, implementing, and managing the delivery of systems, processes, and tools for establishing businesses and growing the efficiency of its operations. In all their work they bring strategic depth, first-rate quality and high levels of commitment to achieving business and project goals.', 
+                            clientName: 'By: Miles Kubheka, CEO',
+                            clientCompany: 'Wakanda Food Accelerator'
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            
+
+            
+            <!-- Add more portfolio items for Design here -->
+        </ul>
+
+        <!-- Row 3 -->
+        <div class="subheading-block" >
+            <h4 class="subheading" style="color: #fff;">Intra-African Trade</h4>
+        </div>
+        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
+            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
+                <div>
+                    <span class="image-block img-hover">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'Africa Leadership Summit',
+                            projectType: 'Leadership and business conferences',
+                            industry: 'SME/ Entrepreneurship Development',
+                            duration: '5 years',
+                            task: '1. Work with the technical team and assist to plan and deliver the main bi-ennial Africa Leadership Summit (ALS) conference in Jerusalem, Israel and others in West, East and Southern Africa 2. Prepare and present the Africa Economic Outlook and later, promote the Africa Israel Chamber of Commerce (AICC) at the conference 3. Help organize business interactions, networking, business matching between African and Israeli businesspeople',
+                            approach: 'Our contribution to the technical team involved assisting with summit conceptualisation, implementation, and post-evaluation. Together with the ALS team, we planned all the logistics pertaining to the event, engaged with key stakeholders, mobilised delegates, liaised with suppliers, etc. We coordinated with the regional (Africa) ALS organisers ensuring that the Africa ALS conferences were positioned to maintain the high quality associated with the main pan African ALS conference in Israel.',
+                            outcome: 'We helped to achieve overall success for the ALS conferences in the 5 years of our involvement. Our major contribution was facilitating the establishment of the AICC, the now independent business wing of ALS. The conference attracted high-calibre audiences including African monarchs (Nigeria), high-ranking politicians, diplomatic corps, businesspeople and church leaders.',
+                            logo: 'assets/images/als1.png', // Include the logo URL here
+                            testimonial: '', 
+                            clientName: '',
+                            clientCompany: ''
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg"  class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+        
+            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
+                <div>
+                    <span class="image-block">
+                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                            client: 'African Union Commission',
+                            projectType: 'Resource Mobilisation',
+                            industry: 'Economic development',
+                            duration: '2 years',
+                            task: 'Implement the African Union (AU) Resource Mobilisation Strategy: Private Sector Engagement. The aim was to mobilise resources from Africa’s private sector to fund AUC programmes.Develop a 5-year brand strategy for Brand Botswana',
+                            approach: 'We prepared the concept note and road map clearly articulating how the assignment would be undertaken in line with the deliverables given. We identified and segmented the target private sector companies (i.e., African multinationals and international corporates that operate in Africa) and produced a potential list of corporate partners for the AUC to target. We undertook research to understand and categorise the types of initiatives large companies support with their Corporate Social Responsibility funds. We then engaged AU departments to solicit data on on-going programmes/ initiatives by the AUC on the key sectors (e.g., education, health, agriculture, etc.) that required funding. Consultations/ initial engagements with selected corporations were conducted to determine what their interest would be in partnering with the AU plus their decision-making processes. We developed value propositions for targeted strategic partnership with the private sector players for future engagements. Validation sessions were conducted to gauge AU stakeholder feedback and garner project support. We prepared full reports and proposed practical steps on how the AUC would engage with the private sector going forward.',
+                            outcome: 'An insight-rich practical guideline for the AU to engage Africa’s private sector for strategic funding. Sukume’s approach created mutual value business-to-organisation partnerships proposals versus the charity requests of the past . This not only made it easier for the AU to engage the private sector but also greatly increased their chances of success and sustainability.',
+                            logo: 'assets/images/au1.png', // Include the logo URL here
+                            testimonial: '', 
+                            clientName: '',
+                            clientCompany: ''
+                        })">
+                            <img src="assets/images/Brand Botswana Card.jpg" class="img-fluid w3layouts agileits" alt="">
+                        </a>
+                    </span>
+                </div>
+            </li>
+            
+
+            
+            <!-- Add more portfolio items for Design here -->
+        </ul>
+    </div>
+    <!-- //gallery container -->
+
+    <script>
+        function redirectToworkinfo(clientInfo) {
+            // Encode the clientInfo object as a query parameter
+            const queryParams = encodeURIComponent(JSON.stringify(clientInfo));
+    
+            // Construct the URL with the query parameter
+            const url = `workinfo.html?clientInfo=${queryParams}`;
+    
+            // Redirect to the target page
+            window.location.href = url;
+        }
+    </script>
+</section>
+
+<!--Case Studies-->
+
+
+     <!-- testimonials section -->
+     <style>
+        .w3l-content-mid {
+            position: relative;
+        }
+        .w3l-content-mid video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+     
+        .w3l-content-mid h3.title-w3l {
+            animation: bounceIn 1s;
+            font-size: 1.9rem;
+            text-align: center;
+        }
+        @keyframes bounceIn {
+            from,
+            20%,
+            40%,
+            60%,
+            80%,
+            to {
+                -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+                animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+            }
+            0% {
+                opacity: 0;
+                transform: scale3d(0.3, 0.3, 0.3);
+            }
+            20% {
+                transform: scale3d(1.1, 1.1, 1.1);
+            }
+            40% {
+                transform: scale3d(0.9, 0.9, 0.9);
+            }
+            60% {
+                opacity: 1;
+                transform: scale3d(1.03, 1.03, 1.03);
+            }
+            80% {
+                transform: scale3d(0.97, 0.97, 0.97);
+            }
+            to {
+                opacity: 1;
+                transform: scale3d(1, 1, 1);
+            }
+        }
+
+        /* Add this CSS to set the font-family to Corbel for all text within the div */
+.w3l-content-mid {
+    font-family: Corbel, sans-serif; /* Use Corbel as the font-family */
+}
+
+/* Optionally, you can specify font-family for specific elements within the div */
+.w3l-content-mid h3.title-w3l {
+    font-family: Corbel, sans-serif; /* Font-family for h3 elements */
+}
+
+.w3l-content-mid p {
+    font-family: Corbel, sans-serif; /* Font-family for paragraphs */
+}
+/* Add this CSS to set the font-family to Corbel for specific elements within the people-info div */
+.w3l-content-mid .people-info h3 {
+    font-family: Corbel, sans-serif; /* Font-family for h3 elements within .people-info */
+}
+
+
+/* You can add more specific styling for other elements if needed */
+
+        
+    </style>
+    <div class="w3l-content-mid py-5 w3l-clients  container py-md-5 py-4 HomePageTestimonials" id="testimonials"  style="background-color: rgb(255, 255, 255);margin-top: -35px;">
+        <div class="text-container">
+            <h3 class="title-w3l" style="color: #000;margin-top: -90px;">
+                 Testimonials
+            </h3>
+        </div>
+        <style>
+            @keyframes bounce {
+                0%,
+                100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+        <div id="owl-demo2" class="owl-carousel owl-theme pb-5" style="margin-top: -60px;">
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>We were impressed</q>
+                        </blockquote>
+                        <p> by Sukume’s global insight, their capacity to think beyond
+                            the obvious and their ability to take strategic concepts and turn them into
+                            practical outcomes. We thus recommend Sukume Consulting without
+                            reservation.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo1.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Gaorekwe
+                            </h3>
+                            <p class="identity">
+                                Executive Director<br>
+                                <span style="text-transform: uppercase;">Botswana Investment and Trade Centre</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume has consistently</q>
+                        </blockquote>
+                        <p>displayed high levels of excellence, integrity and
+                            depth of insight. Their passion for developing strategies, branding nations
+                            and boosting economic development for African countries is expressed in
+                            everything they do</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo6.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Marina Mapitso Bizabani </h3>
+                            <p class="identity">
+                                Manager<br/>
+                                <span style="text-transform: uppercase;">Lesotho National Development Centre</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Beyond the call of duty</q>
+                        </blockquote>
+                        <p>Sukume exceeded expectations, crafting a compelling theme and creative
+                             content for Namibia's Expo 2020 pavilion, despite tight deadlines, 
+                             showcasing high-quality and inspiring work. Grateful for their dedication.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo11.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ndiitah Nghipondoka-Robiati </h3>
+                            <p class="identity">
+                                Chief Executive Officer
+                                <br/>  <span style="text-transform: uppercase;">Namibia Trade Forum </span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume is adept</q>
+                        </blockquote>
+                        <p>at designing, implementing, and managing systems, processes, 
+                            and tools for business establishment and operational efficiency, 
+                            consistently demonstrating strategic depth and unwavering commitment to achieving goals</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo3.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Miles Kubheka </h3>
+                            <p class="identity">
+                                Chief Executive Officer
+                                <br/> <span style="text-transform: uppercase;">Wakanda Food Accelerator</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume understands</q>
+                        </blockquote>
+                        <p>Sukume's Big-Small Business Coaching Approach recognizes the aspirations of small businesses. It effectively equips entrepreneurs 
+                            with the mindset and tools to grow into solid, scalable companies, leaving us impressed</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo2.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Charlotte Nsubuka-Mukasa </h3>
+                            <p class="identity">
+                                Head of Marketing
+                                <br/>  <span style="text-transform: uppercase;">Momentum</span>
+                                 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume consistently</q>
+                        </blockquote>
+                        <p>Sukume consistently uses a thorough approach, infusing creativity, great
+                            insight, passion, and excellence in doing their work. I, therefore, recommend
+                            Sukume Consulting without any reservations</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo8.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                International President
+                                <br/> <span style="text-transform: uppercase;"> Africa-Israel Chamber of Commerce</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume introduced</q>
+                        </blockquote>
+                        <p>At the East and West African Leadership Summit conferences, Vuyelwa, through Sukume,
+                             introduced the Africa-Israel Chamber of Commerce. This initiative facilitates connections
+                             between African businesses and their counterparts in Africa and Israel, 
+                             fostering business opportunities and partnerships.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo8.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                International President
+                                <br/> <span style="text-transform: uppercase;"> Africa-Israel Chamber of Commerce</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sukume assisted</q>
+                        </blockquote>
+                        <p>Through Vuyelwa, Sukume and the Vuka Africa team have facilitated South African SMEs'
+                             participation in trade missions to countries like Ethiopia, Nigeria, and Israel,
+                              promoting intra-Africa trade and transforming entrepreneurs' outlook on the continent's potential.</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo5.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Linda Gobodo </h3>
+                            <p class="identity">
+                                Founder
+                                <br/> <span style="text-transform: uppercase;">Vuka Afrika Foundation</span> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Professionalism</q>
+                        </blockquote>
+                        <p>We highly appreciate your professionalism, knowledge, and clear passion for
+                            this topic. The positive feedback we received from some of the participants is a
+                            testament to the high-quality, engaging manner and interesting experiences and
+                            views of the panel. Once again, thank you so much!</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo4.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ron Osman Omar </h3>
+                            <p class="identity">
+                                Senior Policy Officer
+                                <br/> <span style="text-transform: uppercase;">African Union Commission</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Sterling Work</q>
+                        </blockquote>
+                        <p>On behalf of the Department of Trade, Investment and Competition, I hereby
+                            express our gratitude for your sterling work in moderating the Trade and
+                            Investment Knowledge Network Dialogue. We look forward to your future support
+                            and participation in our strategic stakeholder engagement initiatives</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo10.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Ms Nontombi Matomela </h3>
+                            <p class="identity">
+                                Acting COO
+                                <br/> <span style="text-transform: uppercase;">Department of Trade, Investment and Competition</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="testimonial-content">
+                    <div class="testimonial">
+                        <span class="fa fa-quote-left"></span>
+                        <blockquote>
+                            <q>Effectively presents</q>
+                        </blockquote>
+                        <p>Vuyelwa, aside from co-organizing the Africa Leadership Summit (ALS) conference for years,
+                             consistently serves as a speaker. She effectively presents
+                              the updated African Economic Outlook to over 200 leaders, participates in business panels,
+                               and facilitates Q&A sessions, playing a pivotal role in the event's success</p>
+                    </div>
+                    <div class="bottom-info mt-4">
+                        <a class="comment-img" href="#url"><img
+                                src="assets/images/logo8.png"
+                                class="img-responsive" alt="placeholder image"></a>
+                        <div class="people-info align-self">
+                            <h3>
+                                Olusegun Olanipekun </h3>
+                            <p class="identity">
+                                Chief Executive Officer
+                                <br/> <span style="text-transform: uppercase;">Africa Leadership Summit</span>  </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //testimonials section -->
+
+
+
+    <!-- OurExperience Footprint -->
+    <section id="experiencefootrptint" class="w3l-content-mid py-5 home-services py-" style="background-color: rgb(255, 255, 255);">
+        <style>
+            .w3l-content-mid {
+                position: relative;
+            }
+    
+            .w3l-content-mid video {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: -1;
+            }
+            
+        </style>
+        
+        <div class="container py-md-5 py-4 AboutPageServices">
+    
+            <div class="section-heading text-center">
+                <h3 class="title-style-2" style="color: #000;">
+                    Experience Footprint</h3>
+            </div>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+    
+                <img src="assets/images/Map.png" alt="" class="img-responsive img-fluid" />   
+    
+            </div>
+    
+        </div>
+       
+    </section>
+    <!-- // OurExperience Footprint -->
+
+    
+
+    <!-- footer -->
+    <style>
+        /* Add this style for the rectangle with curved edges */
+        .logo-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #ffffff;
+          padding: 10px;
+          border-radius: 50px;
+          margin-bottom: 20px;
+        }
+    
+        .logo {
+          max-width: 100%;
+          height: 70px;
+        }
+    
+        /* Add this style for the spacing between sections */
+        .section-spacing {
+          margin-bottom: 20px;
+        }
+    
+        /* Add this style for centering the social footer */
+        .FooterSocial {
+          display: flex;
+          justify-content: center;
+        }
+      </style>
+  
+  
+      <footer class="w3l-footer-22 py-5">
+        
+  
+        <div class="container py-md-5 py-4 ExecutionFooter" style="margin-top: -40px;">
+          <div style="text-align: center;">
+            <div class="logo-container">
+              <!-- Use the <img> tag for the logo -->
+              <img src="assets\images/Logo-small.png" class="logo" alt="Your logo" title="Your logo">
+            </div>
+    
+            <div class="columns-2 FooterSocial">
+              <ul class="social">
+                <!-- Your social media icons -->
+                <li><a href="https://www.facebook.com/w3layouts/" title="facebook"><span class="fab fa-facebook-f"
+                      aria-hidden="true"></span></a></li>
+                <li><a href="https://in.linkedin.com/company/w3layouts" title="linkedin"><span class="fab fa-linkedin-in"
+                      aria-hidden="true"></span></a></li>
+                <li><a href="https://twitter.com/W3layouts" title="twitter"><span class="fab fa-twitter"
+                      aria-hidden="true"></span></a></li>
+                <li><a href="https://w3layouts.com/" title="google"><span class="fab fa-google-plus-g"
+                      aria-hidden="true"></span></a></li>
+                <li><a href="https://www.instagram.com/w3layouts_/" title="instagram"><span class="fab fa-instagram"
+                      aria-hidden="true"></span></a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- Add some spacing between sections -->
+          <div class="section-spacing"></div>
+    
+          <div class="sub-contact mt-5 pt-lg-4 FooterContact">
+            <!-- Your contact information -->
+            <div class="row justify-content-center">
+              <div class="col-md-4 footer-contact d-flex align-items-center">
+                <span class="fas fa-envelope-open" aria-hidden="true"></span>
+                <div>
+                  <a href="mailto:info@sukume.com">info@sukume.com</a>
+                  <p>Drop Us A Line</p>
+                </div>
+              </div>
+    
+              <div class="col-md-4 footer-contact d-flex align-items-center active">
+                <span class="fas fa-phone-alt" aria-hidden="true"></span>
+                <div>
+                  <a href="tel:+27 83 200 8953">+27 83 200 8953</a>
+                  <p>Call Us Now</p>
+                </div>
+              </div>
+    
+              <div class="col-md-4 footer-contact d-flex align-items-center">
+                <span class="fas fa-map-marker-alt" aria-hidden="true"></span>
+                <div>
+                  <h5>13 Carlswald Creek, 105 9th Road, Midrand, 1684, Johannesburg, South Africa.</h5>
+                  <p>Get Direction</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Add some spacing between sections -->
+        <div class="section-spacing"></div>
+    
+        <div class="text-center">
+          <p class="CopyRights" style="color: #ffffff;">&copy; 2023 Sukume. All Rights Reserved</p>
+        </div>
+      </footer>
+      <!-- //footer -->
+
+    <!-- Js scripts -->
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fas fa-level-up-alt" aria-hidden="true"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- //move top -->
+
+    <!-- common jquery plugin -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <!-- //common jquery plugin -->
+
+    <!-- owl carousel -->
+    <script src="assets/js/owl.carousel.js"></script>
+    <!-- script for tesimonials carousel slider -->
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo2").owlCarousel({
+                loop: true,
+                nav: false,
+                margin: 50,
+                responsiveClass: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplaySpeed: 1000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    736: {
+                        items: 1,
+                        nav: false
+                    },
+                    991: {
+                        items: 2,
+                        margin: 30,
+                        nav: false
+                    },
+                    1080: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            })
+        })
+    </script>
+    <!-- //script for tesimonials carousel slider -->
+    <!-- owl carousel -->
+
+    <!-- theme switch js (light and dark)-->
+    <script src="assets/js/theme-change.js"></script>
+    <script>
+        function autoType(elementClass, typingSpeed) {
+            var thhis = $(elementClass);
+            thhis.css({
+                "position": "relative",
+                "display": "inline-block"
+            });
+            thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
+            thhis = thhis.find(".text-js");
+            var text = thhis.text().trim().split('');
+            var amntOfChars = text.length;
+            var newString = "";
+            thhis.text("|");
+            setTimeout(function () {
+                thhis.css("opacity", 1);
+                thhis.prev().removeAttr("style");
+                thhis.text("");
+                for (var i = 0; i < amntOfChars; i++) {
+                    (function (i, char) {
+                        setTimeout(function () {
+                            newString += char;
+                            thhis.text(newString);
+                        }, i * typingSpeed);
+                    })(i + 1, text[i]);
+                }
+            }, 1500);
+        }
+
+        $(document).ready(function () {
+            // Now to start autoTyping just call the autoType function with the 
+            // class of outer div
+            // The second paramter is the speed between each letter is typed.   
+            autoType(".type-js", 200);
+        });
+    </script>
+    <!-- //theme switch js (light and dark)-->
+
+    <!-- MENU-JS -->
+    <script>
+        $(window).on("scroll", function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 80) {
+                $("#site-header").addClass("nav-fixed");
+            } else {
+                $("#site-header").removeClass("nav-fixed");
+            }
+        });
+
+        //Main navigation Active Class Add Remove
+        $(".navbar-toggler").on("click", function () {
+            $("header").toggleClass("active");
+        });
+        $(document).on("ready", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+            $(window).on("resize", function () {
+                if ($(window).width() > 991) {
+                    $("header").removeClass("active");
+                }
+            });
+        });
+    </script>
+    <!-- //MENU-JS -->
+
+    <!-- disable body scroll which navbar is in active -->
+    <script>
+        $(function () {
+            $('.navbar-toggler').click(function () {
+                $('body').toggleClass('noscroll');
+            })
+        });
+    </script>
+    <!-- //disable body scroll which navbar is in active -->
+
+     <!--loading js-->
+     <script>
+        window.onload = function() {
+			var loading = document.querySelector('.loading');
+			loading.style.display = 'none';
+		}      
+    </script>
+    <!--// loading js-->
+
+    <!--bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- //bootstrap-->
+    <!-- //Js scripts -->
+</body>
+
+</html>

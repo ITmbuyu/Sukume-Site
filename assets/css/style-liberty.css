@@ -433,7 +433,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.75rem;
+  font-size: 23px;
 }
 
 @media (max-width: 1200px) {
@@ -11148,7 +11148,8 @@ p {
 }
 
 li {
-  list-style-type: none;
+  list-style-type: decimal;
+  font-size: 35px;
 }
 
 p.white {
@@ -13894,7 +13895,7 @@ div#owl-demo2 .owl-dots {
   left: 0;
   right: 0;
   z-index: -1;
-  background: rgb(12 12 12 / 19%);
+  
 }
 
 .w3l-breadcrumb {
