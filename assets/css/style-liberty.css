@@ -14401,6 +14401,8 @@ h4.inner-text-title {
 
 h5.contact-text {
   font-weight: 600;
+  color: #fff;
+  font-size: 2rem;
 }
 
 .w3l-contact-info-main .form-group label {
