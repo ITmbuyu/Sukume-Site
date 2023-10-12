@@ -11149,7 +11149,7 @@ p {
 
 li {
   list-style-type: decimal;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 p.white {
@@ -12633,7 +12633,7 @@ h5.small-title-2 {
 .w3l-footer-22 ul.social li a {
   color: #fff;
   width: 35px;
-  height: 35px;
+  height: 55px;
   background: rgba(255, 255, 255, 0.06);
   display: inline-block;
   border-radius: 50%;

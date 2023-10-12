@@ -209,10 +209,11 @@
      <section class="inner-banner">
         <style>
             .inner-banner {
-                background-image: url('assets/images/inner-banner.jpg');
+                /* make the picture fit in the banner */
+                background-image: url('assets/images/whyus.jpg');
                 background-size: cover;
                 background-position: center;
-                height: 370px;
+                height: 400px;
             }
         
             /* Hide the laptop caption on mobile devices */
@@ -241,11 +242,8 @@
         
         <div class="w3l-breadcrumb py-5">
             <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
-                    <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
-                </h4>
-                <h4 style="color: #ffffff;margin-left: 10px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
-                    Transformative Economic Development
+                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" >
+                    Why Choose Us
                 </h4>
             </div>
         </div>
@@ -360,69 +358,94 @@
             transform-origin: 100% 0;
             z-index: -1;
         }
+
+        /* Adjust the list for mobile devices (less than 768px) */
+@media (max-width: 767px) {
+    .why-us-ol {
+        columns: 1; /* Set the number of columns to 1 for mobile devices */
+        -webkit-columns: 1;
+        -moz-columns: 1;
+        column-gap: 0; /* Remove column gap */
+    }
+}
     </style>
     
     <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about"
-    style="background-color: rgb(255, 255, 255); margin-top: -50px;">
-    <div class="container AboutPageAbout">
+    style="background-color: rgb(255, 255, 255); margin-top: -30px;">
+    <div class="container AboutPageAbout" style="margin-top: -40px;">
         <div class="textwidget">
             <div class="sukume-bird-bg">
-                <h3 style="text-align: left; color: #32004b; font-size: 20px;">10 Reasons to Partner with Us</h3>
                 <ol style="list-style-type: decimal !important;">
                     <li>
-                        <h6 style="color: #32004b; ">Economic Development Expertise</h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px;margin-bottom: 10px; ">Economic Development Expertise</h6>
                         <p>We <strong>only</strong> work with clients and on projects that have an economic development mandate or objective. This has embedded our mastery as leading edge experts in this area. Our key clients and experience includes:</p>
+                        <br>
+                        <!-- add image in the paragraph -->
+                        <p style="text-align: center;"><img class="alignnone size-full wp-image-1023"
+                                src="assets\images\emttable.jpg"
+                                alt="Sukume Consulting" width="100%" height="auto"
+                                sizes="(max-width: 100%) 100vw, 100px" /></p>
+                        <p></p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Nation/Place Branding Expertise</h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Nation/Place Branding Expertise</h6>
                         <p>Place/ Nation Branding is one of our focus areas and our biggest Unique Selling Propositions (USP). As a field, it is relatively new and nuanced. It therefore, requires a high level of hands-on experience to help place/ nation branding entities to traverse the complex world of managing the perceptions of global investors, traders, tourists, event owners, etc. We have in-depth experience positioning some African nation brands including South Africa, Botswana, Lesotho and Namibia.
                             <br>
                             Sukume Consulting is the only economic development consultancy that uses UBUNTU/ BOTHO as a foundation for development planning, implementation, and brand positioning. We designed the Competitiveness & Transformation Planner™ (CTP) model, an IDENTITY-based approach as a tool specifically for building world-class African economies, businesses, and brands in ways that guarantee social and economic transformation among local communities.
                         </p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Business Forums</h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Business Forums</h6>
                         <p>We have experience planning and co/hosting high-level pan-African trade, investment and leadership conferences including:
                         </p>
+                        <br>
+                        <!-- create paragrapgh tags, add image in the paragraph, image must be in the center -->
+                        <p style="text-align: center;"><img class="alignnone size-full wp-image-1023"
+                                src="assets\images\BFTable.jpg"
+                                alt="Sukume Consulting" width="100%" height="auto"
+                                sizes="(max-width: 100%) 100vw, 100px" /></p>
                     </li>
                     
                 </ol>
                 <div class="why-us-ol">
+                    <ol start="4" style="list-style-type: decimal !important;">
                     <li>
-                        <h6 style="color: #32004b; ">Solid Experience</h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Africa Passion &amp; Knowledge
+                        </h6>
+                        <p>We believe in Africa. The cradle of humanity and the founders of the first civilisations, Africans are rising once again to inspire the world to different ways. We are excited to be Africans and part of the rising generation that is working to transform African communities. We understand Africa. We have worked across Africa’s diverse markets from the least developed nations like Ethiopia and Lesotho to the upper-middle income economies of South Africa and Botswana. We have had to deal with the distinctions and contradictions between African cultures. Our gifted team combine deep roots in various African backgrounds combined with the requisite international experience/ exposure. This provides our clients and partners with a rich diversity of relevant insights and perspectives in providing solutions.
+                        <br>
+                        <br>
+                        </p>
+                    </li>
+                    <li>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Solid Experience</h6>
                         <p>Our leadership team combines over 40 years’ experience in the areas of Entrepreneurship/ SME Development, Trade, Investment, Branding & Communications. Moreover, as entrepreneurs ourselves, our team adds an innovative flair with leading-edge thinking to the solutions they bring to our clients and partners.
                         </p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Africa Passion &amp; Knowledge
-                        </h6>
-                        <p>We believe in Africa. The cradle of humanity and the founders of the first civilisations, Africans are rising once again to inspire the world to different ways. We are excited to be Africans and part of the rising generation that is working to transform African communities. We understand Africa. We have worked across Africa’s diverse markets from the least developed nations like Ethiopia and Lesotho to the upper-middle income economies of South Africa and Botswana. We have had to deal with the distinctions and contradictions between African cultures. Our gifted team combine deep roots in various African backgrounds combined with the requisite international experience/ exposure. This provides our clients and partners with a rich diversity of relevant insights and perspectives in providing solutions.
-                        </p>
-                    </li>
-                    <li>
-                        <h6 style="color: #32004b; ">Good Relationships </h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Good Relationships </h6>
                         <p>The nature of our work allows us to enjoy access to African entrepreneurs, large corporations and governments alike. We use these networks to add value to and benefit our clients and partners.
                         </p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Flexibility </h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Flexibility </h6>
                         <p>We are as comfortable dealing with large multi-national corporations, international organisations and Governments as we are with SMEs and NGOs. We criss-cross smoothly between the emerged and emerging world - having experience with both. We travel extensively and work from Johannesburg, South Africa as well as client locations as is necessary. All this allows us the ability to transfer learnings and best practices from a variety of sources and experiences.
                         </p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Passion for our Work </h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Passion for our Work </h6>
                         <p>We love what we do and we do what  we love. Our drive spills over into the sometimes unorthodox but effective ways to solve our clients’ and partners’ challenges.
                         </p>
                     </li>
                     <li>
-                        <h6 style="color: #32004b; ">Implementation Power </h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">Implementation Power </h6>
                         <p>While sound strategy is critical, it is the effective and timely Implementation that separates the players from the winners. We create innovative project implementation plans for our clients. We get involved to manage those plans to ensure accurate adherence to intended strategy outcomes.
                         </p>
                     </li>
                 </div>
                 <ol start="10" style="list-style-type: decimal !important;">
                     <li>
-                        <h6 style="color: #32004b; ">African Female Empowered</h6>
+                        <h6 style="color: #32004b;margin-bottom: 10px; ">African Female Empowered</h6>
                         <p>We are proud to be a 100% black, female-owned, managed and led business
                         </p>
                     </li>
@@ -518,7 +541,7 @@
               <div class="col-md-4 footer-contact d-flex align-items-center active">
                 <span class="fas fa-phone-alt" aria-hidden="true"></span>
                 <div>
-                  <a href="tel:+27 83 200 8953">+27 83 200 8953</a>
+                  <a href="tel:+27 69 238 1771">+27 69 238 1771</a>
                   <p>Call Us Now</p>
                 </div>
               </div>
