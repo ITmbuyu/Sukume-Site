@@ -13195,7 +13195,7 @@ a.btn.btn-style.btn-style-normal {
 }
 
 .w3l-team .social-icons-section a span {
-  color: var(--secondary-color);
+  color: #343a40;
   font-size: 14px;
   line-height: 28px;
 }
@@ -13226,11 +13226,11 @@ h5.member a {
 }
 
 .w3l-team .team-block-single:hover h5.member a {
-  color: var(--secondary-color);
+  color: #343a40;
 }
 
 .w3l-team .team-block-single h5.member.active a:hover {
-  color: var(--heading-color);
+  color: #343a40;
 }
 
 .w3l-team .team-grids img {

@@ -210,19 +210,27 @@
   <section class="inner-banner">
     <style>
       .inner-banner {
-          background-size: cover;
-          background-position: center;
-          height: 400px;
-          transition: background-image 0.5s ease-in-out;
-      }
-
-      /* Adjust the height and background-size for mobile devices */
-      @media (max-width: 767px) {
-          .inner-banner {
-              height: 320px;
-              background-size: contain;
-          }
-      }
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        transition: background-image 0.5s ease-in-out;
+    }
+    
+    /* Apply margin-top only to larger screens (min-width: 768px) */
+    @media (min-width: 768px) {
+        .inner-banner {
+            margin-top: 110px;
+        }
+    }
+    
+    /* Adjust the height and background-size for mobile devices */
+    @media (max-width: 767px) {
+        .inner-banner {
+            height: 320px;
+            margin-top: 0; /* Reset margin-top for mobile devices */
+        }
+    }
+    
   </style>
 
 </div>
@@ -363,6 +371,13 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         .icon-row {
           display: -webkit-inline-box;
           justify-content: space-between;
+        }
+
+        @media (max-width: 767px) {
+          .icon-row {
+            display: block;
+            justify-content: initial; /* You can adjust this as needed */
+          }
         }
         
         .icon {
@@ -640,6 +655,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
       </div>
     </div>
   </div>
+  </div>
 
   
   <!-- Add more icon rows as needed -->
@@ -797,25 +813,25 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
         document.addEventListener("DOMContentLoaded", function () {
           // Get all "Read More" links by their class
           const readMoreLinks = document.querySelectorAll(".read-more-link");
-        
+      
           // Add a click event listener to each link
           readMoreLinks.forEach(function (link) {
             link.addEventListener("click", function (e) {
               // Prevent the default link behavior
               e.preventDefault();
-        
+      
               // Get the content associated with this link
               const contentKey = this.getAttribute("data-content");
-        
+      
               // Generate the target URL with the content as a parameter
               const targetURL = `expertiseinfo.html?content=${contentKey}`;
-        
+      
               // Redirect to the target page
               window.location.href = targetURL;
             });
           });
         });
-
+      
         function toggleAccordion(cardNumber, tabElement) {
           // Hide all accordions first
           const accordions = document.querySelectorAll('.accordion');
@@ -829,13 +845,14 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           selectedAccordion.style.display = 'block';
       
           // Scroll to the selected accordion
-          const offsetTop = tabElement.offsetTop;
+          const offsetTop = selectedAccordion.offsetTop; // Use the offsetTop of the accordion
           window.scrollTo({
             top: offsetTop - 10, // You can adjust this value as needed
             behavior: 'smooth',
           });
         }
       </script>
+      
       
         
               
