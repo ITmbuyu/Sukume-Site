@@ -16,9 +16,10 @@
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
     <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="assets/css/prettyPhoto.css">
-    <!-- Template CSS Style link -->
-    <link rel="stylesheet" href="assets/js/jquery.prettyPhoto.js">
+    <link rel="stylesheet" href="assets/css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto">
+    <script src="assets/js/jquery.prettyPhoto.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <!-- Custom CSS -->
     <style>
         /* Define styles for the loading animation */
@@ -215,6 +216,12 @@
             background-position: center;
             height: 400px;
         }
+        /* Apply margin-top only to larger screens (min-width: 768px) */
+    @media (min-width: 768px) {
+        .inner-banner {
+            margin-top: 110px;
+        }
+    }
 
         /* Adjust the height and background-size for mobile devices */
         @media (max-width: 767px) {
@@ -237,278 +244,337 @@
     <!--clients  -->
 
     <style>
-        /* gallery */
-    
-        .subheading-block {
-            background: #7f7f7f;
-            padding: 15px;
-            text-align: center;
-            color: white;
-            margin-bottom: 20px;
+        * {
+          box-sizing: border-box;
         }
-    
-    ul.portfolio-area li figure {
-        margin: 0;
-    }
-    
-    .portfolio-categ li {
-        color: #333;
-        cursor: pointer;
-        display: inline-block;
-        padding: 8px 25px;
-        font-weight: 600;
-        border-radius: 30px;
-        font-size: 1.1em;
-        margin: 0 0.1em;
-        letter-spacing: 1px;
-        text-transform: capitalize;
-    }
-    
-    .portfolio-categ li a {
-        color: #333;
-        text-transform: uppercase;
-        font-size: 15px;
-        letter-spacing: 1px;
-    }
-    
-    .image-block {
-        display: block;
-        position: relative;
-    }
-    
-    .portfolio-area li {
-        list-style-type: none;
-        overflow: hidden;
-        width: 290px;
-        margin: 10px;
-    }
-    
-    .home-portfolio-text {
-        margin-top: 10px;
-    }
-    
-    .portfolio-categ li.active {
-        background: #009688;
-        color: #fff;
-    }
-    
-    .portfolio-categ li.active a {
-        color: #fff;
-    }
-    
-    @media (max-width: 767px) {
-        #clients {
-            margin-top: -100px;
+        
+        /* Center website */
+        .main {
+          max-width: 1000px;
+          margin: auto;
         }
-    }
+        
+        h1 {
+          font-size: 50px;
+          word-break: break-all;
+        }
+        
+        .row {
+          margin: 10px -16px;
+        }
+        
+        /* Add padding BETWEEN each column */
+        .row,
+        .row > .column {
+          padding: 8px;
+        }
+        
+        /* Create three equal columns that float next to each other */
+        .column {
+          float: left;
+          width: 33.33%;
+          display: none; /* Hide all elements by default */
+        }
+        
+        /* Clear floats after rows */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Content */
+        .content {
+          background-color: white;
+          padding: 10px;
+        }
+        
+        /* The "show" class is added to the filtered elements */
+        .show {
+          display: block;
+        }
+        
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          padding: 12px 16px;
+          background-color: white;
+          cursor: pointer;
+        }
+        
+        .btn:hover {
+          background-color: #ddd;
+        }
+        
+        .btn.active {
+          background-color: #666;
+          color: white;
+        }
+        
+        @media (max-width: 768px) {
+            #clients {
+                margin-top: -115px;
+              }
 
-    @media (max-width: 767px) {
-        ul.portfolio-area {
-            justify-content: flex-start;
+          .row > .column {
+            width: 50%; /* Display images 2 by 2 on mobile devices */
+          }
         }
-    }
-    
-    
-    /* //gallery */
-    </style>
+        </style>
 
-    <section id="clients"  class="w3l-content-mid py-5 w3l-clients  container py-md-5 py-4 HomePageTestimonials" id="section3">
-        <div class="container-fluid py-md-5 py-3 text-center" style="margin-top: -50px;">
-            <div class="section-heading text-center">
-                <h3 class="title-w3l" style="color: #000; margin-bottom: 20px;
-                font-size: 40px;border-style: groove;">
-                    Clients</h3>
-            </div>
-            <!-- Row 1 -->
-            <div class="subheading-block">
-                <h4 class="subheading" style="color: #fff;">Place/Nation Branding</h4>
-            </div>
-            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                    <div>
-                        <span class="image-block img-hover">
-                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/dtc1.png"  class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/VUkaafrica1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/momentum.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/AICC1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/WAKS1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                
-    
-                
-                <!-- Add more portfolio items for Design here -->
-            </ul>
-    
-            <!-- Row 2 -->
-            <div class="subheading-block">
-                <h4 class="subheading" style="color: #fff;">SME Development</h4>
-            </div>
-            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                    <div>
-                        <span class="image-block img-hover">
-                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/au1.png"  class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/FoodNext1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/AMT1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/als1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/AICC1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                
-    
-                
-                <!-- Add more portfolio items for Design here -->
-            </ul>
-    
-            <!-- Row 3 -->
-            <div class="subheading-block" >
-                <h4 class="subheading" style="color: #fff;">Intra-African Trade</h4>
-            </div>
-            <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-                <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                    <div>
-                        <span class="image-block img-hover">
-                            <a class="image-zoom" href="images/g1.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/SA1.png"  class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/Botswana1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/Namabia1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/LNDC1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                    <div>
-                        <span class="image-block">
-                            <a class="image-zoom" href="images/g2.jpg" data-gal="prettyPhoto[gallery]">
-                                <img src="assets/images/au1.png" class="img-fluid w3layouts agileits" alt="">
-                            </a>
-                        </span>
-                    </div>
-                </li>
-                
-    
-                
-                <!-- Add more portfolio items for Design here -->
-            </ul>
+    <section id="clients" class="w3l-content-mid py-5 w3l-clients container py-md-5 py-4 HomePageTestimonials" id="section3">
+        <div class="section-heading text-center">
+            <h3 class="title-w3l" style="color: #000; margin-bottom: 20px; font-size: 40px; border-style: groove;">
+                Clients
+            </h3>
         </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('place/nation branding')"> Place/Nation Branding</button>
+            <button class="btn" onclick="filterSelection('sme development')"> SME Development</button>
+            <button class="btn" onclick="filterSelection('intra-african trade')"> Intra-African Trade</button>
+        </div>
+          
+          <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column place/nation branding">
+            <div class="content">
+                <img src="assets/images/au1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column place/nation branding">
+            <div class="content">
+                <img src="assets/images/FoodNext1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column place/nation branding">
+            <div class="content">
+                <img src="assets/images/AMT1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column place/nation branding">
+            <div class="content">
+                <img src="assets/images/als1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column place/nation branding">
+            <div class="content">
+                <img src="assets/images/AICC1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column sme development">
+            <div class="content">
+                <img src="assets/images/dtc1.png" alt="Mountains" style="width:100%">
+            </div>
+        </div>
+        <div class="column sme development">
+            <div class="content">
+                <img src="assets/images/VUkaafrica1.png" alt="Lights" style="width:100%">
+            </div>
+        </div>
+        <div class="column sme development">
+            <div class="content">       
+                <img src="assets/images/momentum.png" alt="Place/Nation Branding" style="width:100%">
+            </div>
+        </div>
+        <div class="column sme development">
+            <div class="content">
+                <img src="assets/images/AICC1.png" alt="Place/Nation Branding" style="width:100%">
+            </div>
+        </div>
+        <div class="column sme development">
+            <div class="content">
+                <img src="assets/images/WAKS1.png" alt="Place/Nation Branding" style="width:100%">
+            </div>
+        </div>
+        <div class="column intra-african trade">
+            <div class="content">
+                <img src="assets/images/SA1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column intra-african trade">
+            <div class="content">
+                <img src="assets/images/Botswana1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column intra-african trade">
+            <div class="content">
+                <img src="assets/images/Namabia1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column intra-african trade">
+            <div class="content">
+                <img src="assets/images/LNDC1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+        <div class="column intra-african trade">
+            <div class="content">
+                <img src="assets/images/au1.png" alt="Car" style="width:100%">
+            </div>
+        </div>
+    </div>
+    <!-- END GRID -->
+</section>
+          
 
-        <!-- //gallery container -->
-    </section>
+
+<script>
+    // Initially, set the "Show all" button to be active
+    document.querySelector('.btn.active').classList.remove('active');
+    document.querySelector('.btn:first-child').classList.add('active');
+
+    filterSelection("all");
+
+    function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+
+        // Remove the active class from all buttons and add it to the clicked button
+        var btns = document.getElementsByClassName("btn");
+        for (i = 0; i < btns.length; i++) {
+            btns[i].classList.remove("active");
+        }
+        document.querySelector('.btn[data-filter="' + c + '"]').classList.add('active');
+    }
+
+    function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+            }
+        }
+    }
+
+    function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+        }
+        element.className = arr1.join(" ");
+    }
+</script>
     
 <!-- //clients -->
 
 <!-- Case studies -->
 
-<section id="casetudies"  class="w3l-content-mid py-5 w3l-clients  container py-md-5 py-4 HomePageTestimonials" id="section4" style="margin-top: -140px;">
-    <div class="container-fluid py-md-5 py-3 text-center">
+<style>
+    * {
+        box-sizing: border-box;
+      }
+      
+      /* Center website */
+      .main {
+        max-width: 1000px;
+        margin: auto;
+      }
+      
+      h1 {
+        font-size: 50px;
+        word-break: break-all;
+      }
+      
+      .row {
+        margin: 10px -16px;
+      }
+      
+      /* Add padding BETWEEN each column */
+      .row,
+      .row > .column2 {
+        padding: 8px;
+      }
+      
+      .column2 {
+        float: left;
+        width: 33.33%;
+        display: none; /* Hide all elements by default */
+      }
+      
+      /* Clear floats after rows */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Content */
+      .content2 {
+        background-color: white;
+        padding: 10px;
+      }
+      
+      /* The "show" class is added to the filtered elements */
+      .show {
+        display: block;
+      }
+      
+      .btn-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      
+      .btn2 {
+        border: none;
+        outline: none;
+        padding: 12px 16px;
+        background-color: white;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .btn2.active {
+        background-color: #666;
+        color: white;
+      }
+      
+      .btn2:hover {
+        background-color: #ddd;
+      }
+      
+      /* Add media query for mobile devices */
+      @media (max-width: 768px) {
+        /* set the margin-top of id="casestudies" to -80px  */
+        #casestudies {
+            margin-top: -80px;
+          }
+
+        .column2 {
+          width: 100%; /* Set to 100% for mobile devices to make images stack vertically */
+        }
+      }
+      
+    </style>
+
+    <section id="casestudies" class="w3l-content-mid py-5 w3l-clients container py-md-5 py-4 HomePageTestimonials" id="section4">
         <div class="text-container">
             <h3 class="title-w3l" style="color: #000;margin-bottom: 20px;
             font-size: 40px;border-style: groove;">
                 Case Studies</h3>
         </div>
-        <!-- Row 1 -->
-        <div class="subheading-block">
-            <h4 class="subheading" style="color: #fff;">Place/Nation Branding</h4>
+        <div id="myBtnContainer2">
+            <button class="btn2 active" onclick="filterSelection2('all')"> Show all</button>
+            <button class="btn2" onclick="filterSelection2('place/nation branding')"> Place/Nation Branding</button>
+            <button class="btn2" onclick="filterSelection2('sme development')"> SME Development</button>
+            <button class="btn2" onclick="filterSelection2('intra-african trade')"> Intra-African Trade</button>
         </div>
-        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                <div>
+    
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column2 place/nation branding">
+                <div class="content2">
                     <span class="image-block img-hover">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Botswana Investment and Trade Centre/ Brand Botswana',
@@ -527,9 +593,9 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
+            </div>
+            <div class="column2 place/nation branding">
+                <div class="content2">
                     <span class="image-block">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Lesotho National Development Corporation',
@@ -548,9 +614,9 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
+            </div>
+            <div class="column2 place/nation branding">
+                <div class="content2">
                     <span class="image-block">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Namibia Trade Forum',
@@ -569,20 +635,10 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            
-
-            
-            <!-- Add more portfolio items for Design here -->
-        </ul>
-
-        <!-- Row 2 -->
-        <div class="subheading-block">
-            <h4 class="subheading" style="color: #fff;">SME Development</h4>
-        </div>
-        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                <div>
+            </div>
+    
+            <div class="column2 sme development">
+                <div class="content2">
                     <span class="image-block img-hover">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Momentum',
@@ -601,9 +657,9 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
+            </div>
+            <div class="column2 sme development">
+                <div class="content2">
                     <span class="image-block">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Department of Trade, Industry and Competition',
@@ -622,9 +678,9 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
+            </div>
+            <div class="column2 sme development">
+                <div class="content2">
                     <span class="image-block">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Africa-Israel Chamber of Commerce',
@@ -643,9 +699,10 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
+            </div>
+    
+            <div class="column2 sme development">
+                <div class="content2">
                     <span class="image-block">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Wakanda Food Accelerator',
@@ -664,20 +721,9 @@
                         </a>
                     </span>
                 </div>
-            </li>
-            
-
-            
-            <!-- Add more portfolio items for Design here -->
-        </ul>
-
-        <!-- Row 3 -->
-        <div class="subheading-block" >
-            <h4 class="subheading" style="color: #fff;">Intra-African Trade</h4>
-        </div>
-        <ul class="portfolio-area clearfix" style="list-style-type: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center;">
-            <li class="portfolio-item2" data-id="id-0" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 10px;" >
-                <div>
+            </div>
+            <div class="column2 intra-african trade">
+                <div class="content2">
                     <span class="image-block img-hover">
                         <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
                             client: 'Africa Leadership Summit',
@@ -696,38 +742,57 @@
                         </a>
                     </span>
                 </div>
-            </li>
-        
-            <li class="portfolio-item2" data-id="id-1" data-type="cat-item-4" style="margin-right: 50px; margin-bottom: 50px;">
-                <div>
-                    <span class="image-block">
-                        <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
-                            client: 'African Union Commission',
-                            projectType: 'Resource Mobilisation',
-                            industry: 'Economic development',
-                            duration: '2 years',
-                            task: 'Implement the African Union (AU) Resource Mobilisation Strategy: Private Sector Engagement. The aim was to mobilise resources from Africa’s private sector to fund AUC programmes.Develop a 5-year brand strategy for Brand Botswana',
-                            approach: 'We prepared the concept note and road map clearly articulating how the assignment would be undertaken in line with the deliverables given. We identified and segmented the target private sector companies (i.e., African multinationals and international corporates that operate in Africa) and produced a potential list of corporate partners for the AUC to target. We undertook research to understand and categorise the types of initiatives large companies support with their Corporate Social Responsibility funds. We then engaged AU departments to solicit data on on-going programmes/ initiatives by the AUC on the key sectors (e.g., education, health, agriculture, etc.) that required funding. Consultations/ initial engagements with selected corporations were conducted to determine what their interest would be in partnering with the AU plus their decision-making processes. We developed value propositions for targeted strategic partnership with the private sector players for future engagements. Validation sessions were conducted to gauge AU stakeholder feedback and garner project support. We prepared full reports and proposed practical steps on how the AUC would engage with the private sector going forward.',
-                            outcome: 'An insight-rich practical guideline for the AU to engage Africa’s private sector for strategic funding. Sukume’s approach created mutual value business-to-organisation partnerships proposals versus the charity requests of the past . This not only made it easier for the AU to engage the private sector but also greatly increased their chances of success and sustainability.',
-                            logo: 'assets/images/au1.png', // Include the logo URL here
-                            testimonial: '', 
-                            clientName: '',
-                            clientCompany: ''
-                        })">
-                            <img src="assets/images/AU.jpg" class="img-fluid w3layouts agileits" alt="">
-                        </a>
-                    </span>
-                </div>
-            </li>
-            
-
-            
-            <!-- Add more portfolio items for Design here -->
-        </ul>
-    </div>
-    <!-- //gallery container -->
+            </div>
+            <div class="column2 intra-african trade">
+                <span class="image-block">
+                    <a class="image-zoom" href="javascript:void(0);" onclick="redirectToworkinfo({
+                        client: 'African Union Commission',
+                        projectType: 'Resource Mobilisation',
+                        industry: 'Economic development',
+                        duration: '2 years',
+                        task: 'Implement the African Union (AU) Resource Mobilisation Strategy: Private Sector Engagement. The aim was to mobilise resources from Africa’s private sector to fund AUC programmes.Develop a 5-year brand strategy for Brand Botswana',
+                        approach: 'We prepared the concept note and road map clearly articulating how the assignment would be undertaken in line with the deliverables given. We identified and segmented the target private sector companies (i.e., African multinationals and international corporates that operate in Africa) and produced a potential list of corporate partners for the AUC to target. We undertook research to understand and categorise the types of initiatives large companies support with their Corporate Social Responsibility funds. We then engaged AU departments to solicit data on on-going programmes/ initiatives by the AUC on the key sectors (e.g., education, health, agriculture, etc.) that required funding. Consultations/ initial engagements with selected corporations were conducted to determine what their interest would be in partnering with the AU plus their decision-making processes. We developed value propositions for targeted strategic partnership with the private sector players for future engagements. Validation sessions were conducted to gauge AU stakeholder feedback and garner project support. We prepared full reports and proposed practical steps on how the AUC would engage with the private sector going forward.',
+                        outcome: 'An insight-rich practical guideline for the AU to engage Africa’s private sector for strategic funding. Sukume’s approach created mutual value business-to-organisation partnerships proposals versus the charity requests of the past . This not only made it easier for the AU to engage the private sector but also greatly increased their chances of success and sustainability.',
+                        logo: 'assets/images/au1.png', // Include the logo URL here
+                        testimonial: '', 
+                        clientName: '',
+                        clientCompany: ''
+                    })">
+                        <img src="assets/images/AU.jpg" class="img-fluid w3layouts agileits" alt="">
+                    </a>
+                </span>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </section>
 
     <script>
+        filterSelection2("all");
+    
+        function filterSelection2(c) {
+            var x, i;
+            x = document.getElementsByClassName("column2");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                if (x[i].className.indexOf(c) > -1) {
+                    x[i].style.display = "block";
+                } else {
+                    x[i].style.display = "none";
+                }
+            }
+        }
+    
+        // Add active class to the current button (highlight it)
+        var btnContainer2 = document.getElementById("myBtnContainer2");
+        var btns2 = btnContainer2.getElementsByClassName("btn");
+        for (var i = 0; i < btns2.length; i++) {
+            btns2[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+
         function redirectToworkinfo(clientInfo) {
             // Encode the clientInfo object as a query parameter
             const queryParams = encodeURIComponent(JSON.stringify(clientInfo));
@@ -739,7 +804,6 @@
             window.location.href = url;
         }
     </script>
-</section>
 
 <!--Case Studies-->
 
@@ -822,7 +886,7 @@
     </style>
     <div class="w3l-content-mid py-5 w3l-clients  container py-md-5 py-4 HomePageTestimonials" id="testimonials"  style="background-color: rgb(255, 255, 255);margin-top: -64px;">
         <div class="text-container">
-            <h3 class="title-w3l" style="color: #000;margin-top: -90px;border-style: groove;font-size: 40px;">
+            <h3 class="title-w3l" style="color: #000;margin-top: 30px;border-style: groove;font-size: 40px;">
                  Testimonials
             </h3>
         </div>

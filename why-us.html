@@ -205,54 +205,56 @@
     <!--// loading animation-->
 
      <!-- inner banner -->
-     <!-- inner banner -->
-     <section class="inner-banner">
-        <style>
-            .inner-banner {
-                /* make the picture fit in the banner */
-                background-image: url('assets/images/whyus.jpg');
-                background-size: cover;
-                background-position: center;
-                height: 400px;
-            }
-        
-            /* Hide the laptop caption on mobile devices */
-            @media (max-width: 767px) {
-                .inner-banner {
-                    height: 350px;
-                }
-        
-                .inner-banner #laptop {
-                    display: none;
-                }
-        
-                /* Adjust the margin-top for the mobile caption */
-                .inner-banner #phone {
-                    margin-top: 80px; /* Adjust this value as needed */
-                }
-            }
-        
-            /* Hide the phone caption on screens wider than 767px */
-            @media (min-width: 768px) {
-                .inner-banner #phone {
-                    display: none;
-                }
-            }
-        </style>
-        
-        <div class="w3l-breadcrumb py-5">
-            <div class="container py-xl-5 py-md-4 mt-5">
-                <h4 style="color: #ffffff;margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2" >
-                    Why Choose Us
-                </h4>
-            </div>
-        </div>
-    </section>
-    
+<!-- inner banner -->
+<section class="inner-banner">
+    <style>
+        .inner-banner {
+            /* Make the picture fit in the banner */
+            background-image: url('assets/images/whyus.jpg');
+            background-size: contain;
+            background-position: center;
+            height: 400px;
+            position: relative;
+        }
 
-    
-    
-    <!-- //inner banner -->
+        /* Create a pseudo-element for the background color */
+        .inner-banner::before {
+            content: "";
+            background: rgba(0, 0, 0, 0.52);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Apply margin-top only to larger screens (min-width: 768px) */
+        @media (min-width: 768px) {
+            .inner-banner {
+                margin-top: 110px;
+            }
+        }
+
+        /* Hide the laptop caption on mobile devices */
+        @media (max-width: 767px) {
+            .inner-banner {
+                height: 350px;
+                margin-top: -15px;
+            }
+
+        }
+    </style>
+
+    <div class="w3l-breadcrumb py-5">
+        <div class="container py-xl-5 py-md-4 mt-5">
+            <h4 style="color: #ffffff; margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
+                Why Choose Us
+            </h4>
+        </div>
+    </div>
+</section>
+<!-- //inner banner -->
+
 
     <!-- about section -->
     <style>
@@ -359,6 +361,26 @@
             z-index: -1;
         }
 
+       /* Table Styles */
+    .talks-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .talks-table th, .talks-table td {
+        padding: 10px;
+        text-align: left;
+        border: 1px solid #ccc;
+    }
+
+    .talks-table th {
+        background: #f2f2f2;
+        font-weight: bold;
+    }
+
+
+    
+
         /* Adjust the list for mobile devices (less than 768px) */
 @media (max-width: 767px) {
     .why-us-ol {
@@ -367,11 +389,23 @@
         -moz-columns: 1;
         column-gap: 0; /* Remove column gap */
     }
+
+ /* Ensure the table is scrollable on smaller screens */
+    .talks-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    @media (max-width: 767px) {
+        #about {
+            margin-top: -115px !important; /* Use !important to ensure it takes priority */
+        }
+    }
 }
     </style>
     
     <div class="w3l-content-mid py-5 w3l-text-6 text-6-mian py-md-5 py-4" id="about"
-    style="background-color: rgb(255, 255, 255); margin-top: -30px;">
+    style="background-color: rgb(255, 255, 255); margin-top: -30px; @media (max-width: 767px) { margin-top: -115px; }">
     <div class="container AboutPageAbout" style="margin-top: -40px;">
         <div class="textwidget">
             <div class="sukume-bird-bg">
@@ -381,11 +415,63 @@
                         <p>We <strong>only</strong> work with clients and on projects that have an economic development mandate or objective. This has embedded our mastery as leading edge experts in this area. Our key clients and experience includes:</p>
                         <br>
                         <!-- add image in the paragraph -->
-                        <p style="text-align: center;"><img class="alignnone size-full wp-image-1023"
-                                src="assets\images\emttable.jpg"
-                                alt="Sukume Consulting" width="100%" height="auto"
-                                sizes="(max-width: 100%) 100vw, 100px" /></p>
-                        <p></p>
+                        <table class="talks-table">
+                            <tr>
+                                <th>Client</th>
+                                <th>Nature Of Work</th>
+                                <th>Country</th>
+                                <th>Year/s</th>
+                            </tr>
+                            <tr>
+                                <td>Wakanda Food Accelerator</td>
+                                <td>Strategy and Business Capacity</td>
+                                <td>South Africa</td>
+                                <td>2020-present</td>
+                            </tr>
+                            <tr>
+                                <td>Namibia Trade Forum</td>
+                                <td>Country Brand Theme Statement & Creative (Dubai Expo 2020)</td>
+                                <td>Namibia</td>
+                                <td>2019-2020</td>
+                            </tr>
+                            <tr>
+                                <td>Lesotho National Development Corporation</td>
+                                <td>Country Brand Strategy Design</td>
+                                <td>Lesotho</td>
+                                <td>2017-2018</td>
+                            </tr>
+                            <tr>
+                                <td>Department of Trade & Industry</td>
+                                <td>Research Review on Marketing and Communications to SMEs</td>
+                                <td>South Africa</td>
+                                <td>2017-2018</td>
+                            </tr>
+                            <tr>
+                                <td>Botswana Trade & Investment Centre</td>
+                                <td>Brand Botswana Strategy Development and Advisory</td>
+                                <td>Botswana</td>
+                                <td>2014-2017</td>
+                            </tr>
+                            <tr>
+                                <td>African Union Commission</td>
+                                <td>Strategy Implementation for Resource Mobilisation Project</td>
+                                <td>Ethiopia</td>
+                                <td>2017-2019</td>
+                            </tr>
+                            <tr>
+                                <td>Africa-Israel Chamber of Commerce (AICC)</td>
+                                <td>Trade and Investment Promotion and Facilitation</td>
+                                <td>South Africa</td>
+                                <td>2015-2018</td>
+                            </tr>
+                            <tr>
+                                <td>Vuka Africa Foundation</td>
+                                <td>Research Review on Marketing and Communications to SMEs</td>
+                                <td>South Africa</td>
+                                <td>2015</td>
+                            </tr>
+                        </table>                        
+                        
                     </li>
                     <li>
                         <h6 style="color: #32004b;margin-bottom: 10px; ">Nation/Place Branding Expertise</h6>
@@ -400,10 +486,62 @@
                         </p>
                         <br>
                         <!-- create paragrapgh tags, add image in the paragraph, image must be in the center -->
-                        <p style="text-align: center;"><img class="alignnone size-full wp-image-1023"
-                                src="assets\images\BFTable.jpg"
-                                alt="Sukume Consulting" width="100%" height="auto"
-                                sizes="(max-width: 100%) 100vw, 100px" /></p>
+                        <table class="talks-table">
+                            <tr>
+                                <th>Forum</th>
+                                <th>Description</th>
+                                <th>Country</th>
+                                <th>Years</th>
+                            </tr>
+                            <tr>
+                                <td>FoodNext.Africa</td>
+                                <td>Food trade & investment conference</td>
+                                <td>South Africa</td>
+                                <td>2019, 2018</td>
+                            </tr>
+                            <tr>
+                                <td>Africa Leadership Summit</td>
+                                <td>Main biennial conference</td>
+                                <td>Israel</td>
+                                <td>2019, 2017, 2015</td>
+                            </tr>
+                            <tr>
+                                <td>Afhca-Israel Chamber of Commerce</td>
+                                <td>Gauteng SA launch event</td>
+                                <td>South Africa</td>
+                                <td>2018</td>
+                            </tr>
+                            <tr>
+                                <td>Africa-Israel Chamber of Commerce</td>
+                                <td>Global launch and trade mission</td>
+                                <td>Israel</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Africa Leadership Summit</td>
+                                <td>Information & connection conference</td>
+                                <td>Lesotho</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Africa Leadership Summit</td>
+                                <td>Information & connection conference</td>
+                                <td>Kenya, Nigeria</td>
+                                <td>2016</td>
+                            </tr>
+                            <tr>
+                                <td>Africa Arise</td>
+                                <td>Inaugural business conference</td>
+                                <td>Ethiopia</td>
+                                <td>2015</td>
+                            </tr>
+                            <tr>
+                                <td>Vuka Africa Foundation</td>
+                                <td>Launch Event, Trade Events</td>
+                                <td>South Africa, Nigeria, Israel</td>
+                                <td>2014, 2015, 2013</td>
+                            </tr>
+                        </table>
                     </li>
                     
                 </ol>
