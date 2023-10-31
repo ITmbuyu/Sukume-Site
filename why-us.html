@@ -204,55 +204,77 @@
       
     <!--// loading animation-->
 
-     <!-- inner banner -->
-<!-- inner banner -->
-<section class="inner-banner">
+ <!-- inner banner -->
+ <section class="inner-banner">
     <style>
         .inner-banner {
             /* Make the picture fit in the banner */
-            background-image: url('assets/images/whyus.jpg');
-            background-size: contain;
-            background-position: center;
-            height: 400px;
-            position: relative;
+        background-image: url('assets/images/whyus.jpg');
+        background-size: contain;
+        background-position: center;
+        height: 400px;
+        position: relative;
         }
 
-        /* Create a pseudo-element for the background color */
-        .inner-banner::before {
-            content: "";
-            background: rgba(0, 0, 0, 0.52);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
+/* Create a pseudo-element for the background color */
+    .inner-banner::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.52);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 
-        /* Apply margin-top only to larger screens (min-width: 768px) */
-        @media (min-width: 768px) {
-            .inner-banner {
-                margin-top: 110px;
-            }
+       /* Apply margin-top only to larger screens (min-width: 768px) */
+    @media (min-width: 768px) {
+        .inner-banner {
+            margin-top: 110px;
         }
-
+    }
+    
         /* Hide the laptop caption on mobile devices */
         @media (max-width: 767px) {
             .inner-banner {
                 height: 350px;
-                margin-top: -15px;
+                margin-top: -22px;
             }
-
+    
+            .inner-banner #laptop {
+                display: none;
+            }
+    
+            /* Adjust the margin-top for the mobile caption */
+            .inner-banner #phone {
+                margin-top: 120px ; /* Adjust this value as needed */
+                font-size: 16px;
+            }
+        }
+    
+        /* Hide the phone caption on screens wider than 767px */
+        @media (min-width: 768px) {
+            .inner-banner #phone {
+                display: none;
+            }
         }
     </style>
-
+    
     <div class="w3l-breadcrumb py-5">
         <div class="container py-xl-5 py-md-4 mt-5">
-            <h4 style="color: #ffffff; margin-left: 100px; margin-top: 40px;" class="inner-text-title font-weight-bold mb-sm-2">
-                Why Choose Us
+            <h4 style="color: #ffffff;margin-left: 100px; margin-top: 0px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
+                <span style="margin-left: 45px;">Why Choose Us</span>
+            </h4>
+            <h4 style="color: #ffffff;margin-left: -264px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
+                <span style="margin-left: 12px;">Why Choose Us</span>
             </h4>
         </div>
     </div>
 </section>
+
+
+
+
 <!-- //inner banner -->
 
 

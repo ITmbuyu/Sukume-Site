@@ -384,7 +384,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           width: 369px;
           height: 350px;
           margin-right: 10px;
-          display: flex;
+          display: inline;
           flex-direction: column;
           align-items: center;
         }
@@ -655,10 +655,8 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
       </div>
     </div>
   </div>
-  </div>
+      </div>
 
-  
-  <!-- Add more icon rows as needed -->
       </div>
       <div class="accordion" id="accordion2">
         <div class="paragraph" style="margin-top: 20px;">
@@ -710,10 +708,11 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           </div>
         </div>
       </div>
-      <div class="accordion" id="accordion3">
+      <div class="accordion" id="accordion3" style="display: none;">
         <div class="paragraph" style="margin-top: 20px;">
-          <p class="mb-3" style=" line-height: 1.5;font-family: Corbel;">Trade and investment facilitation plays a vital role in enhancing international trade, boosting foreign exchange earnings and promoting economic growth. We facilitate trade and investment between African SMEs and pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities</p>
+          <p class="mb-3" style="line-height: 1.5; font-family: Corbel;">Trade and investment facilitation plays a vital role in enhancing international trade, boosting foreign exchange earnings and promoting economic growth. We facilitate trade and investment between African SMEs and pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities</p>
         </div>
+      
         <!-- Card 3 content here -->
         <div class="icon-row" style="display: -webkit-inline-box; justify-content: space-between; width: 100%;">
           <!-- First row of icons -->
@@ -723,7 +722,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
               <p style="text-align: center;"><a class="read-more-link" data-content="Trade Platforms">Read More</a></p>
             </div>
           </div>
-          
+      
           <div class="icon" style="width: 30%;"> <!-- Adjust the width as needed -->
             <img src="assets/images/IAT2.png" alt="Icon 2">
             <div class="read-more">
@@ -747,6 +746,7 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
           </div>
         </div>
       </div>
+      
       
       
       <div class="accordion" id="accordion4">
@@ -858,67 +858,14 @@ box-shadow: 0 25px 50px rgba(0,0,0,0.15);
               
       </div>
       </div>
-    <!--
-<script>
-        document.addEventListener('DOMContentLoaded', function () {
-            // Get all card elements by class name within the specific divs
-            const cardsInDivs = document.querySelectorAll('.col-lg-3.col-md-6.item .card');
     
-            // Define messages for each card (index corresponds to card order)
-            const cardMessages = [
-            "Place Nation branding is relevant because consumers and investors continue to rely heavily on country images in making economic decisions. Branding has become a central tool in country competitiveness, where having a bad reputation or none at all, seriously affects a country’s ability to compete. Thus, effective country branding can give a competitive advantage in world markets and open-up many opportunities for developing countries.' Philippe Mihailovich, 2006",
-            "In general, SMEs play a key role in local, national and global economies. In South Africa, they account for about 34% of GDP. Besides being a vital force for reducing unemployment, they are instruments for adding value, bringing innovation and ultimately contributing to more inclusive growth.We capacitate and equip SMEs to achieve global competitiveness and local transformation. Our market access platforms promote Made-by-African SME brands. We build awareness and facilitate trade and investment for African SMEs. We also aim to help SMEs to scale through doing business with corporates and governments as well as with their African and global counterparts. The overall aim is to foster shared economic growth and empowerment for local communities.",
-            "Trade and investment facilitation plays a vital role in enhancing international trade, boosting foreign exchange earnings and promoting economic growth. We facilitate trade and investment between African SMEs and pan-African corporations, governments, and their global counterparts in ways that foster shared economic growth and empowerment for local communities.",
-            "Public Speaking is important for conveying ideas, sharing information, influencing and persuading people as well as networking and relationship building. Our in-depth expertise on place/nation branding, entrepreneurship development and intra-African trade has led some of our team members to become sought-after public speakers about these topics."
-            
-            ];
-    
-            // Get the modal and modal content elements
-            const modal = document.querySelector('.modal');
-            const modalContent = document.querySelector('.modal-content');
-    
-            // Function to display a modal with the card's message
-            function displayModal(cardIndex) {
-                modalContent.innerHTML = `<div style="text-align: justify">${cardMessages[cardIndex]}</div>`;
-                modal.style.display = 'block';
-    
-                // Add a click event listener to the modal to close it when clicked outside
-                modal.addEventListener('click', closeModal);
-            }
-    
-            // Function to close the modal
-            function closeModal() {
-                modal.style.display = 'none';
-                // Remove the click event listener from the modal
-                modal.removeEventListener('click', closeModal);
-            }
-    
-            // Add click event listeners to each card within the specific divs
-            cardsInDivs.forEach((card, index) => {
-                card.addEventListener('click', (event) => {
-                    // Prevent the card click event from propagating to the modal
-                    event.stopPropagation();
-                    displayModal(index); // Show the corresponding modal with the card's message
-                });
-            });
-        });
-    </script>
-    -->
       
     
     
     
 
-  <!-- Modal -->
-  <div class="modal">
-    <div class="modal-content">
-      <!-- Close button -->
-      <span class="close" onclick="closeModal()">&times;</span>
-        <!-- Message content will be inserted here -->
-    </div>
-</div>
-</div>
-  </div>
+  
+
 
  
 
