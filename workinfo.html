@@ -401,19 +401,19 @@
                 var results = regex.exec(location.search);
                 return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
             }
-    
+
             // Get the content parameter from the URL
             const contentParam = getUrlParameter("clientInfo");
-    
+
             // Parse the JSON contentParam into an object
             const contentInfo = JSON.parse(decodeURIComponent(contentParam));
-    
+
             // Update the content in the tabbed elements
-            document.getElementById('clientInfo').textContent = contentInfo.client;
-            document.getElementById('projectTypeInfo').textContent = contentInfo.projectType;
-            document.getElementById('industryInfo').textContent = contentInfo.industry;
-            document.getElementById('durationInfo').textContent = contentInfo.duration;
-    
+            document.getElementById('clientInfo').innerHTML = contentInfo.client;
+            document.getElementById('projectTypeInfo').innerHTML = contentInfo.projectType;
+            document.getElementById('industryInfo').innerHTML = contentInfo.industry;
+            document.getElementById('durationInfo').innerHTML = contentInfo.duration;
+
             // Set the logo image source
             const logoURL = contentInfo.logo; // Use contentInfo.logo to get the logo URL
             const logoImage = document.createElement("img");
@@ -423,20 +423,19 @@
             // Set the width and height of the logo
             logoImage.style.width = "200px"; // Adjust the width as needed
             logoImage.style.height = "200px"; // Adjust the height as needed
-    
+
             // Append the logo image to the page
             document.getElementById('logoContainer').appendChild(logoImage);
-    
+
             // You can similarly update the content for other properties like 'task', 'approach', and 'outcome' in the respective tabbed elements.
-            document.getElementById('taskInfo').textContent = contentInfo.task;
-            document.getElementById('approachInfo').textContent = contentInfo.approach;
-            document.getElementById('outcomeInfo').textContent = contentInfo.outcome;
-            document.getElementById('testimonial').textContent = contentInfo.testimonial;
-            document.getElementById('clientName').textContent = contentInfo.clientName;
-            document.getElementById('clientCompany').textContent = contentInfo.clientCompany;
+            document.getElementById('taskInfo').innerHTML = contentInfo.task;
+            document.getElementById('approachInfo').innerHTML = contentInfo.approach;
+            document.getElementById('outcomeInfo').innerHTML = contentInfo.outcome;
+            document.getElementById('testimonial').innerHTML = contentInfo.testimonial;
+            document.getElementById('clientName').innerHTML = contentInfo.clientName;
+            document.getElementById('clientCompany').innerHTML = contentInfo.clientCompany;
         });
 
-        
         // Function to open a tab
         function openCity(evt, cityName) {
             // Declare all variables
