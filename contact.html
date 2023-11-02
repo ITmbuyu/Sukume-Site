@@ -265,6 +265,7 @@
                         .column h2, .column p {
                           margin: 0;
                         }
+
                       
                         /* Styles for mobile devices (max-width: 767px) */
                         @media (max-width: 767px) {
@@ -289,6 +290,43 @@
                             margin-left: 0px !important;
                           }
 
+                          a[href^="tel:"]::before {
+                            content: "";
+                            display: inline-block;
+                            height: 65px; /* Adjust as needed */
+                            width:  65px; /* Adjust as needed */
+                            margin-right: -1px; /* Adjust as needed */
+                            background-image: url('assets/images/phone\ icon.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            vertical-align: middle; /* Align the icon with the middle of the text */
+                          }
+  
+                          a[href^="mailto:"]::before {
+                            content: "";
+                            display: inline-block;
+                            height: 55px; /* Adjust as needed */
+                            width: 55px; /* Adjust as needed */
+                            margin-right: -5px; /* Adjust as needed */
+                            background-image: url('assets/images/email\ icon.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            vertical-align: middle; /* Align the icon with the middle of the text */
+                          }
+
+                          #mobilemail{
+                            margin-left: 20px !important;
+                          }
+
+                          #mobilecall{
+                            margin-left: 5px !important;
+                          }
+                          
+                          #mobilevisit{
+                            margin-left: 70px !important;
+                            margin-top: 15px !important;
+                          }
+
                           
                         }
                       
@@ -311,6 +349,30 @@
                             float: left;
                             height: 600px;
                           }
+
+                          a[href^="tel:"]::before {
+                            content: "";
+                            display: inline-block;
+                            height: 65px; /* Adjust as needed */
+                            width:  65px; /* Adjust as needed */
+                            margin-right: -1px; /* Adjust as needed */
+                            background-image: url('assets/images/phone\ icon.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            vertical-align: middle; /* Align the icon with the middle of the text */
+                          }
+  
+                          a[href^="mailto:"]::before {
+                            content: "";
+                            display: inline-block;
+                            height: 55px; /* Adjust as needed */
+                            width: 55px; /* Adjust as needed */
+                            margin-right: -5px; /* Adjust as needed */
+                            background-image: url('assets/images/email\ icon.png');
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            vertical-align: middle; /* Align the icon with the middle of the text */
+                          }
                         }
                       </style>
 
@@ -322,14 +384,14 @@
           Visit Us:
         </h5>
       </div>
-      <p style="margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+      <p style="margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;" id="mobilevisit">
         13 Carlswald Creek<br>105 9th Road<br>Midrand<br>1684<br>Johannesburg<br>South Africa
       </p>
-      <a href="tel:+27 69 238 1771" style="margin-top: -55px; margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+      <a href="tel:+27 69 238 1771" style="margin-top: -55px;  padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;" id="mobilecall">
         +27 69 238 1771
       </a>
       <br>
-      <a href="mailto:info@sukume.com" style="margin-top: -55px; margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+      <a href="mailto:info@sukume.com" style="margin-top: -55px; margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;" id="mobilemail">
         info@sukume.com
       </a>
     </div>
@@ -396,7 +458,7 @@
           height: 120px;
           display: flex;
           justify-content: center;
-          align-items: center;" class="fas fa-map-marker-alt" aria-hidden="true"></i>
+          align-items: center;margin-left: 140px;" class="fas fa-map-marker-alt" aria-hidden="true"></i>
       </div>
       <div class="contact-icon d-flex align-items-center" style="border-style: solid;width: 500px;margin-top: 40px;margin-bottom: 38px;margin-left: -10px;height: 80px;background-color: #707070;">
         <div class="ml-3">
@@ -406,14 +468,14 @@
         </div>
       </div>
       <div>
-        <p style="margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+        <p style="margin-left: 71px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
           13 Carlswald Creek<br>105 9th Road<br>Midrand<br>1684<br>Johannesburg<br>South Africa
         </p>
-        <a href="tel:+27 69 238 1771" style="margin-top: -55px; margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+        <a href="tel:+27 69 238 1771" style="margin-top: -55px; margin-left: -7px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
           +27 69 238 1771
         </a>
         <br>
-        <a href="mailto:info@sukume.com" style="margin-top: -55px; margin-left: 20px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
+        <a href="mailto:info@sukume.com" style="margin-top: -55px; margin-left: 10px; padding: 0; font-size: 19px; line-height: 28px; color: #fff; letter-spacing: .4px;">
           info@sukume.com
         </a>
       </div>
