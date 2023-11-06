@@ -225,7 +225,8 @@
             /* Hide the laptop caption on mobile devices */
             @media (max-width: 767px) {
                 .inner-banner {
-                    height: 350px;
+                    background-image: url('assets/images/inner-bannerphone.jpg');
+                    height: 575px;
                     margin-top: -22px;
                 }
         
@@ -235,10 +236,30 @@
         
                 /* Adjust the margin-top for the mobile caption */
                 .inner-banner #phone {
-                    margin-top: 85px ; /* Adjust this value as needed */
-                    font-size: 16px;
+                    margin-top: 135px ; /* Adjust this value as needed */
+                    font-size: 29px;
                 }
             }
+
+            @media (min-width: 320px) {
+                .inner-banner #phone {
+                    font-size: 23px;
+                }
+            }
+
+            @media (min-width: 375px) {
+                .inner-banner #phone {
+                    font-size: 23px;
+                }
+            }
+
+            @media (min-width: 425px) {
+                .inner-banner #phone {
+                    font-size: 29px;
+                }
+            }
+
+
         
             /* Hide the phone caption on screens wider than 767px */
             @media (min-width: 768px) {
@@ -253,10 +274,9 @@
                 <h4 style="color: #ffffff;margin-left: 100px; margin-top: 0px;" class="inner-text-title font-weight-bold mb-sm-2" id="laptop">
                     <span style="margin-left: 45px;">Transformative</span> <br> Economic Development
                 </h4>
-                <h4 style="color: #ffffff;margin-left: -200px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
-                    <span style="margin-left: 12px;">Transformative</span> <br>  
-                    <span style="margin-left: -31px;">Economic</span> <br>
-                    <span style="margin-left: -1px;">Development</span>
+                <h4 style="color: #ffffff;margin-left: 30px; text-align: center; " class="inner-text-title font-weight-bold mb-sm-2" id="phone">
+                    <span style="margin-left: -35px;">Transformative</span> <br>  
+                    <span style="margin-left: -31px;">Development Economic</span> <br>
                 </h4>
             </div>
         </div>
@@ -377,9 +397,17 @@
         /* set the margin top for id="about" on mobile devices to be -96px */
         @media (max-width: 767px) {
             #about {
-                margin-top: -96px;
+                margin-top: -50px;
             }
         }
+        
+        /* set the margin top for id="about" on mobile devices to be -96px */
+        @media (max-width: 320px) {
+            #about {
+                margin-top: -95px;
+            }
+        }
+
         /* set the margin top for id="about" on computers, laptops devices to be 50px */
         @media (min-width: 768px) {
             #about {
