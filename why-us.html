@@ -238,7 +238,8 @@
         /* Hide the laptop caption on mobile devices */
         @media (max-width: 767px) {
             .inner-banner {
-                height: 350px;
+                height: 575px;
+                background-image: url('assets/images/mwhyus.png');
                 margin-top: -22px;
             }
     
@@ -260,9 +261,37 @@
             }
         }
 
-        @media (max-width: 320px) {
+        @media (max-width: 425px) {
+            .inner-banner {
+                height: 675px !important;
+                
+                margin-top: 0px !important;
+            }
+
+            #phone {
+                margin-top: 430px !important;
+                font-size: 20px !important; 
+            }
+        }
+
+        @media (max-width: 375px) {
+            .inner-banner {
+                margin-top: -15px !important;
+            }
+
             #phone {
                 margin-left: -170px !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .inner-banner {
+                height: 615px !important;
+            }
+
+            #phone {
+                margin-left: -120px !important;
+                margin-top: 375px !important;
             }
         }
     </style>

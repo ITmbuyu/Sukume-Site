@@ -209,49 +209,85 @@
      <section class="inner-banner">
         <style>
           .inner-banner {
-              background-size: cover;
-              background-position: center;
-              height: 400px;
-              transition: background-image 0.5s ease-in-out;
-          }
-    
-          /* Adjust the height and background-size for mobile devices */
-          @media (max-width: 767px) {
-              .inner-banner {
-                  height: 320px;
-                  background-size: contain;
-              }
-          }
+            background-size: contain;
+            background-position: center;
+            height: 400px;
+            transition: background-image 0.5s ease-in-out;
+        }
+        
+        /* Apply margin-top only to larger screens (min-width: 768px) */
+        @media (min-width: 768px) {
+            .inner-banner {
+                margin-top: 110px;
+            }
+        }
+        
+        /* Adjust the height and background-size for mobile devices */
+        @media (max-width: 767px) {
+            .inner-banner {
+                height: 600px;
+                margin-top: 0; /* Reset margin-top for mobile devices */
+            }
+        }
+        
       </style>
     
     </div>
     
     
     <script>
-    // Array of image URLs
-    const images = [
-        'assets/images/banner1.png',
-        'assets/images/banner2.png',
-        'assets/images/banner3.png',
-        'assets/images/banner4.png',
-    ];
-    
-    // Function to change the background image
-    let currentImageIndex = 0;
-    function changeBackgroundImage() {
-        const innerBanner = document.querySelector('.inner-banner');
-        innerBanner.style.backgroundImage = `url('${images[currentImageIndex]}')`;
-    
-        // Increment the index or reset to 0 if it reaches the end
-        currentImageIndex = (currentImageIndex + 1) % images.length;
-    }
-    
-    // Change the background image every 5 seconds (5000 milliseconds)
-    setInterval(changeBackgroundImage, 5000);
-    
-    // Initial image
-    changeBackgroundImage();
-    </script>
+      // Array of regular image URLs
+      const images = [
+          'assets/images/banner1.png',
+          'assets/images/banner2.png',
+          'assets/images/banner3.png',
+          'assets/images/banner4.png',
+      ];
+      
+      // Function to change the background image for regular screens
+      let currentImageIndex = 0;
+      function changeRegularBackgroundImage() {
+          const innerBanner = document.querySelector('.inner-banner');
+          innerBanner.style.backgroundImage = `url('${images[currentImageIndex]}')`;
+      
+          // Increment the index or reset to 0 if it reaches the end
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+      }
+      
+      // Change the background image for regular screens every 5 seconds (5000 milliseconds)
+      setInterval(changeRegularBackgroundImage, 5000);
+      
+      // Initial regular image
+      changeRegularBackgroundImage();
+      
+      // Array of mobile image URLs
+      const mimages = [
+        'assets/images/mbanner1.png',
+        'assets/images/mbanner2.png',
+        'assets/images/mbanner3.png',
+        'assets/images/mbanner4.png',
+      ];
+      
+      // Function to change the background image for mobile screens
+      let mcurrentImageIndex = 0;
+      function changeMobileBackgroundImage() {
+        // Check if the viewport width is less than or equal to 768px
+        if (window.matchMedia('(max-width: 768px)').matches) {
+          const innerBanner = document.querySelector('.inner-banner');
+          innerBanner.style.backgroundImage = `url('${mimages[mcurrentImageIndex]}')`;
+      
+          // Increment the index or reset to 0 if it reaches the end
+          mcurrentImageIndex = (mcurrentImageIndex + 1) % mimages.length;
+        }
+      }
+      
+      // Change the background image for mobile screens every 5 seconds (5000 milliseconds)
+      setInterval(changeMobileBackgroundImage, 5000);
+      
+      // Initial mobile image
+      changeMobileBackgroundImage();
+      </script>
+      
     </section>
     <!-- //inner banner -->
 
